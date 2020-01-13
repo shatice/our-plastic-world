@@ -1,5 +1,22 @@
 # Projet fil rouge
 
+<strong>Prérequis</strong>
+
+<ul>
+    <li>Composer</li>
+    <li>PHP 7.3</li>
+</ul>
+
+<i>Si vous avez une version de PHP ultérieure à 7.3, vous devez faire une màj</i>
+
+<code>brew install brew-php-switcher</code>
+
+<code>brew install php@7.3</code>
+
+<code>brew-php-switcher 7.3</code>
+
+<strong>Récupérer et lancer le projet en local</strong>
+
 <code>git clone</code> https://github.com/shatice/filrouge.git
 
 <code>cd filrouge</code>
@@ -12,7 +29,7 @@ Avant tout, se placer dans sa branche
 
 <code>cd front</code>
 
-<code>npm i</code>
+<code>npm install</code>
 
 <code>npm start</code>
 
