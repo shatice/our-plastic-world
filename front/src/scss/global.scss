@@ -1,0 +1,26 @@
+.homeIntro {
+  width: 100vw;
+  height: 100vh;
+  @include flexbox(column, center, center);
+  text-align: center;
+
+  p {
+    width: 50%;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border: 1px solid $borderColor;
+  background-color: unset;
+  border-radius: 1.8rem;
+  font-size: 1.5rem;
+  transition: .5s ease-out;
+
+  &:hover {
+    background-color: $borderColor;
+    color: $bg;
+  }
+}
