@@ -35,6 +35,8 @@
 
 <strong>Lancer le back en local</strong>
 
+<i>Lancer un server local (avec Mamp ou autres)</i>
+
 <code>cd back</code>
 
 <code>composer install</code>
