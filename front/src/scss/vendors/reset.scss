@@ -22,8 +22,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
-
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -31,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1.5;
     background-color: $bg;
-    font-family: $primary-font;
+	font-family: $primary-font;
+	color: $text-color;
 }
 ol, ul {
 	list-style: none;
@@ -47,4 +46,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: $text-color;
 }
