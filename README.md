@@ -7,7 +7,7 @@
     <li>PHP 7.3</li>
 </ul>
 
-<i>Si vous avez une version de PHP ultérieure à 7.3, vous devez faire une màj</i>
+<i>Si vous avez une version de PHP antérieure à 7.3, vous devez faire une màj</i>
 
 <code>brew install brew-php-switcher</code>
 
@@ -21,10 +21,6 @@
 
 <code>cd filrouge</code>
 
-Avant tout, se placer dans sa branche
-
-<code>git checkout -b "votrenom"</code>
-
 <strong>Lancer le front en local</strong>
 
 <code>cd front</code>
@@ -34,6 +30,8 @@ Avant tout, se placer dans sa branche
 <code>npm start</code>
 
 <strong>Lancer le back en local</strong>
+
+<i>Lancer un server local (avec Mamp ou autres)</i>
 
 <code>cd back</code>
 
