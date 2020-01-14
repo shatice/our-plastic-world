@@ -21,10 +21,6 @@
 
 <code>cd filrouge</code>
 
-<i>Avant tout, se placer dans sa branche</i>
-
-<code>git checkout -b "votreprénom"</code>
-
 <strong>Lancer le front en local</strong>
 
 <code>cd front</code>
