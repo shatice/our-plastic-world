@@ -7,8 +7,23 @@ $secondary-font: 'Oswald';
 
 $bg: #282626;
 $text-color: #fff;
-$borderColor: #fff;
-$grey: #5E5E5E; 
+$grey: #5E5E5E;
+$grey-dark: #3B3939;  
 $blue: #90B4F9; 
 $red: #FF8383; 
 $green: #8EEBBE; 
+$white: #fff;
+$black: #000; 
+
+/***** TEMPLATE *****/
+
+// MARGIN
+$margin: 1.25rem; 
+
+// ICONS
+$icon-container-size-big: 3.75rem; 
+$icon-container-size-medium: 3.125rem; 
+$icon-container-size-small: 1.875rem;
+
+// GLOBE
+$globe-container-size: 31.25rem;

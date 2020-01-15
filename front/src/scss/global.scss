@@ -1,26 +1,39 @@
-.homeIntro {
-  width: 100vw;
-  height: 100vh;
-  @include flexbox(column, center, center);
-  text-align: center;
-
-  p {
-    width: 50%;
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-  }
-}
+/***** CTAS *****/
 
 button {
   padding: 1rem 1.5rem;
-  border: 1px solid $borderColor;
+  border: 1px solid $white;
   background-color: unset;
   border-radius: 1.8rem;
   font-size: 1.5rem;
   transition: .5s ease-out;
 
   &:hover {
-    background-color: $borderColor;
+    background-color: $white;
     color: $bg;
+  }
+}
+
+/***** STEPS *****/
+
+.step1,
+.step2, 
+.step3 {
+  width: 100vw; 
+  height: 100vh;
+  padding: 6.25rem $margin;
+  @include flexbox(row, space-between, flex-start);
+
+  .infos, 
+  legend {
+    width: 25%;
+    padding-top: 3.125rem;
+  }
+
+  .globeContainer {
+    width: $globe-container-size;
+    height: $globe-container-size;
+    @include flexbox(column, center, center);
+    border: 1px solid white;
   }
 }

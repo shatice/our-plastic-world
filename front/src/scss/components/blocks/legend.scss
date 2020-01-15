@@ -1,0 +1,32 @@
+legend {
+    .legendContent {
+        padding: 1rem;
+        @include flexbox(column, unset, flex-end);
+        background-color: $grey-dark;
+        border-radius: 0.625rem;
+
+        .crossIcon {
+            width: 1rem;
+            height: 1rem;
+            fill: $white; 
+        }
+
+        .legendItem {
+            margin: 1rem 0;
+            @include flexbox(row, space-between, center);
+            font-weight: lighter;
+
+            .legendItem__icon {
+                width: $icon-container-size-small;
+                height: $icon-container-size-small;
+                background-color: white;
+                border-radius: 100%;
+            }
+
+            .legendItem__text {
+                width: 85%;
+                padding: 0 1rem;
+            }
+        }
+    }
+}

@@ -1,12 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+/***** COMPONENTS *****/
+import Header from './Header.jsx';
+import Globe from './Globe.jsx';
+import Infos from './Infos.jsx';
+import Legend from './Legend.jsx';
+import Footer from './Footer.jsx';
  
 const Step1 = () => {
  
     return(
-        <div>
-            <h1>C'est le step 1</h1>
-            <Link to="/step2">Suivant</Link>
+        <div class="step1">
+            <Header/>
+            <Infos/>
+            <Globe/>
+            <Legend/>
+            <Footer/>
         </div>
     );
 }
