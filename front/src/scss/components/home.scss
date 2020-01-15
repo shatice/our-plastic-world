@@ -1,0 +1,12 @@
+.home .home__intro {
+    width: 100vw;
+    height: 100vh;
+    @include flexbox(column, center, center);
+    text-align: center;
+  
+    p {
+      width: 50%;
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+    }
+}
