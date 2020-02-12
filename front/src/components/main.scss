@@ -1,6 +1,17 @@
 .main {
 	width: 100vw;
 	height: 100vh;
-	border: solid red;
 	@include flexbox(row, space-between, center);
+
+	font-weight: $text-weight;
+
+	h2 {
+		font-size: $title-size;
+		font-weight: $title-weight;
+	}
+
+	.data {
+		font-size: $data-size;
+		font-weight: $data-weight;
+	}
 }

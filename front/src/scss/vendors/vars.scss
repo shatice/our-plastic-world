@@ -7,10 +7,16 @@ $secondary-font: 'Oswald';
 
 // SIZES
 
-$text-default: 1rem; 
-$text-title: 1.625rem; 
-$text-data: 1.5rem; 
-$text-timeline: 1.125rem; 
+$text-size: 1rem; 
+$title-size: 1.625rem; 
+$data-size: 1.5rem; 
+$timeline-size: 1.125rem; 
+
+// STYLES & WEIGHTS
+
+$text-weight: lighter; 
+$title-weight: normal; 
+$data-weight: bold; 
 
 /***** COLORS *****/
 

@@ -6,7 +6,6 @@ header {
   right: 0; 
   padding: $margin $margin 0;
   @include flexbox(row, flex-end, center);
-  border: solid white;
 }
 
 .navList {

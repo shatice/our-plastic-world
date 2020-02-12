@@ -1,6 +1,27 @@
 .infos {
   height: 80%;
-  width: 25%;
+  width: 28%;
   padding-left: $margin;
-  border: solid white;
+
+  ul {
+    padding: 0 $margin; 
+  }
+
+  h2 {
+    margin-bottom: .8rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+}
+
+.infos__bloc:not(:first-child) {
+  margin-top: $margin;
+  padding-top: $margin;
+  border-top: 1px solid $grey;
+
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
