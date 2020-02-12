@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
  
 const Globe = () => {
     return(
-        <div class="globeContainer">
+        <div className="globeContainer">
             "Je suis le globe"
         </div>
     );

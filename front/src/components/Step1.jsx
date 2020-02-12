@@ -1,4 +1,6 @@
 import React from "react";
+import axios from 'axios';
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 /***** COMPONENTS *****/
@@ -11,7 +13,7 @@ import Footer from './Footer.jsx';
 const Step1 = () => {
  
     return(
-        <div class="step1">
+        <div className="step1">
             <Header/>
             <Infos/>
             <Globe/>
