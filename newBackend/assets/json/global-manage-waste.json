@@ -1,0 +1,181 @@
+[{
+  "year": 1980,
+  "discarded": 100,
+  "incinerated": 0,
+  "recycled": 0
+}, {
+  "year": 1981,
+  "discarded": 98.3,
+  "incinerated": 1.7,
+  "recycled": 0
+}, {
+  "year": 1982,
+  "discarded": 97.6,
+  "incinerated": 2.4,
+  "recycled": 0
+}, {
+  "year": 1983,
+  "discarded": 96.9,
+  "incinerated": 3.1,
+  "recycled": 0
+}, {
+  "year": 1984,
+  "discarded": 96.2,
+  "incinerated": 3.8,
+  "recycled": 0
+}, {
+  "year": 1985,
+  "discarded": 95.5,
+  "incinerated": 4.5,
+  "recycled": 0
+}, {
+  "year": 1986,
+  "discarded": 94.8,
+  "incinerated": 5.2,
+  "recycled": 0
+}, {
+  "year": 1987,
+  "discarded": 94.1,
+  "incinerated": 5.9,
+  "recycled": 0
+}, {
+  "year": 1988,
+  "discarded": 92.8,
+  "incinerated": 6.6,
+  "recycled": 0.6
+}, {
+  "year": 1989,
+  "discarded": 91.4,
+  "incinerated": 7.3,
+  "recycled": 1.3
+}, {
+  "year": 1990,
+  "discarded": 90,
+  "incinerated": 8,
+  "recycled": 2
+}, {
+  "year": 1991,
+  "discarded": 88.6,
+  "incinerated": 8.7,
+  "recycled": 2.7
+}, {
+  "year": 1992,
+  "discarded": 87.2,
+  "incinerated": 9.4,
+  "recycled": 3.4
+}, {
+  "year": 1993,
+  "discarded": 85.8,
+  "incinerated": 10.1,
+  "recycled": 4.1
+}, {
+  "year": 1994,
+  "discarded": 84.4,
+  "incinerated": 10.8,
+  "recycled": 4.8
+}, {
+  "year": 1995,
+  "discarded": 83,
+  "incinerated": 11.5,
+  "recycled": 5.5
+}, {
+  "year": 1996,
+  "discarded": 81.6,
+  "incinerated": 12.2,
+  "recycled": 6.2
+}, {
+  "year": 1997,
+  "discarded": 80.2,
+  "incinerated": 12.9,
+  "recycled": 6.9
+}, {
+  "year": 1998,
+  "discarded": 78.8,
+  "incinerated": 13.6,
+  "recycled": 7.6
+}, {
+  "year": 1999,
+  "discarded": 77.4,
+  "incinerated": 14.3,
+  "recycled": 8.3
+}, {
+  "year": 2000,
+  "discarded": 76,
+  "incinerated": 15,
+  "recycled": 9
+}, {
+  "year": 2001,
+  "discarded": 74.6,
+  "incinerated": 15.7,
+  "recycled": 9.7
+}, {
+  "year": 2002,
+  "discarded": 73.2,
+  "incinerated": 16.4,
+  "recycled": 10.4
+}, {
+  "year": 2003,
+  "discarded": 71.8,
+  "incinerated": 17.1,
+  "recycled": 11.1
+}, {
+  "year": 2004,
+  "discarded": 70.4,
+  "incinerated": 17.8,
+  "recycled": 11.8
+}, {
+  "year": 2005,
+  "discarded": 69,
+  "incinerated": 18.5,
+  "recycled": 12.5
+}, {
+  "year": 2006,
+  "discarded": 67.6,
+  "incinerated": 19.2,
+  "recycled": 13.2
+}, {
+  "year": 2007,
+  "discarded": 66.2,
+  "incinerated": 19.9,
+  "recycled": 13.9
+}, {
+  "year": 2008,
+  "discarded": 64.8,
+  "incinerated": 20.6,
+  "recycled": 14.6
+}, {
+  "year": 2009,
+  "discarded": 63.4,
+  "incinerated": 21.3,
+  "recycled": 15.3
+}, {
+  "year": 2010,
+  "discarded": 62,
+  "incinerated": 22,
+  "recycled": 16
+}, {
+  "year": 2011,
+  "discarded": 60.6,
+  "incinerated": 22.7,
+  "recycled": 16.7
+}, {
+  "year": 2012,
+  "discarded": 59.2,
+  "incinerated": 23.4,
+  "recycled": 17.4
+}, {
+  "year": 2013,
+  "discarded": 57.8,
+  "incinerated": 24.1,
+  "recycled": 18.1
+}, {
+  "year": 2014,
+  "discarded": 56.4,
+  "incinerated": 24.8,
+  "recycled": 18.8
+}, {
+  "year": 2015,
+  "discarded": 55,
+  "incinerated": 25.5,
+  "recycled": 19.5
+}]

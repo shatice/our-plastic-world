@@ -5,7 +5,7 @@ const Infos = () => {
     return(
         /***** Contenu en dur, à passer en dynamique ******/
         /***** Classe --consumption comme exemple ici, à ajouter en js ******/
-        <section class="infos infos--consumption">
+        <section className="infos infos--consumption">
             <h1>La production mondiale de matières plastiques</h1>
             <article>
                 <p>Aujourd’hui, le monde produit en moyenne <span>300 millions de tonnes</span> de plastique <span>par an</span>, soit presque autant que <span>le poids total de l’humanité</span>.</p>
