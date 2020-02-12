@@ -3,19 +3,17 @@ import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-r
 import './scss/styles.scss';
 
 /***** COMPONENTS *****/
-import Home from './components/Home.jsx';
-import Step1 from './components/Step1.jsx';
-import Step2 from './components/Step2.jsx';
-import Step3 from './components/Step3.jsx';
+import Intro from './components/intro/Intro.jsx';
+import Main from './components/Main.jsx';
+import Globe from './components/globe/Globe.jsx';
 
 const App = () => (
   <Router>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route name="le-plastique-et-le-monde" path="/step1" component={Step1}/>
-        <Route name="le-plastique-et-l-ocean" path="/step2" component={Step2}/>
-        <Route name="le-plastique-et-les-jo-2024" path="/step3" component={Step3}/>
-      </Switch>
+    <Switch>
+      {/* <Route exact path="/" component={Home}/> */}
+      <Route exact path="/" component={Main}/>
+      {/* <Route name="le-plastique-et-le-monde" path="/step1" component={Step1}/> */}
+    </Switch>
   </Router>
 );
 

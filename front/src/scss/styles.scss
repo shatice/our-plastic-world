@@ -5,18 +5,15 @@
 @import 'vendors/mixins.scss';
 @import 'vendors/reset.scss';
 
+/***** VENDORS *****/
 @import 'global.scss';
 
 /***** COMPONENTS *****/
-@import './components/home.scss';
-@import './components/step1.scss';
-@import './components/step2.scss';
-@import './components/step3.scss';
-
-/***** BLOCKS *****/
-@import './components/blocks/header.scss';
-@import './components/blocks/footer.scss';
-@import './components/blocks/infos.scss';
-@import './components/blocks/globe.scss';
-@import './components/blocks/legend.scss';
+@import '../components/main.scss';
+@import '../components/globe/globe.scss';
+@import '../components/header/header.scss';
+@import '../components/infos/infos.scss';
+@import '../components/intro/intro.scss';
+@import '../components/nav/nav.scss';
+@import '../components/timeline/timeline.scss';
 

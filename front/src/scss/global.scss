@@ -13,27 +13,3 @@ button {
     color: $bg;
   }
 }
-
-/***** STEPS *****/
-
-.step1,
-.step2, 
-.step3 {
-  width: 100vw; 
-  height: 100vh;
-  padding: 6.25rem $margin;
-  @include flexbox(row, space-between, flex-start);
-
-  .infos, 
-  legend {
-    width: 25%;
-    padding-top: 3.125rem;
-  }
-
-  .globeContainer {
-    width: $globe-container-size;
-    height: $globe-container-size;
-    @include flexbox(column, center, center);
-    border: 1px solid white;
-  }
-}
