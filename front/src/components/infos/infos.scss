@@ -3,6 +3,15 @@
   width: 28%;
   padding-left: $margin;
 
+  .timelinetest {
+    display: flex;
+    padding: $margin;
+
+    li {
+      margin-right: .2rem;
+    }
+  }
+
   ul {
     padding: 0 $margin; 
   }

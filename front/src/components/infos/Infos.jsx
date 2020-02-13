@@ -1,13 +1,39 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
- 
-const Infos = () => {
-  return(
+import React, {useState}from "react";
+import axios from 'axios';
+
+const Infos = ({ yearList }) => {
+
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  if(!selectedDate) {
+    axios.all([axios.get('http://127.0.0.1:8000/global/manage/1980'), axios.get('http://127.0.0.1:8000/global/production/1980')])
+    .then(axios.spread((...res) => {
+      let obj = res[0].data;
+      obj.production = res[1].data.production
+      setSelectedDate(obj)
+    }))
+  }
+
+  const handleClick = (a) => {
+    axios.all([axios.get('http://127.0.0.1:8000/global/manage/' + a), axios.get('http://127.0.0.1:8000/global/production/' + a)])
+    .then(axios.spread((...res) => {
+      let obj = res[0].data;
+      obj.production = res[1].data.production
+      setSelectedDate(obj)
+    }))
+  }
+
+  const listYears = yearList.map((date) => 
+    <li key={date.id} onClick={() => handleClick(date.year)}>{date.year}</li>
+  );
+
+  return (
     <div className="infos">
       <section className="infos__bloc infos__bloc--production">
+
         <h2>PRODUCTION MONDIALE DE PLASTIQUE</h2>
         <ul>
-          <li className="data">400 M. de Tonnes</li>
+          <li className="data">{selectedDate ? selectedDate.production : ''} M. de Tonnes</li>
           <li><strong>3x</strong> plus qu’en <strong>1980</strong></li>
           <li><strong>7x</strong> plus que <strong>l’année précédente</strong></li>
         </ul>
@@ -17,24 +43,27 @@ const Infos = () => {
         <ul>
           <li>
             <p>Recyclés</p>
-            <p className="data">18%</p>
+            <p className="data">{selectedDate ? selectedDate.recycled : ''}</p>
           </li>
           <li>
             <p>Incinérés</p>
-            <p className="data">37%</p>
+            <p className="data">{selectedDate ? selectedDate.incinerated : ''}</p>
           </li>
           <li>
             <p>Dans la nature</p>
-            <p className="data">45%</p>
+            <p className="data">{selectedDate ? selectedDate.discarded : ''}</p>
           </li>
           <li>
             <p>Soit l’équivalent de</p>
-            <p className="data">115</p>
+            <p className="data">{selectedDate ? ((selectedDate.production * (selectedDate.discarded / 100)) / 150) : ''}</p>
             <strong>baleines bleues,</strong>
             <p>l'animal le plus lourd du monde</p>
           </li>
         </ul>
       </section>
+      <ul className="timelinetest">
+        {listYears}
+      </ul>
     </div>
   );
 }
