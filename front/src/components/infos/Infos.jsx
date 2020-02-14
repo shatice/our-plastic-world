@@ -6,7 +6,7 @@ const Infos = ({ yearList }) => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   if(!selectedDate) {
-    axios.all([axios.get('http://127.0.0.1:8000/global/manage/1980'), axios.get('http://127.0.0.1:8000/global/production/1980')])
+    axios.all([axios.get(process.env.REACT_APP_API_URL + '/global/manage/1980'), axios.get(process.env.REACT_APP_API_URL + '/global/production/1980')])
     .then(axios.spread((...res) => {
       let obj = res[0].data;
       obj.production = res[1].data.production
@@ -15,7 +15,7 @@ const Infos = ({ yearList }) => {
   }
 
   const handleClick = (a) => {
-    axios.all([axios.get('http://127.0.0.1:8000/global/manage/' + a), axios.get('http://127.0.0.1:8000/global/production/' + a)])
+    axios.all([axios.get(process.env.REACT_APP_API_URL + '/global/manage/' + a), axios.get(process.env.REACT_APP_API_URL + '/global/production/' + a)])
     .then(axios.spread((...res) => {
       let obj = res[0].data;
       obj.production = res[1].data.production
