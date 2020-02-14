@@ -9,6 +9,7 @@ import Intro from './components/intro/Intro.jsx';
 import Main from './components/Main.jsx';
 import Globe from './components/globe/Globe.jsx';
 
+require('dotenv').config()
 
 function App() {
   return(
