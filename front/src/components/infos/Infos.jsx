@@ -1,12 +1,21 @@
 import React, {useState}from "react";
 import axios from 'axios';
+// import API from '../../services/Api'
+
+// const $API = new API
+
+// $API.getManageByDate(1980)
+// .then((res)=>{
+
+// })
 
 const Infos = ({ yearList }) => {
 
   const [selectedDate, setSelectedDate] = useState(null);
 
   if(!selectedDate) {
-    axios.all([axios.get(process.env.REACT_APP_API_URL + '/global/manage/1980'), axios.get(process.env.REACT_APP_API_URL + '/global/production/1980')])
+    axios.all([axios.get(process.env.REACT_APP_API_URL + '/global/manage/1980'), 
+    axios.get(process.env.REACT_APP_API_URL + '/global/production/1980')])
     .then(axios.spread((...res) => {
       let obj = res[0].data;
       obj.production = res[1].data.production
