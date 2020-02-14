@@ -37,4 +37,4 @@
 
 <code>composer install</code>
 
-<code>php bin/console server:run</code>
+<code>php -S 127.0.0.1:8000 -t public</code>
