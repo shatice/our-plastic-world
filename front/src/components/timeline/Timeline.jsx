@@ -1,6 +1,9 @@
 import React, {useState}from "react";
 import axios from 'axios';
 
+/* Styles */
+import './timeline.scss';
+
 const Infos = ({ yearList }) => {
 
   const [selectedDate, setSelectedDate] = useState(null);

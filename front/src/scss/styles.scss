@@ -7,13 +7,7 @@
 
 /***** VENDORS *****/
 @import 'global.scss';
+@import './vendors/vendors.scss';
 
-/***** COMPONENTS *****/
-@import '../components/main.scss';
-@import '../components/globe/globe.scss';
-@import '../components/header/header.scss';
-@import '../components/infos/infos.scss';
-@import '../components/intro/intro.scss';
-@import '../components/nav/nav.scss';
-@import '../components/timeline/timeline.scss';
+
 

@@ -1,6 +1,9 @@
 import React, {useState}from "react";
 import axios from 'axios';
 
+/* Styles */
+import './infos.scss';
+
 const Infos = ({ yearList }) => {
 
   const [selectedDate, setSelectedDate] = useState(null);
@@ -30,7 +33,6 @@ const Infos = ({ yearList }) => {
   return (
     <div className="infos">
       <section className="infos__bloc infos__bloc--production">
-
         <h2>PRODUCTION MONDIALE DE PLASTIQUE</h2>
         <ul>
           <li className="data">{selectedDate ? selectedDate.production : ''} M. de Tonnes</li>

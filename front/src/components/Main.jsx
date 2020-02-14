@@ -3,6 +3,9 @@ import '../scss/styles.scss';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import axios from 'axios';
 
+/* Styles */
+import './main.scss';
+
 
 /***** COMPONENTS *****/
 import Header from './header/Header.jsx';
