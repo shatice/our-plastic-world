@@ -37,7 +37,7 @@ const [yearList, setYearList] = useState(null);
       { yearList ? <Infos yearList={yearList}/> : ''}
       <Globe/>
       <Nav/>
-      { yearList ? <Timeline yearList={yearList}/> : ''}
+      <Timeline/>
     </div>
   );
 }

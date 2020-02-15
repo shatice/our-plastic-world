@@ -1,8 +1,16 @@
-import React, {useState}from "react";
+import React, {useState} from "react";
+
+/* AXIOS */
 import axios from 'axios';
 
-/* Styles */
+/* STYLES */
 import './infos.scss';
+
+/***** COMPONENTS *****/
+// import Continents from './components/Continents.jsx';
+// import Countries from './components/Countries.jsx';
+// import Global from './components/Global.jsx';
+// import Oceans from './components/Oceans.jsx';
 
 const Infos = ({ yearList }) => {
 
