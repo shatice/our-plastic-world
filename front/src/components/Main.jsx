@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from "react";
 import '../scss/styles.scss';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import axios from 'axios';
 
 /* Styles */
 import './main.scss';
@@ -16,25 +14,10 @@ import Timeline from './timeline/Timeline.jsx';
  
 
 const Main = () => {
-
-const [yearList, setYearList] = useState(null);
-
-  const fetchDatas = () => {
-    if (!yearList) {
-      axios.get('http://127.0.0.1:8000/global/manage')
-      .then(response =>
-        setYearList(response.data));
-    }
-  }
-
-  useEffect(() => {
-    fetchDatas()
-  }, [])
- 
   return(
     <div className="main">
       <Header/>
-      { yearList ? <Infos yearList={yearList}/> : ''}
+      <Infos/>
       <Globe/>
       <Nav/>
       <Timeline/>

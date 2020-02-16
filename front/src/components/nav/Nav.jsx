@@ -1,20 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-/* Styles */
-import './nav.scss';
 
 /* Styles */
 import './nav.scss';
  
-const Nav = () => {
+const Nav = ({ settings }) => {
+	const dashboard = 
+	[
+		{
+			id: 1,
+			mode: "Monde"
+		},
+		{
+			id: 2,
+			mode: "Continents"
+		},
+		{
+			id: 3,
+			mode: "Pays"
+		},
+		{
+			id: 3,
+			mode: "Océans"
+		}
+	]
+
 	return(
 		<nav className="nav">
 			<ul>
-				<li>Évolution mondiale</li>
-				<li>Continents</li>
-				<li>Pays</li>
-				<li>Océans</li>
+				{ dashboard.map(d => <li key={ d.id }>{ d.mode }</li> )}
 			</ul>
 		</nav>
 	);
