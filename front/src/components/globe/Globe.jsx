@@ -6,13 +6,17 @@ import './globe.scss';
 /* Globe library */
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
+import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_continentsLow from "@amcharts/amcharts4-geodata/continentsLow";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
  
 const Globe = () => {
 
+
 	/* USEEFFECT START */
   useEffect(() => {
+		// Apply Theme
+		am4core.useTheme(am4themes_animated);
 		let chart = am4core.create("chartdiv", am4maps.MapChart);
 		let interfaceColors = new am4core.InterfaceColorSet();
 
@@ -23,10 +27,18 @@ const Globe = () => {
 			chart.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
 		}
 
+		
 		// Set projection
 		chart.projection = new am4maps.projections.Orthographic();
 		chart.panBehavior = "rotateLongLat";
+		// chart.deltaLatitude = -20;
 		chart.padding(20,20,20,20);
+
+		// limits vertical rotation
+		chart.adapter.add("deltaLatitude", function(delatLatitude){
+			return am4core.math.fitToRange(delatLatitude, -90, 90);
+		})
+
 
 		// Background glonbal
 		chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("rgba(0, 0, 0, 0)");
@@ -118,7 +130,7 @@ const Globe = () => {
 		template.nonScalingStroke = true;
 
 		// countries fill
-		template.fill = am4core.color("#C00B0B");
+		template.fill = am4core.color("rgba(255, 255, 255, 0.301)");
 		// countries strokes
 		template.stroke = am4core.color("black");
 
@@ -192,6 +204,11 @@ const Globe = () => {
 				}
 
 			})
+		})
+
+		let animation;
+		setTimeout(function(){
+			animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
 		})
 
 

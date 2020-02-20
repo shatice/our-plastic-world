@@ -1,9 +1,11 @@
-@import '../main.scss';
+@import '../../routes/main/main.scss';
 
 .infos {
   height: 80%;
   width: 28%;
   padding-left: $margin;
+  opacity: 0;
+	animation: fade 1.5s 1s linear forwards;
 
   .timelinetest {
     display: flex;
@@ -35,4 +37,8 @@
   li:not(:last-child) {
     margin-bottom: 1rem;
   }
+}
+
+.timeline {
+	border: solid red;
 }

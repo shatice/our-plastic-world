@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import '../../routes/main/main.scss';
 
 .timeline {
 	position: fixed;
@@ -7,4 +7,6 @@
 	border: solid white;
 	height: 10%;
 	display: none;
+	opacity: 0;
+	animation: fade 1.5s 1s linear forwards;
 }

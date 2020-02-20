@@ -6,7 +6,7 @@ import './header.scss';
  
 const Header = () => {
     return(
-      <header>
+      <header className="header">
         <nav className="navIcons">
           <ul className="navList">
             <li className="navItem navItem--lang">

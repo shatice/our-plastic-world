@@ -19,15 +19,20 @@ const Nav = ({ settings }) => {
 			mode: "Pays"
 		},
 		{
-			id: 3,
+			id: 4,
 			mode: "Océans"
 		}
 	]
 
+	function handleClick(e) {
+    e.preventDefault();
+    console.log(e.target.id);
+  }
+
 	return(
 		<nav className="nav">
 			<ul>
-				{ dashboard.map(d => <li key={ d.id }>{ d.mode }</li> )}
+				{ dashboard.map(d => <li id={ d.mode } key={ d.id } onClick={handleClick}>{ d.mode }</li> )}
 			</ul>
 		</nav>
 	);

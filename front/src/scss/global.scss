@@ -1,12 +1,20 @@
+
 /***** CTAS *****/
 
-button {
+// CREATE A CTA COMPONENT !
+
+.cta {
   padding: 1rem 1.5rem;
+  width: 168px;
   border: 1px solid $white;
   background-color: unset;
   border-radius: 1.8rem;
   font-size: 1.5rem;
   transition: .5s ease-out;
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: .1rem;
 
   &:hover {
     background-color: $white;

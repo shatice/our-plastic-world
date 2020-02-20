@@ -1,10 +1,11 @@
-@import '../scss/vendors/vendors.scss';
+@import '../../scss/vendors/vendors.scss';
 
 
 .main {
 	width: 100vw;
 	height: 100vh;
 	@include flexbox(row, space-between, center);
+	background-color: $bg-up;
 
 	font-weight: $text-weight;
 
@@ -19,3 +20,4 @@
 		font-weight: $data-weight;
 	}
 }
+

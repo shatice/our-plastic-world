@@ -18,9 +18,29 @@ import './infos.scss';
 import Global from './components/Global.jsx';
 import Continents from './components/Continents.jsx';
 // import Countries from './components/Countries.jsx';
-// import Oceans from './components/Oceans.jsx';
+import Oceans from './components/Oceans.jsx';
 
 const Infos = ({ }) => {
+
+  const dashboard = 
+	[
+		{
+			id: 1,
+			mode: "Monde"
+		},
+		{
+			id: 2,
+			mode: "Continents"
+		},
+		{
+			id: 3,
+			mode: "Pays"
+		},
+		{
+			id: 3,
+			mode: "Océans"
+		}
+	]
 
   const [yearList, setYearList] = useState(null);
 
@@ -39,7 +59,9 @@ const Infos = ({ }) => {
   return (
     <div className="infos">
       {/* <Continents/> */}
-      { yearList ? <Global yearList={yearList}/> : ''}
+      { yearList ? <Global id="Global" yearList={yearList}/> : ''}
+      {/* <Countries/> */}
+      {/* <Oceans/> */}
     </div>
   );
 }

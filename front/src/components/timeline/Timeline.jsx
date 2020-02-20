@@ -1,18 +1,14 @@
-import React, {useState}from "react";
-import axios from 'axios';
+// import React, {} from "react";
 
-/* Styles */
-import './timeline.scss';
+// const Timeline = ({}) => {
 
-const Infos = () => {
-
-  return (
-    <div className="timeline">
-      {/* <ul className="timelinetest">
-        {listYears}
-      </ul> */}
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <ul className="timelinetestê">
+//         { yearList.map(y => <li key={y.id} onClick={() => handleClick(y.year)}>{y.year}</li> )}
+//       </ul>
+//     </div>
+//   );
+// }
    
-export default Infos;
+// export default Timeline;

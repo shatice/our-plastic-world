@@ -1,13 +1,14 @@
-@import '../main.scss';
+@import '../../routes/main/main.scss';
 
 .nav {
 	padding-right: $margin;
 	text-align: right;
+	opacity: 0;
+	animation: fade 1.5s 1s linear forwards;
 
 	li {
 		margin-bottom: $margin;
 		@include flexbox(row, flex-end, center);
-		color: $red;
 
 		&::after {
 			content: "";
