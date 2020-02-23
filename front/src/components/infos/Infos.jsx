@@ -59,7 +59,7 @@ const Infos = ({ }) => {
   return (
     <div className="infos">
       {/* <Continents/> */}
-      { yearList ? <Global id="Global" yearList={yearList}/> : ''}
+      { yearList ? <Global yearList={yearList}/> : ''}
       {/* <Countries/> */}
       {/* <Oceans/> */}
     </div>
