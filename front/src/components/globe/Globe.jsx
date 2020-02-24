@@ -9,11 +9,10 @@ import * as am4maps from "@amcharts/amcharts4/maps";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_continentsLow from "@amcharts/amcharts4-geodata/continentsLow";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
+import { cos } from "@amcharts/amcharts4/.internal/core/utils/Math";
  
 const Globe = () => {
-
-
-	/* USEEFFECT START */
+	
   useEffect(() => {
 		// Apply Theme
 		am4core.useTheme(am4themes_animated);
@@ -40,9 +39,10 @@ const Globe = () => {
 		})
 
 
-		// Background glonbal
+		// Background global
 		chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("rgba(0, 0, 0, 0)");
-		chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
+		// console.log(chart.backgroundSeries.mapPolygons.template.polygon)
+		chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = .2;
 		chart.deltaLongitude = 20;
 		chart.deltaLatitude = -20;
 
@@ -150,17 +150,18 @@ const Globe = () => {
 			}
 		})
 
-		// IMPORTANT DESKOP -- Hover
-		// let hs = polygonSeries.mapPolygons.template.states.create("hover");
-		// hs.properties.fillOpacity = 1;
-		// hs.properties.fill = am4core.color("#deb7ad");
+		// IMPORTANT DESKOP -- Hover;
+		let hs = polygonSeries.mapPolygons.template.states.create("hover");
+		console.log(polygonSeries.mapPolygons);
+		hs.properties.fillOpacity = 1;
+		hs.properties.fill = am4core.color("red");
 
 		//
 		let graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
 		graticuleSeries.mapLines.template.stroke = am4core.color("#fff");
 		graticuleSeries.fitExtent = false;
 		graticuleSeries.mapLines.template.strokeOpacity = 0.2;
-		graticuleSeries.mapLines.template.stroke = am4core.color("#fff");
+		// graticuleSeries.mapLines.template.stroke = am4core.color("#fff"); 
 
 		
 		let measelsSeries = chart.series.push(new am4maps.MapPolygonSeries())
@@ -176,15 +177,14 @@ const Globe = () => {
 		measelTemplate.fillOpacity = 0.75;
 		measelTemplate.tooltipPosition = "fixed";
 
-
-
-		let hs2 = measelsSeries.mapPolygons.template.states.create("hover");
-		hs2.properties.fillOpacity = 1;
-		hs2.properties.fill = am4core.color("#86240c");
+		// let hs2 = measelsSeries.mapPolygons.template.states.create("hover");
+		// hs2.properties.fillOpacity = 1;
+		// hs2.properties.fill = am4core.color("red");
 
 		polygonSeries.events.on("inited", function () {
 			polygonSeries.mapPolygons.each(function (mapPolygon) {
 				let count = data[mapPolygon.id];
+				console.log(mapPolygon.id);
 
 				if (count > 0) {
 					let polygon = measelsSeries.mapPolygons.create();
@@ -206,10 +206,10 @@ const Globe = () => {
 			})
 		})
 
-		let animation;
-		setTimeout(function(){
-			animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
-		})
+		// let animation;
+		// setTimeout(function(){
+		// 	animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+		// })
 
 
 		let data = {
@@ -330,10 +330,10 @@ const Globe = () => {
 			"ZW": 0.06
 		}
 
+		// console.log(mapPolygon.dataItem.dataContext.name);
 		
 	}, [])
-	/* USEEFFECT END */
-
+	
 	return(
 		<div id="chartdiv" className="globe"></div>
 	);

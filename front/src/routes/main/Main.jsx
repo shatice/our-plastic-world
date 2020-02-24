@@ -22,7 +22,6 @@ const Main = () => {
       <Header/>
       <Infos stateInfos={stateInfos} />
       <Globe/>
-      {/* <Timeline/> } */}
       <Nav setStateInfos={setStateInfos} />
     </div>
   );

@@ -18,7 +18,6 @@ import './infos.scss';
 import Global from './components/Global.jsx';
 import Continents from './components/Continents.jsx';
 import Countries from './components/Countries.jsx';
-import Oceans from './components/Oceans.jsx';
 
 const Infos = ({ stateInfos }) => {
   const [yearList, setYearList] = useState(null);
@@ -40,7 +39,6 @@ const Infos = ({ stateInfos }) => {
       { stateInfos === 'Continents' ? <Continents/> : '' }
       { yearList && stateInfos === 'Global' ? <Global yearList={yearList}/> : '' }
       { stateInfos === 'Countries' ? <Countries/> : '' }
-      { stateInfos === 'Oceans' ? <Oceans/> : '' }
     </div>
   );
 }
