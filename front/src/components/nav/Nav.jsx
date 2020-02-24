@@ -18,10 +18,6 @@ const Nav = ({ setStateInfos }) => {
 		{
 			id: 3,
 			mode: "Countries"
-		},
-		{
-			id: 4,
-			mode: "Oceans"
 		}
 	]
 
