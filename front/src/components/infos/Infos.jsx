@@ -17,31 +17,9 @@ import './infos.scss';
 /***** COMPONENTS *****/
 import Global from './components/Global.jsx';
 import Continents from './components/Continents.jsx';
-// import Countries from './components/Countries.jsx';
-import Oceans from './components/Oceans.jsx';
+import Countries from './components/Countries.jsx';
 
-const Infos = ({ }) => {
-
-  const dashboard = 
-	[
-		{
-			id: 1,
-			mode: "Monde"
-		},
-		{
-			id: 2,
-			mode: "Continents"
-		},
-		{
-			id: 3,
-			mode: "Pays"
-		},
-		{
-			id: 3,
-			mode: "Océans"
-		}
-	]
-
+const Infos = ({ stateInfos }) => {
   const [yearList, setYearList] = useState(null);
 
   const fetchDatas = () => {
@@ -58,10 +36,9 @@ const Infos = ({ }) => {
 
   return (
     <div className="infos">
-      {/* <Continents/> */}
-      { yearList ? <Global yearList={yearList}/> : ''}
-      {/* <Countries/> */}
-      {/* <Oceans/> */}
+      { stateInfos === 'Continents' ? <Continents/> : '' }
+      { yearList && stateInfos === 'Global' ? <Global yearList={yearList}/> : '' }
+      { stateInfos === 'Countries' ? <Countries/> : '' }
     </div>
   );
 }
