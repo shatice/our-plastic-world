@@ -8,15 +8,12 @@ const Nav = ({ setStateInfos }) => {
 	const dashboard = 
 	[
 		{
-			id: 1,
 			mode: "Global"
 		},
 		{
-			id: 2,
 			mode: "Continents"
 		},
 		{
-			id: 3,
 			mode: "Countries"
 		}
 	]
@@ -25,7 +22,7 @@ const Nav = ({ setStateInfos }) => {
 		<nav className="nav">
 			<ul>
 				{ dashboard.map(d => 
-				<li onClick={ () => { setStateInfos(d.mode) } } id={ d.mode } key={ d.id }>{ d.mode }</li> )}
+				<li onClick={ () => { setStateInfos(d.mode) } } id={ d.mode } key={ d.mode }>{ d.mode }</li> )}
 			</ul>
 		</nav>
 	);

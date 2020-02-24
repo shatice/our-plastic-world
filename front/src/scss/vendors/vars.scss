@@ -2,8 +2,8 @@
 
 // FAMILIES
 
-$primary-font: 'Roboto';
-$secondary-font: 'Gilroy';
+$primary-font: 'rajdhani', sans-serif;
+$secondary-font: '';
 
 // SIZES
 
@@ -22,8 +22,8 @@ $data-weight: bold;
 
 $text-color: #fff;
 
-$bg: #282626;
-$bg-up: rgba(0, 0, 0, 0.5);
+$primary-bg: radial-gradient(circle, rgb(34, 34, 34) 11%, rgb(19, 19, 19) 100%);
+$secondary-bg: linear-gradient(to bottom,rgb(34, 34, 34) 11%, rgb(19, 19, 19) 100%);
 
 $grey: #5E5E5E;
 $grey-dark: #3B3939; 

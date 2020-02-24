@@ -1,55 +1,23 @@
-/***** PRIMARY FONT | ROBOTO *****/
-
-// BOLD
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-Bold.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-Bold.woff') format('woff');
+  font-family: 'rajdhani';
+  src: url('../../../assets/fonts/primary_font/rajdhani-bold-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/primary_font/rajdhani-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-BoldItalic.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-
-// LIGHT
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-Light.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-Light.woff') format('woff');
+  font-family: 'rajdhani';
+  src: url('../../../assets/fonts/primary_font/rajdhani-light-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/primary_font/rajdhani-light-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-LightItalic.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-LightItalic.woff') format('woff');
-  font-weight: lighter;
-  font-style: italic;
-}
-
-// REGULAR
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-Regular.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-Regular.woff') format('woff');
+  font-family: 'rajdhani';
+  src: url('../../../assets/fonts/primary_font/rajdhani-medium-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/primary_font/rajdhani-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/primary_font/Roboto-Italic.woff2') format('woff2'),
-      url('/src/assets/fonts/primary_font/Roboto-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
 }
