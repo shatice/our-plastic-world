@@ -13,13 +13,17 @@ import Timeline from '../../components/timeline/Timeline.jsx';
  
 
 const Main = () => {
+  const [stateInfos, setStateInfos] = useState({
+    type: 'Global'
+  });
+
   return(
     <div className="main">
       <Header/>
-      <Infos/> 
-      {/* <Globe/> */}
-      <Nav/>
-      {/* <Timeline/> */}
+      <Infos stateInfos={stateInfos} />
+      <Globe/>
+      {/* <Timeline/> } */}
+      <Nav setStateInfos={setStateInfos} />
     </div>
   );
 }

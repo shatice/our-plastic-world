@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 
 /* Styles */
 import './nav.scss';
  
-const Nav = ({ settings }) => {
+const Nav = ({ setStateInfos }) => {
+
 	const dashboard = 
 	[
 		{
 			id: 1,
-			mode: "Monde"
+			mode: "Global"
 		},
 		{
 			id: 2,
@@ -16,23 +17,19 @@ const Nav = ({ settings }) => {
 		},
 		{
 			id: 3,
-			mode: "Pays"
+			mode: "Countries"
 		},
 		{
 			id: 4,
-			mode: "Océans"
+			mode: "Oceans"
 		}
 	]
-
-	function handleClick(e) {
-    e.preventDefault();
-    console.log(e.target.id);
-  }
 
 	return(
 		<nav className="nav">
 			<ul>
-				{ dashboard.map(d => <li id={ d.mode } key={ d.id } onClick={handleClick}>{ d.mode }</li> )}
+				{ dashboard.map(d => 
+				<li onClick={ () => { setStateInfos(d.mode) } } id={ d.mode } key={ d.id }>{ d.mode }</li> )}
 			</ul>
 		</nav>
 	);
