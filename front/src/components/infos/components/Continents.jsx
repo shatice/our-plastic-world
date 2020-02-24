@@ -1,18 +1,7 @@
 import React from "react";
-
-/* STYLES */
 import '../infos.scss';
- 
+
 const Continents = () => {
-  const colors = [
-    "#C00B0B",
-    "#D34C2D",
-    "#E07844",
-    "#EA9956",
-    "#F3B665",
-    "#FEDC79",
-    "#FFEBB2"
-  ]
 
   const continents = 
   [
@@ -50,8 +39,6 @@ const Continents = () => {
 
 	return(
 		<section className="infos__bloc infos__bloc--continents">
-      <h2>CLASSEMENT</h2>
-      <h3>du plus polluant au moins polluant en fonction de leur part de déchets se retrouvant dans la nature</h3>
 			<ol>
         { continents.map(c => <li key={ c.id }><span className="itemOrder">{ c.id }</span>{ c.title }</li> )}
 			</ol>

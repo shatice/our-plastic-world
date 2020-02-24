@@ -1,15 +1,18 @@
 @import '../../routes/main/main.scss';
 
 .infos {
-  height: 80%;
   width: 28%;
+  max-height: 75%;
   padding-left: $margin;
   opacity: 0;
-	animation: fade 1.5s 1s linear forwards;
+  animation: fade 1.5s 1s linear forwards;
+  z-index: 2;
 
   .timelinetest {
     display: flex;
     padding: $margin;
+    width: 500px;
+    overflow: hidden;
 
     li {
       margin-right: .2rem;
@@ -29,16 +32,31 @@
   }
 }
 
-.infos__bloc:not(:first-child) {
-  margin-top: $margin;
-  padding-top: $margin;
-  border-top: 1px solid $grey;
+.infos__bloc {
+  animation: fade .5s forwards;
 
-  li:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 1rem;
   }
-}
 
-.timeline {
-	border: solid red;
+  &.infos__bloc--management {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: .8rem;
+      height: 45%;
+      border-top: 1px dotted $white;
+      border-left: 1px dotted $white;
+      border-bottom: 1px dotted $white;
+    }
+
+    li:last-child {
+      margin-top: 1rem;
+    }
+  }
 }

@@ -4,26 +4,25 @@
   width: 100vw;
   height: 100vh;
   @include flexbox(column, center, center);
-  // background-color: $bg-up;
 
   .intro__content {
-    opacity: 0;
-    animation: fade 2s .5s ease-in-out forwards;
     width: 50%;
     @include flexbox(column, center, center);
+    z-index: 10;
+    opacity: 0;
+    animation: fade 2s .5s ease-in-out forwards;
   
     h1 {
-      font-size: 4rem;
       margin-bottom: 2rem;
-      font-family: 'serif';
+      font-size: 4rem;
       letter-spacing: .1rem;
     }
   
     p {
-      font-size: 1.25rem;
-      font-weight: lighter;
       margin-bottom: 4rem;
       text-align: center;
+      font-size: 1.25rem;
+      font-weight: lighter;
     }
   }
 }

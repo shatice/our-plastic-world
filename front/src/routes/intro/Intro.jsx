@@ -1,8 +1,6 @@
 import React, { useState }from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
-/* Styles */
 import './intro.scss';
 
 /***** COMPONENTS *****/

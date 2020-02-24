@@ -3,10 +3,13 @@
 .timeline {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
-	border: solid white;
-	height: 10%;
-	display: none;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 6.25rem;
+	border-top-left-radius: 30px; 
+	border-top-right-radius: 30px;
+	background: $secondary-bg;
 	opacity: 0;
 	animation: fade 1.5s 1s linear forwards;
 }

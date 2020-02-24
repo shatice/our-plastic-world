@@ -2,15 +2,14 @@
 
 
 .main {
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 	@include flexbox(row, space-between, center);
-	// background-color: $bg-up;
-
 	font-weight: $text-weight;
+	// user-select: none;
 
 	h2 {
-		// font-family: $secondary-font;
 		font-size: $title-size;
 		font-weight: $title-weight;
 	}

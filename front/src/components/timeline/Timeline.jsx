@@ -1,14 +1,12 @@
-// import React, {} from "react";
+import React, {} from "react";
+import '../timeline/timeline.scss'; 
 
-// const Timeline = ({}) => {
+const Timeline = ({}) => {
 
-//   return (
-//     <div>
-//       <ul className="timelinetestê">
-//         { yearList.map(y => <li key={y.id} onClick={() => handleClick(y.year)}>{y.year}</li> )}
-//       </ul>
-//     </div>
-//   );
-// }
+  return (
+    <div className="timeline">
+    </div>
+  );
+}
    
-// export default Timeline;
+export default Timeline;

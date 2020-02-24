@@ -17,12 +17,15 @@ const Main = () => {
     type: 'Global'
   });
 
+  const [yearList, setYearList] = useState(null);
+
   return(
     <div className="main">
       <Header/>
-      <Infos stateInfos={stateInfos} />
+      <Infos stateInfos={stateInfos}/>
       <Globe/>
       <Nav setStateInfos={setStateInfos} />
+      <Timeline yearList={yearList} setYearList={setYearList}/>
     </div>
   );
 }

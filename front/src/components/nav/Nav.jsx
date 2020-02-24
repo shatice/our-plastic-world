@@ -18,11 +18,14 @@ const Nav = ({ setStateInfos }) => {
 		}
 	]
 
+	const handleClick = () => {
+  }
+
 	return(
 		<nav className="nav">
 			<ul>
 				{ dashboard.map(d => 
-				<li onClick={ () => { setStateInfos(d.mode) } } id={ d.mode } key={ d.mode }>{ d.mode }</li> )}
+				<li onClick={ () => { setStateInfos(d.mode); handleClick() } } id={ d.mode } key={ d.mode }>{ d.mode }</li> )}
 			</ul>
 		</nav>
 	);

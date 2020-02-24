@@ -1,18 +1,26 @@
 @import '../../routes/main/main.scss';
 
 .nav {
-	padding-right: $margin;
+	padding: 2rem $margin 2rem 2rem;
 	text-align: right;
-	opacity: 0;
-	animation: fade 1.5s 1s linear forwards;
 	border-top-left-radius: 30px; 
 	border-bottom-left-radius: 30px;
 	background: $secondary-bg;
 	opacity: 0;
-	padding: 2rem;
+	animation: fade 1.5s 1s linear forwards;
+
+	ul {
+		@include flexbox(column, space-between, flex-end);
+	}
 
 	li {
-		margin-bottom: $margin;
 		@include flexbox(row, flex-end, center);
+		letter-spacing: .2rem;
+		opacity: .5;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			margin-bottom: $margin;
+		}
 	}
 }
