@@ -1,3 +1,0 @@
-<?php //route_name_3efbb1f07b9af9cf34b8f3b6060834f3
-
-return [PHP_INT_MAX, 'api_global_manages_get_item'];

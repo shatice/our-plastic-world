@@ -15,8 +15,6 @@ import Timeline from '../../components/timeline/Timeline.jsx';
 import API from '../../services/Api'
 const $API = new API
 
-
-
 const Main = () => {
   const [stateInfos, setStateInfos] = useState({
     type: 'Global'
