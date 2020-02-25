@@ -1,19 +1,24 @@
 import React, {} from "react";
 import views from "../../js/models/views.js";
+import { useTranslation } from 'react-i18next';
 import './nav.scss';
  
 const Nav = ({ setStateInfos }) => {
+	const { t } = useTranslation();
 
 	const dashboard = 
 	[
 		{
-			mode: views.Global
+			mode: views.Global, 
+			label: t('nav.1')
 		},
 		{
-			mode: views.Continents
+			mode: views.Continents, 
+			label: t('nav.2')
 		},
 		{
-			mode: views.Countries
+			mode: views.Countries,
+			label: t('nav.3')
 		}
 	]
 
@@ -24,7 +29,7 @@ const Nav = ({ setStateInfos }) => {
 		<nav className="nav">
 			<ul>
 				{ dashboard.map(d => 
-				<li onClick={ () => { setStateInfos(d.mode); handleClick() } } id={ d.mode } key={ d.mode }>{ d.mode }</li> )}
+				<li onClick={ () => { setStateInfos(d.mode); handleClick() } } id={ d.mode } key={ d.mode }>{ d.label }</li> )}
 			</ul>
 		</nav>
 	);
