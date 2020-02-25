@@ -25,7 +25,7 @@ const Intro = () => {
 
     return(
       <section className="home">
-        <Header/>
+        <Header setSelectLanguage={setSelectLanguage} selectLanguage={selectLanguage}/>
         <section className="home__content">
           <h1>Choose your language</h1>
           <ul>
