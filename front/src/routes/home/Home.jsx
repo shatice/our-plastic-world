@@ -14,6 +14,10 @@ const Intro = () => {
 
     const [selected, setSelected] = React.useState( false );
 
+    const [selectLanguage, setSelectLanguage] = React.useState(false);
+    const toggle = () => setSelectLanguage(!selectLanguage);
+
+
     function changeLanguage(lang){
       i18n.changeLanguage(lang);
     }
@@ -25,8 +29,8 @@ const Intro = () => {
         <section className="home__content">
           <h1>Choose your language</h1>
           <ul>
-            <Link to="/intro"><button onClick={() => changeLanguage('fr')} className="cta">Français</button></Link>
-            <Link to="/intro"><button onClick={() => changeLanguage('en')} className="cta">English</button></Link>
+            <Link to="/intro"><button onClick={() => {setSelectLanguage(toggle) ; changeLanguage('fr')}} className="cta">Français</button></Link>
+            <Link to="/intro"><button onClick={() => {setSelectLanguage(toggle) ; changeLanguage('en')}} className="cta">English</button></Link>
           </ul>
           <svg className="headphoneIcon"><use xlinkHref="/sprite-sheet.svg#headphoneIcon" /></svg>
         </section>
