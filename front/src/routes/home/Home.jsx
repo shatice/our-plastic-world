@@ -1,8 +1,6 @@
-import React, { useState }from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, {}from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
-/* Styles */
 import './home.scss';
 
 /***** COMPONENTS *****/
@@ -10,14 +8,12 @@ import Header from '../../components/header/Header.jsx';
  
 const Intro = () => {
 
+
+    // Transalation (fr, en)
     const { t, i18n } = useTranslation();
-
-    const [selected, setSelected] = React.useState( false );
-
     function changeLanguage(lang){
       i18n.changeLanguage(lang);
     }
-
 
     return(
       <section className="home">

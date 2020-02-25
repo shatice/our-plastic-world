@@ -1,8 +1,6 @@
 import React from "react";
-import '../infos.scss';
 
 const Continents = () => {
-
   const continents = 
   [
     {

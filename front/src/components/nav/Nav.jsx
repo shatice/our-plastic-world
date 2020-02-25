@@ -1,8 +1,5 @@
-import React, {useState} from "react";
-
-import views from '../../models/views.js';
-
-/* Styles */
+import React, {} from "react";
+import views from "../../js/models/views.js";
 import './nav.scss';
  
 const Nav = ({ setStateInfos }) => {

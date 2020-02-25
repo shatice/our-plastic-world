@@ -1,6 +1,4 @@
 import React, {useEffect} from "react";
-
-/* Styles */
 import './globe.scss';
 
 /* Globe library */

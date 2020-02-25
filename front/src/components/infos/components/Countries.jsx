@@ -1,7 +1,4 @@
-import React, {useState} from "react";
-
-/* STYLES */
-import '../infos.scss';
+import React, {} from "react";
  
 const Countries = ({setStateInfos}) => {
 

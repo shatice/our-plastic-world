@@ -1,9 +1,4 @@
 import React, {} from "react";
-
-/* Style */
-import '../infos.scss';
-
-/* Translation */
 import { useTranslation } from 'react-i18next';
 
 const Global = ({ infosContent }) => {
