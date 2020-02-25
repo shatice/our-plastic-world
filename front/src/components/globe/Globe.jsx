@@ -23,7 +23,6 @@ const Globe = () => {
 		catch (e) {
 			chart.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
 		}
-
 		
 		// Set projection
 		chart.projection = new am4maps.projections.Orthographic();
@@ -35,7 +34,6 @@ const Globe = () => {
 		chart.adapter.add("deltaLatitude", function(delatLatitude){
 			return am4core.math.fitToRange(delatLatitude, -90, 90);
 		})
-
 
 		// Background global
 		// chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("rgba(0, 0, 0, 0)");
@@ -107,7 +105,6 @@ const Globe = () => {
 		catch (e) {
 				shadowPolygonSeries.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
 		}
-
 
 		// SHADOW
 		shadowPolygonSeries.useGeodata = true;

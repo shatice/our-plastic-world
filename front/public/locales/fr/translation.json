@@ -16,5 +16,8 @@
         "data-discarded-desc" : "dans la nature",
         "equivalence-intro" : "Soit l'équivalent de",
         "equivalence-desc" : "tours Eiffel"
-    } 
+    },
+    "continents": {
+        "title": "En 2020, où pollue-t-on le plus ?"
+    }
 }
