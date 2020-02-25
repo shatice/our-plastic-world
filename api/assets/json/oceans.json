@@ -1,0 +1,29 @@
+[{
+  "entity": "Global ocean (total)",
+  "prod": 268950,
+  "percent": 100
+}, {
+  "entity": "Indian Ocean",
+  "prod": 59130,
+  "percent": 22
+}, {
+  "entity": "Mediterranean Sea",
+  "prod": 23150,
+  "percent": 9
+}, {
+  "entity": "North Atlantic",
+  "prod": 56470,
+  "percent": 21
+}, {
+  "entity": "North Pacific",
+  "prod": 96400,
+  "percent": 36
+}, {
+  "entity": "South Atlantic",
+  "prod": 12780,
+  "percent": 5
+}, {
+  "entity": "South Pacific",
+  "prod": 21020,
+  "percent": 8
+}]
