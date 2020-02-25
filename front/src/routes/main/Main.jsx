@@ -4,6 +4,8 @@ import '../../scss/styles.scss';
 /* Styles */
 import './main.scss';
 
+import views from '../../models/views.js';
+
 /***** COMPONENTS *****/
 import Header from '../../components/header/Header.jsx';
 import Infos from '../../components/infos/Infos.jsx';
@@ -16,10 +18,7 @@ import API from '../../services/Api'
 const $API = new API
 
 const Main = () => {
-  const [stateInfos, setStateInfos] = useState({
-    type: 'Global'
-  });
-
+  const [stateInfos, setStateInfos] = useState(views.Global);
   const [yearList, setYearList] = useState(null);
   const [infosContent, setInfosContent] = useState(null);
 

@@ -7,14 +7,15 @@ import './infos.scss';
 import Global from './components/Global.jsx';
 import Continents from './components/Continents.jsx';
 import Countries from './components/Countries.jsx';
+import views from "../../models/views";
 
 const Infos = ({ stateInfos, infosContent }) => {
 
   return (
     <div className="infos">
-      { stateInfos === 'Continents' ? <Continents/> : '' }
-      { infosContent && stateInfos === 'Global' ? <Global infosContent={infosContent}/> : '' }
-      { stateInfos === 'Countries' ? <Countries/> : '' }
+      { stateInfos === views.Continents ? <Continents/> : '' }
+      { infosContent && stateInfos === views.Global ? <Global infosContent={infosContent}/> : '' }
+      { stateInfos === views.Countries ? <Countries/> : '' }
     </div>
   );
 }

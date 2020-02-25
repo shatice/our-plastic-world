@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 
+import views from '../../models/views.js';
+
 /* Styles */
 import './nav.scss';
  
@@ -8,13 +10,13 @@ const Nav = ({ setStateInfos }) => {
 	const dashboard = 
 	[
 		{
-			mode: "Global"
+			mode: views.Global
 		},
 		{
-			mode: "Continents"
+			mode: views.Continents
 		},
 		{
-			mode: "Countries"
+			mode: views.Countries
 		}
 	]
 
