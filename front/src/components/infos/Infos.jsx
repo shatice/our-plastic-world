@@ -1,15 +1,4 @@
-import React, {useState, useEffect} from "react";
-
-/* AXIOS */
-import axios from 'axios';
-// import API from '../../services/Api'
-
-// const $API = new API
-
-// $API.getManageByDate(1980)
-// .then((res)=>{
-
-// })
+import React, {} from "react";
 
 /* STYLES */
 import './infos.scss';
@@ -19,25 +8,12 @@ import Global from './components/Global.jsx';
 import Continents from './components/Continents.jsx';
 import Countries from './components/Countries.jsx';
 
-const Infos = ({ stateInfos }) => {
-  const [yearList, setYearList] = useState(null);
-
-  const fetchDatas = () => {
-    if (!yearList) {
-      axios.get('http://127.0.0.1:8000/global/manage')
-      .then(response =>
-        setYearList(response.data));
-    }
-  }
-
-  useEffect(() => {
-    fetchDatas()
-  }, [])
+const Infos = ({ stateInfos, infosContent }) => {
 
   return (
     <div className="infos">
       { stateInfos === 'Continents' ? <Continents/> : '' }
-      { yearList && stateInfos === 'Global' ? <Global yearList={yearList}/> : '' }
+      { infosContent && stateInfos === 'Global' ? <Global infosContent={infosContent}/> : '' }
       { stateInfos === 'Countries' ? <Countries/> : '' }
     </div>
   );

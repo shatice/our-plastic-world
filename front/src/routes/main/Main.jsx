@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import '../../scss/styles.scss';
 
 /* Styles */
@@ -11,6 +11,11 @@ import Nav from '../../components/nav/Nav.jsx';
 import Globe from '../../components/globe/Globe.jsx';
 import Timeline from '../../components/timeline/Timeline.jsx';
  
+/* AXIOS */
+import API from '../../services/Api'
+const $API = new API
+
+
 
 const Main = () => {
   const [stateInfos, setStateInfos] = useState({
@@ -18,14 +23,28 @@ const Main = () => {
   });
 
   const [yearList, setYearList] = useState(null);
+  const [infosContent, setInfosContent] = useState(null);
+
+  if( !yearList ) {
+    $API.getYears()
+    .then((res)=>{
+        setYearList(res.data);
+      })
+  }
+  if( !infosContent) {
+    $API.getInfoByYear(1980)
+    .then((res)=>{
+        setInfosContent(res.data);
+      })
+  }
 
   return(
     <div className="main">
       <Header/>
-      <Infos stateInfos={stateInfos}/>
+      <Infos stateInfos={stateInfos} infosContent={infosContent}/>
       <Globe/>
       <Nav setStateInfos={setStateInfos} />
-      <Timeline yearList={yearList} setYearList={setYearList}/>
+      { setInfosContent && yearList ? <Timeline yearList={yearList} setInfosContent={setInfosContent}/> : ''}
     </div>
   );
 }

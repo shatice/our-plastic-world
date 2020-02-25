@@ -12,4 +12,15 @@
 	background: $secondary-bg;
 	opacity: 0;
 	animation: fade 1.5s 1s linear forwards;
+
+	ul {
+		width: 80%;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			margin-right: .5rem;
+		}
+	}
 }
