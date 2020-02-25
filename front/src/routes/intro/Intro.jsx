@@ -10,12 +10,6 @@ import Globe from '../../components/globe/Globe.jsx';
 const Intro = () => {
     const { t } = useTranslation();
 
-    const [selected, setSelected] = React.useState( false );
-
-    const handleClick = (e) => {
-        
-    }
-
     return(
         <div className="intro">
             <Header/>
