@@ -10,7 +10,7 @@ class $API {
    * @return {array<object>} all years 
    */
   getYears() {
-    return this.get('/years/')
+    return this.get('/global/years/')
   }
 
   /**
@@ -26,7 +26,7 @@ class $API {
    * @return {array<object>} continents infos
    */
   getContinentsInfos() {
-    return this.get('TODO')
+    return this.get('/continent/')
   }
 
   /**
@@ -46,8 +46,9 @@ class $API {
   get(path) {
     return axios.get(this.uri+path)
   }
-  getManageByDate (date) {
-    return this.get('/global/manage/' + date)
+
+  getInfoByYear (year) {
+    return this.get(`/global/${year}`)
   }
 }
 

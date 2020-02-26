@@ -1,22 +1,26 @@
-import React, {useState} from "react";
-
-/* Styles */
+import React, { useState } from "react";
+import views from "../../js/models/views.js";
+import { useTranslation } from 'react-i18next';
 import './nav.scss';
  
 const Nav = ({ setStateInfos }) => {
+	const { t } = useTranslation();
 
 	const [elementDashboard, setElementDashboard] = useState();
 
 	const dashboard = 
 	[
 		{
-			mode: "Global"
+			mode: views.Global, 
+			label: t('nav.1')
 		},
 		{
-			mode: "Continents"
+			mode: views.Continents, 
+			label: t('nav.2')
 		},
 		{
-			mode: "Countries"
+			mode: views.Countries,
+			label: t('nav.3')
 		}
 	]
 

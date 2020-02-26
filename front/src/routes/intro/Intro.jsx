@@ -1,5 +1,5 @@
-import React, { useState }from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, {} from "react";
+import { Link } from "react-router-dom";
 import './intro.scss';
 
 /***** COMPONENTS *****/
@@ -7,12 +7,6 @@ import Header from '../../components/header/Header.jsx';
 import Globe from '../../components/globe/Globe.jsx';
  
 const Intro = () => {
-
-    const [selected, setSelected] = React.useState( false );
-
-    const handleClick = (e) => {
-        
-    }
 
     return(
         <div className="intro">

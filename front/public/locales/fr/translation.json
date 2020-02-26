@@ -1,20 +1,29 @@
 {
-    "Bonjour": {
-        "1": "Bonjour le monde"
-    },
-    "nav": {
-        "1" : "Production", 
-        "2" : "Pollution", 
-        "3" : "Recyclage"
-    },
-    "global": {
-        "data-prod-mesure" : "millions de tonnes", 
-        "data-prod-desc" : "de plastique produit", 
-        "data-prod-calcul-1" : "depuis", 
-        "data-prod-calcul-2" : "en 1 an", 
-        "data-recycled-desc" : "recyclés", 
-        "data-discarded-desc" : "dans la nature",
-        "equivalence-intro" : "Soit l'équivalent de",
-        "equivalence-desc" : "tours Eiffel"
-    }
+	"Bonjour": {
+		"1": "Bonjour le monde"
+	},
+	"nav": {
+		"1" : "Évolution mondiale", 
+		"2" : "Régions", 
+		"3" : "Pays"
+	},
+	"global": {
+		"data-prod-mesure" : "millions de tonnes", 
+		"data-prod-desc" : "de plastique produit", 
+		"data-prod-calcul-1" : "depuis", 
+		"data-prod-calcul-2" : "en 1 an", 
+		"data-recycled-desc" : "recyclés", 
+		"data-discarded-desc" : "dans la nature",
+		"equivalence-intro" : "Soit l'équivalent de",
+		"equivalence-desc" : "tours Eiffel"
+	},
+	"current-year" : "En 2020",
+	"continents": {
+		"title": "où pollue-t-on le plus ?"
+	},
+	"countries": {
+		"title": "qui recycle le mieux ?",
+		"detail": "Sélectionne un pays pour en savoir plus sur son impact"
+
+	}
 }

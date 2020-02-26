@@ -1,10 +1,6 @@
-import React, { useState }from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, {}from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import Sound from 'react-sound';
-import soundClick from '../../assets/audio/click.mp3';
-
-/* Styles */
 import './home.scss';
 
 /***** COMPONENTS *****/
@@ -12,10 +8,9 @@ import Header from '../../components/header/Header.jsx';
  
 const Intro = () => {
 
+
+    // Transalation (fr, en)
     const { t, i18n } = useTranslation();
-
-    const [selected, setSelected] = React.useState( false );
-
     const [selectLanguage, setSelectLanguage] = React.useState(false);
     const toggle = () => setSelectLanguage(!selectLanguage);
 
@@ -23,10 +18,6 @@ const Intro = () => {
     function changeLanguage(lang){
       i18n.changeLanguage(lang);
     }
-
-
-
-
 
     return(
       <section className="home">

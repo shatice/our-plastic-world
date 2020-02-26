@@ -1,3 +1,0 @@
-<?php //route_name_e84da852dc08be2ffc53bbcc0b13b679
-
-return [PHP_INT_MAX, 'api_global_productions_get_item'];
