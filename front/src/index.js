@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './scss/styles.scss';
 import App from './App';
-import './helpers/i18n';
+import './js/helpers/i18n';
 import * as serviceWorker from './js/serviceWorker';
 
 ReactDOM.render(

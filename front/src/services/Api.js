@@ -26,7 +26,7 @@ class $API {
    * @return {array<object>} continents infos
    */
   getContinentsInfos() {
-    return this.get('TODO')
+    return this.get('/continent/')
   }
 
   /**
@@ -46,6 +46,7 @@ class $API {
   get(path) {
     return axios.get(this.uri+path)
   }
+
   getInfoByYear (year) {
     return this.get(`/global/${year}`)
   }

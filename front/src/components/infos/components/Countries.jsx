@@ -1,12 +1,14 @@
-import React, {useState} from "react";
+import React, {} from "react";
 
-/* STYLES */
-import '../infos.scss';
+/***** COMPONENTS *****/
+import Search from './search/Search.jsx';
  
 const Countries = ({setStateInfos}) => {
 
 	return(
-    <div>Hello</div>
+    <div>
+			<Search />
+		</div>
 	);
 }
    
