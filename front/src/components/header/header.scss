@@ -41,3 +41,26 @@
 .home .header .navItem:not(.navItem--audio){
   display: none;
 } 
+
+.show{
+  opacity:1;
+}
+.hidden{
+  opacity:0.5;
+}
+.nav__language{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  font-size: 24px;
+  line-height: 41px;
+}
+.line{
+  background:white;
+  height: 30px;
+  margin-left: $margin;
+}
+span.navItem.line {
+  width: 2px;
+  height:30px;
+}
