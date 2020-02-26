@@ -5,7 +5,7 @@
 	"nav": {
 		"1" : "Global evolution", 
 		"2" : "Regions", 
-		"3" : "Country"
+		"3" : "Countries"
 	},
 	"global": {
 		"data-prod-mesure" : "million tonnes", 
@@ -17,7 +17,14 @@
 		"equivalence-intro" : "Or the equivalent of",
 		"equivalence-desc" : "Eiffel tower"
 	},
+	"current-year" : "In 2020",
 	"continents": {
-		"title": "In 2020, where do we pollute the most?"
-	} 
+		"title": "In 2020, where do we pollute the most ?"
+	},
+	"countries": {
+		"title": "who recycles the best ?",
+		"detail": "Select a country in order to see its impact",
+		"data-reycled-desc": "Déchets plastiques recyclés", 
+		"data-perperson-desc": "Consommation par personne"
+	}
 }

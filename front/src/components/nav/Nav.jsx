@@ -37,7 +37,7 @@ const Nav = ({ setStateInfos }) => {
 						elementDashboard === index ? {opacity: 1} : {opacity: 0.5}
 					}
 					key={index}>
-					{d.mode}
+					{d.label}
 				</li> 
 				)}
 			</ul>

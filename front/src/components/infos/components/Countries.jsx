@@ -18,11 +18,11 @@ const Countries = ({setStateInfos}) => {
 			<ul>
 				<li>
 					<p className="data"><span>97</span>%</p>
-					<p>Déchets plastiques recyclés</p>
+					<p>{t('countries.data-reycled-desc')}</p>
 				</li>
 				<li>
 					<p className="data"><span>144</span>kg</p>
-					<p>Consommation par personne</p>
+					<p>{t('countries.data-perperson-desc')}</p>
 				</li>
 			</ul>
 		</section>
