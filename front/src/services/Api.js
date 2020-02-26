@@ -26,14 +26,14 @@ class $API {
    * @return {array<object>} continents infos
    */
   getContinentsInfos() {
-    return this.get('/continent/')
+    return this.get('/continent')
   }
 
   /**
    * @return {array<object>} countries infos
    */
   getCountriesInfos() {
-    return this.get('TODO')
+    return this.get('/country')
   }
 
   /**

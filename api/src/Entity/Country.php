@@ -54,6 +54,11 @@ class Country
      */
     private $continent;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $value;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -115,6 +120,18 @@ class Country
     public function setContinent(?Continent $continent): self
     {
         $this->continent = $continent;
+
+        return $this;
+    }
+
+    public function getValue(): ?int
+    {
+        return $this->value;
+    }
+
+    public function setValue(int $value): self
+    {
+        $this->value = $value;
 
         return $this;
     }

@@ -19,10 +19,7 @@ class ContinentRepository extends ServiceEntityRepository
         parent::__construct($registry, Continent::class);
     }
 
-     /**
-      * @return Continent[] Returns an array of Continent objects
-      */
-
+    /*
     public function findContinents()
     {
         return $this->createQueryBuilder('c')
@@ -31,8 +28,7 @@ class ContinentRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-
-
+    */
 
 
     /*

@@ -14,36 +14,30 @@ class ContinentController extends AbstractController
      */
     public function index(ContinentRepository $repo)
     {
-        $result = $repo->findContinents();
-        return $this->json($result);
-    }
-
-    /**
-     * @Route("/continent/{id}", name="continent_countries")
-     */
-    public function getCountries(Continent $continent = null)
-    {
-        if ($continent)
+        $result = $repo->findAll();
+        $arr = [];
+        $countries = [];
+        foreach ($result as $key=>$value)
         {
-            $result = $continent->getCountries();
-            $arr = [];
-            foreach ($result as $key=>$value)
+            foreach ($value->getCountries() as $country)
             {
-                $obj = [
-                    "id" => $value->getId(),
-                    "name" => $value->getName(),
-                    "code" => $value->getCode(),
-                    "tonne_per_year" => $value->getTonnePerYear(),
-                    "per_person_per_day" => $value->getPerPersonPerDay(),
-                    "continent" => $continent->getName()
+                $countriesArr = [
+                    "id" => $country->getId(),
+                    "name" => $country->getName(),
+                    "code" => $country->getCode(),
+                    "value" => $country->getValue()
                 ];
-                $arr[] = $obj;
+                $countries[] = $countriesArr;
             }
-            return $this->json($arr);
+            $obj = [
+                "id" => $value->getId(),
+                "name" => $value->getName(),
+                "pollution" => $value->getPollution(),
+                "countries" => $countries
+            ];
+            $arr[] = $obj;
         }
-        else
-        {
-            return $this->json(["error" => "No data"]);
-        }
+
+        return $this->json($arr);
     }
 }
