@@ -19,12 +19,13 @@
 	},
 	"current-year" : "In 2020",
 	"continents": {
-		"title": "In 2020, where do we pollute the most ?"
+		"title": "where do we pollute the most ?"
 	},
 	"countries": {
 		"title": "who recycles the best ?",
 		"detail": "Select a country in order to see its impact",
-		"data-reycled-desc": "Déchets plastiques recyclés", 
-		"data-perperson-desc": "Consommation par personne"
-	}
+		"data-reycled-desc": "Recycled plastic waste", 
+		"data-perperson-desc": "Consumption per person"
+	},
+	"search" : "Find a country"
 }
