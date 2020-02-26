@@ -14,6 +14,7 @@ import Timeline from '../../components/timeline/Timeline.jsx';
 import Search from '../../components/search/Search.jsx';
  
 
+
 const Main = () => {
   const { t } = useTranslation();
   const [stateInfos, setStateInfos] = useState({
@@ -22,8 +23,10 @@ const Main = () => {
 
   const [yearList, setYearList] = useState(null);
 
+
   return(
     <div className="main">
+      
       <Header/>
       <Infos stateInfos={stateInfos}/>
       <Globe/>
