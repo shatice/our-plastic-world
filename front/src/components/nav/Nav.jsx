@@ -1,10 +1,12 @@
-import React, {} from "react";
+import React, { useState } from "react";
 import views from "../../js/models/views.js";
 import { useTranslation } from 'react-i18next';
 import './nav.scss';
  
 const Nav = ({ setStateInfos }) => {
 	const { t } = useTranslation();
+
+	const [elementDashboard, setElementDashboard] = useState();
 
 	const dashboard = 
 	[
@@ -22,14 +24,22 @@ const Nav = ({ setStateInfos }) => {
 		}
 	]
 
-	const handleClick = () => {
-  }
-
 	return(
 		<nav className="nav">
-			<ul>
-				{ dashboard.map(d => 
-				<li onClick={ () => { setStateInfos(d.mode); handleClick() } } id={ d.mode } key={ d.mode }>{ d.label }</li> )}
+			<ul className="nav__items">
+				{ dashboard.map((d, index) => 
+				<li 
+					onClick={ () => { 
+						setStateInfos(d.mode); 
+						setElementDashboard(index)
+					}} 
+					style={
+						elementDashboard === index ? {opacity: 1} : {opacity: 0.5}
+					}
+					key={index}>
+					{d.mode}
+				</li> 
+				)}
 			</ul>
 		</nav>
 	);

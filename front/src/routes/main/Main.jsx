@@ -12,6 +12,7 @@ import Nav from '../../components/nav/Nav.jsx';
 import Globe from '../../components/globe/Globe.jsx';
 import Timeline from '../../components/timeline/Timeline.jsx';
 
+
 const Main = () => {
   const { t } = useTranslation();
   const $API = new API();
@@ -40,8 +41,10 @@ const Main = () => {
     })
   }
 
+
   return(
     <div className="main">
+      
       <Header/>
       <Infos 
         stateInfos={stateInfos} 
