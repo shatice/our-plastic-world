@@ -5,6 +5,8 @@ import './nav.scss';
  
 const Nav = ({ setStateInfos }) => {
 
+	const [elementDashboard, setElementDashboard] = useState();
+
 	const dashboard = 
 	[
 		{
@@ -18,14 +20,20 @@ const Nav = ({ setStateInfos }) => {
 		}
 	]
 
-
 	return(
 		<nav className="nav">
-			<ul>
-				{ dashboard.map(d => 
-				<li onClick={ () => { setStateInfos(d.mode) } } id={ d.mode } key={ d.mode } style={{opacity: d.mode  ? "1" : "0.5"}}>
+			<ul className="nav__items">
+				{ dashboard.map((d, index) => 
+				<li 
+					onClick={ () => { 
+						setStateInfos(d.mode); 
+						setElementDashboard(index)
+					}} 
+					style={
+						elementDashboard === index ? {opacity: 1} : {opacity: 0.5}
+					}
+					key={index}>
 					{d.mode}
-					{console.log(d.mode)}
 				</li> 
 				)}
 			</ul>
