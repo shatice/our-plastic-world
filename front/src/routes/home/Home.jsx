@@ -14,6 +14,7 @@ const Intro = () => {
     const [selectLanguage, setSelectLanguage] = React.useState(false);
     const toggle = () => setSelectLanguage(!selectLanguage);
 
+
     function changeLanguage(lang){
       i18n.changeLanguage(lang);
     }
