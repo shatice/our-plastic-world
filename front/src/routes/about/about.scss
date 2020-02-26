@@ -1,0 +1,65 @@
+@import '../../scss/vendors/vendors.scss';
+
+.about{
+    margin-left: 2.25rem;
+}
+.first__title{
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+.second__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+.third__title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+.container__four--one{
+    display:flex;
+}
+.container__four--two{
+    display:flex;
+    margin-bottom: 3rem;
+}
+.one__text{
+    width: 35vw;
+}
+.one__text:not(:last-child){
+    margin-right: 13rem;
+}
+.four__title{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+.first__text{
+    font-family: Roboto;
+    font-style: lighter;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 3.25rem;
+    width: 80vw;
+}
+.text{
+    font-family: Roboto;
+    font-style: lighter;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 2.25rem;
+}
