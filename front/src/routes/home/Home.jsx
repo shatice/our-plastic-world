@@ -1,6 +1,9 @@
 import React, { useState }from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import Sound from 'react-sound';
+import soundClick from '../../assets/audio/click.mp3';
+
 /* Styles */
 import './home.scss';
 
@@ -20,6 +23,9 @@ const Intro = () => {
     function changeLanguage(lang){
       i18n.changeLanguage(lang);
     }
+
+
+
 
 
     return(

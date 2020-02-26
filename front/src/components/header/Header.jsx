@@ -12,7 +12,7 @@ import './header.scss';
 
 const Header = () => {
   
-  const [swapSound, setSwapSound] = useState(Sound.status.PLAYING);
+  const [swapSound, setSwapSound] = useState(Sound.status.STOPPED);
   
   const { t, i18n } = useTranslation();
   
@@ -34,9 +34,6 @@ const Header = () => {
     return(
       <header className="header">
         <Sound url={soundfile} playStatus={swapSound} loop={true} />
-        {
-          console.log(Sound.status.PLAYING)
-        }
         <nav className="navIcons">
           <ul className="navList">
             <div className="nav__language">
