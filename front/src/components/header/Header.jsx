@@ -1,27 +1,39 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import Sound from 'react-sound';
+import soundfile from '../../assets/audio/sound.wav';
 import './header.scss';
 
 const Header = () => {
-  const [isShow, setIsShow] = useState(false);
+  
+  const [swapSound, setSwapSound] = useState(Sound.status.STOPPED);
+  
   const { t, i18n } = useTranslation();
   
   function changeLanguage(lang){
     i18n.changeLanguage(lang);
   }
 
+  const toggle = () => {
+    if (swapSound === Sound.status.PLAYING) {
+      setSwapSound(Sound.status.STOPPED);
+    }else {
+      setSwapSound(Sound.status.PLAYING);
+    }
+    
+  }
+
   return(
     <header className="header">
+      <Sound url={soundfile} playStatus={swapSound} loop={true} />
       <nav className="navIcons">
         <ul className="navList">
-          {console.log("i18n", i18n)}
           <div className="nav__language">
             <li onClick={() => {changeLanguage('en')}} style={{opacity: i18n.language === "en" ? "1" : "0.5"}} className={`navItem navItem--lang`}>EN</li>
-            <span className="navItem line"></span>
             <li onClick={() => {changeLanguage('fr')}} style={{opacity: i18n.language === "fr" ? "1" : "0.5"}} className={`navItem navItem--lang`}>FR</li>
           </div>
-          <li className="navItem navItem--audio">
+          <li onClick={toggle} className="navItem navItem--audio">
             <svg className="navItem__icon navItem__icon--audioOff"><use xlinkHref="/sprite-sheet.svg#audioOffIcon" /></svg>
           </li>
           <li className="navItem navItem--turnOff">

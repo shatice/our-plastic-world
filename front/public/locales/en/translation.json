@@ -3,18 +3,28 @@
 		"1": "Bonjour le monde"
 	},
 	"nav": {
-		"1" : "Production", 
-		"2" : "Pollution", 
-		"3" : "Recyclage"
+		"1" : "Global evolution", 
+		"2" : "Regions", 
+		"3" : "Countries"
 	},
 	"global": {
-		"data-prod-mesure" : "millions de tonnes", 
-		"data-prod-desc" : "de plastique produit", 
-		"data-prod-calcul-1" : "depuis", 
-		"data-prod-calcul-2" : "en 1 an", 
-		"data-recycled-desc" : "recyclés", 
-		"data-discarded-desc" : "dans la nature",
-		"equivalence-intro" : "Soit l'équivalent de",
-		"equivalence-desc" : "tours Eiffel"
-	} 
+		"data-prod-mesure" : "million tonnes", 
+		"data-prod-desc" : "plastic product", 
+		"data-prod-calcul-1" : "since", 
+		"data-prod-calcul-2" : "in 1 year", 
+		"data-recycled-desc" : "recycled", 
+		"data-discarded-desc" : "in nature",
+		"equivalence-intro" : "Or the equivalent of",
+		"equivalence-desc" : "Eiffel tower"
+	},
+	"current-year" : "In 2020",
+	"continents": {
+		"title": "In 2020, where do we pollute the most ?"
+	},
+	"countries": {
+		"title": "who recycles the best ?",
+		"detail": "Select a country in order to see its impact",
+		"data-reycled-desc": "Déchets plastiques recyclés", 
+		"data-perperson-desc": "Consommation par personne"
+	}
 }

@@ -23,7 +23,8 @@
 	},
 	"countries": {
 		"title": "qui recycle le mieux ?",
-		"detail": "Sélectionne un pays pour en savoir plus sur son impact"
-
+		"detail": "Sélectionne un pays pour en savoir plus sur son impact",
+		"data-reycled-desc": "Déchets plastiques recyclés", 
+		"data-perperson-desc": "Consommation par personne"
 	}
 }

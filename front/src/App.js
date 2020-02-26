@@ -11,13 +11,16 @@ require('dotenv').config()
 
 function App() {
   return(
-    <Router>
+  <div>
+  <Router>
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route exact path="/intro" component={Intro}/>
       <Route exact path="/main" component={Main}/>
     </Switch>
   </Router>
+  </div>
+
   );
 };
 
