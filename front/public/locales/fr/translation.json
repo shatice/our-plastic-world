@@ -17,7 +17,13 @@
 		"equivalence-intro" : "Soit l'équivalent de",
 		"equivalence-desc" : "tours Eiffel"
 	},
+	"current-year" : "En 2020",
 	"continents": {
-		"title": "En 2020, où pollue-t-on le plus ?"
+		"title": "où pollue-t-on le plus ?"
+	},
+	"countries": {
+		"title": "qui recycle le mieux ?",
+		"detail": "Sélectionne un pays pour en savoir plus sur son impact"
+
 	}
 }

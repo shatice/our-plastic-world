@@ -1,19 +1,15 @@
-.search{
-    position: absolute;
-    left: 5%;
-}
 .search__input{
-    width: 200px;
+    width: 12.5rem;
     height: 30px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 0.5px dashed #FFFFFF;
-    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.164); 
+    border: unset;
     border-radius: 10px;
 }
+
 .search__input[placeholder]{
     padding-left:1vw;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.875rem;
+    font-style: italic;
     color: #FFFFFF;
     opacity: 0.5;
 }

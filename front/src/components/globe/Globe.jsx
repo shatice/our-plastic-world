@@ -12,6 +12,10 @@ import { cos } from "@amcharts/amcharts4/.internal/core/utils/Math";
 const Globe = () => {
 	
   useEffect(() => {
+
+		// Test slider
+		console.log(am4core.Slider);
+
 		// Apply Theme
 		am4core.useTheme(am4themes_animated);
 		let chart = am4core.create("chartdiv", am4maps.MapChart);
@@ -105,8 +109,9 @@ const Globe = () => {
 		polygonSeries.heatRules.push({
 			"property": "fill",
 			"target": polygonTemplate,
-			"min": am4core.color("#FFEBB2"),
-			"max": am4core.color("#C00B0B")
+			"min": am4core.color("#C00B0B"),
+			// "max": am4core.color("#C00B0B")
+			"max": am4core.color("#59B64A")
 		});
 
 		// Set hover/tabletClick behaviour

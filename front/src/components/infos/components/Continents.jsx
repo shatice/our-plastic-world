@@ -6,7 +6,10 @@ const Continents = ( continentList ) => {
 
 	return(
 		<section className="infos__bloc infos__bloc--continents">
-      <h1>{t('continents.title')}</h1>
+      <h2>
+				<p>{t('current-year')}</p>
+				<p>{t('continents.title')}</p>
+			</h2>
 			<ol>
         {/* { continentList.map(c => <li key={c.name}>{c.name}</li> )} */}
 			</ol>
