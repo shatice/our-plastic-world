@@ -20,7 +20,6 @@ const Header = () => {
       <header className="header">
         <nav className="navIcons">
           <ul className="navList">
-            {console.log("i18n", i18n)}
             <div className="nav__language">
               <li onClick={() => {changeLanguage('en')}} style={{opacity: i18n.language === "en" ? "1" : "0.5"}} className={`navItem navItem--lang`}>EN</li>
               <span className="navItem line"></span>
