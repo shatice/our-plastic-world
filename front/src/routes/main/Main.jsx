@@ -22,7 +22,7 @@ const Main = () => {
   const [yearList, setYearList] = useState(null);
   const [infosContent, setInfosContent] = useState(null);
   const [continentList, setContinentList] = useState(null);
-
+  const [isDisplayAbout, setIsDisplayAbout] = useState(false);
 
   if( !yearList ) {
     $API.getYears()
@@ -45,10 +45,11 @@ const Main = () => {
   }
 
 
+
   return(
     <div className="main">
-      <Goabout />
-      <About />
+      <Goabout isDisplayAbout={isDisplayAbout} setIsDisplayAbout={setIsDisplayAbout}/>
+      {isDisplayAbout && <About />}
       <Header />
       <Infos 
         stateInfos={stateInfos} 

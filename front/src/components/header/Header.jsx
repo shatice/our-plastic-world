@@ -33,7 +33,7 @@ const Header = () => {
 
   return(
     <header className="header">
-      <Sound url={soundfile} playStatus={swapSound} loop={true} />
+      <Sound url={soundfile} playStatus={swapSound} loop={true}/>
       <Sound url={soundClick} playStatus={swapClick} />
       <nav className="navIcons">
         <ul className="navList">
