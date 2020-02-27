@@ -20,7 +20,7 @@ const Timeline = ({ yearList, setInfosContent }) => {
       <ul>
         { yearList.map(y => <li key={y.year} onClick={() => handleClick(y.year)}>{y.year}</li> )}
       </ul>
-      <Scrollbar/>
+      <Scrollbar setInfosContent={setInfosContent} />
     </div>
   );
 }
