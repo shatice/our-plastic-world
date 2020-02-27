@@ -24,20 +24,22 @@ const Countries = ({ setStateInfos }) => {
     <>
       {selectedCountry ? (
         <section className="infos__bloc infos__bloc--countries">
-          <h2>
+          <h2 className="countries__title">
             <p>{t("current-year")}</p>
             <p>{t("countries.title")}</p>
           </h2>
-          <Search />
-          <i>{t("countries.detail")}</i>
+          <div className="input__infos">
+            <Search />
+            <i>{t("countries.detail")}</i>
+          </div>
           <ul>
-            <li>
+            <li className="data__countries">
               <p className="data">
                 <span>{selectedCountry.value}</span>%
               </p>
               <p>{t('countries.data-reycled-desc')}</p>
             </li>
-            <li>
+            <li className="data__countries">
               <p className="data">
                 <span>{Math.round(selectedCountry.per_person_per_day * 365)}</span>kg
               </p>
