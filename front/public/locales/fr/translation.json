@@ -25,5 +25,26 @@
 		"title": "qui recycle le mieux ?",
 		"detail": "Sélectionne un pays pour en savoir plus sur son impact"
 
+	},
+	"about": {
+		"about-title": "À propos", 
+		"about-subtitle": "Une visualisation interactive de la pollution plastique", 
+		"about-desc": "Our Plastic World compare et met en perspective des données sur l’utilisation du plastique dans le monde. Sa pollution ne fait aucun doute, mais avons réellement nous conscience de son envergure ?", 
+		"evol-title": "Évolution mondiale", 
+		"evol-content-1": "Depuis 1980, la production de plastique augmente plus que n'importe quelle autre ressource.", 
+		"evol-content-2": "Quatre secteurs représentent environ 75 % de la demande totale européenne : l’emballage, largement en tête puisqu'il compte pour près de 40 % de la consommation de plastique, le bâtiment et la construction (20.5 %), l’automobile (8.3 %), l’électricité / électronique (5.4 %)", 
+		"evol-content-3": "Seul 9% de la totalité du plastique jamais produit a été recyclé.", 
+		"repartition-title": "Répartition mondiale", 
+		"repartition-content-1": "Les plus gros consommateurs par habitant sont les pays occidentaux. Parallèlement, ces derniers ont en grande majorité mis en place des systèmes avancés de gestion des déchets plastiques (tri, recyclage, sensibilisation contre le gaspillage).", 
+		"repartition-content-2": "Ainsi, ce sont les régions en voie de développement, comme l’Asie orientale - où sa consommation est en hausse et la gestion de ses déchets quasi-inexistante - qui sont responsables de la plus grosse partie de la pollution plastique. ", 
+		"consequences-title": "Conséquences", 
+		"consequences-content-1": "Les premières victimes de l’utilisation néfaste de cette ressource polluante se trouvent dans la mer. ", 
+		"consequences-content-2": "En effet, on estime à 268 950 millions de tonnes la masse de déchets plastiques à la surface des océans. ", 
+		"consequences-content-3": "Le plastique met entre 100 et 1000 ans à se biodégrader, entre temps soit il est directement avalé par des animaux marins - souvent confondus avec des méduses par exemple - soit il se dégrade en macroplastiques et s’infiltre de manière invisible à cet écosystème.", 
+		"responsability-title": "Notre responsabilité",
+		"responsability-content-1": "Le plastique fait partie de nos vies et son impact sur notre planète est un sujet très actuel, nous ne pouvons nier notre responsabilité.",
+		"responsability-content-2": "Agir sur son impact à la source en tentant de responsabiliser les entreprises est une nécessité, mais tandis que sa production augmente ce que nous pouvons faire concrètement, c’est améliorer notre utilisation, optimiser notre consommation, réduire nos déchets et bien sûr : recycler !",
+		"sources-title": "Sources", 
+		"sources-content": "Our World in Data - Plastic Pollution"
 	}
 }
