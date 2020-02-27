@@ -15,7 +15,7 @@ import Timeline from "../../components/timeline/Timeline.jsx";
 const Main = () => {
   const { t } = useTranslation();
   const $API = new API();
-  const [stateInfos, setStateInfos] = useState(views.Global);
+  const [stateInfos, setStateInfos] = useState(views.Countries);
   const [yearList, setYearList] = useState(null);
   const [infosContent, setInfosContent] = useState(null);
   const [continentList, setContinentList] = useState(null);
@@ -61,6 +61,7 @@ const Main = () => {
           countryList={countryList}
           setSelectedCountry={setSelectedCountry}
           stateInfos={stateInfos}
+          continentList={continentList}
         />
       ) : (
         ""

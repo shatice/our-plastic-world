@@ -11,10 +11,14 @@ import am4geodata_continentsLow from "@amcharts/amcharts4-geodata/continentsLow"
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import { cos } from "@amcharts/amcharts4/.internal/core/utils/Math";
 
-const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
-
+const Globe = ({
+  countryList,
+  setSelectedCountry,
+  stateInfos,
+  continentList
+}) => {
   useEffect(() => {
-    console.log(stateInfos === views.Countries); 
+    console.log(stateInfos === views.Countries);
     // Test slider
     console.log(am4core.Slider);
 
@@ -88,8 +92,8 @@ const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
     // Create map polygon series
     let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 
-    if (stateInfos === views.Countries ) {
-      console.log('lol')
+    if (stateInfos === views.Countries) {
+      console.log("lol");
       let arr = [];
 
       countryList.forEach(country => {
@@ -99,6 +103,21 @@ const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
         });
       });
       polygonSeries.data = arr;
+    }
+
+    if (stateInfos === views.Continents) {
+      let arr = [];
+
+      continentList.forEach((continent, index) => {
+        continent.countries.forEach(country => {
+          arr.push({
+            id: country.code,
+            value: index === 0 ? 0 : continent.pollution
+          });
+        });
+        polygonSeries.data = arr;
+      });
+      console.log("arr", arr);
     }
     // Load polygon data from GeoJSON (like country names)
     polygonSeries.useGeodata = true;
@@ -128,9 +147,19 @@ const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
       //   countryList.find(x => x.name === event.target.dataItem.dataContext.name)
       // );
 
-      setSelectedCountry(
+      if (
         countryList.find(x => x.code === event.target.dataItem.dataContext.id)
-      );
+      ) {
+        setSelectedCountry(
+          countryList.find(x => x.code === event.target.dataItem.dataContext.id)
+        );
+      } else {
+        setSelectedCountry({
+          per_person_per_day: null,
+          value: null
+        });
+      }
+
       // console.log(event.target.dataItem.dataContext.name);
       // console.log(event.target.dataItem.dataContext);
       // console.log(event.target.dataItem.dataContext.id);
@@ -155,7 +184,7 @@ const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
     // Set hover/tabletClick behaviour
     var hs = polygonTemplate.states.create("hover");
     hs.properties.fill = am4core.color("#fff");
-    polygonTemplate.fill = am4core.color("red");
+    // polygonTemplate.fill = am4core.color("red");
     // Configure tooltips : country name
     polygonTemplate.tooltipText = "{name}";
     // Set tooltip style
@@ -165,5 +194,5 @@ const Globe = ({ countryList, setSelectedCountry, stateInfos }) => {
 
   return <div id="chartdiv" className="globe"></div>;
 };
-   
+
 export default Globe;
