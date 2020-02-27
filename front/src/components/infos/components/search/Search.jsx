@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 /* Styles */
 import './search.scss';
 
  
 const Search = () => {
+
+  const { t } = useTranslation();
 
     const countries = [
         "France",
@@ -30,7 +33,7 @@ const Search = () => {
     
     return(
         <div className="search">
-            <input className="search__input" type='text' placeholder="Chercher un pays" 
+            <input className="search__input" type='text' placeholder={t('search')} 
                 value={searchTerm}
                 onChange={handleChange}
              />
