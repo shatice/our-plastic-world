@@ -1,4 +1,10 @@
 {
+	"intro": {
+		"1": "On estime que 8.3 milliards de tonnes de plastiques ont été produites depuis 1950 dont environ 60% a fini en milieu naturel, en majeur partie dans les océans. Alors que sa pollution détruit des écosystèmes, notre consommation de plastique à usage unique ne cesse d’augmenter.",
+		"2": "Quand la gestion de ses déchets s’améliore dans une partie du monde, elle prend du retard ailleurs.",
+		"3": "À travers cette expérience, nous vous invitons à prendre conscience de l’utilisation néfaste de cette ressource qui fait partie de notre quotidien.", 
+		"cta": "Découvrir"
+	},
 	"nav": {
 		"1" : "Évolution mondiale", 
 		"2" : "Régions", 
@@ -24,6 +30,7 @@
 		"data-reycled-desc": "Déchets plastiques recyclés", 
 		"data-perperson-desc": "Consommation par personne"
 	},
+	"search" : "Chercher un pays",
 	"about": {
 		"about-title": "À propos", 
 		"about-subtitle": "Une visualisation interactive de la pollution plastique", 
@@ -44,6 +51,5 @@
 		"responsability-content-2": "Agir sur son impact à la source en tentant de responsabiliser les entreprises est une nécessité, mais tandis que sa production augmente ce que nous pouvons faire concrètement, c’est améliorer notre utilisation, optimiser notre consommation, réduire nos déchets et bien sûr : recycler !",
 		"sources-title": "Sources", 
 		"sources-content": "Our World in Data - Plastic Pollution"
-	},
-	"search" : "Chercher un pays"
+	}
 }
