@@ -17,12 +17,19 @@
       font-size: 4rem;
       letter-spacing: .1rem;
     }
+
+    .content {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
   
     p {
-      margin-bottom: 4rem;
       text-align: center;
       font-size: 1.25rem;
+      font-family: 'roboto';
       font-weight: lighter;
+      text-align: left;
+      line-height: 1.5;
     }
   }
 }

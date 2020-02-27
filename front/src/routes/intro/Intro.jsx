@@ -15,9 +15,11 @@ const Intro = () => {
             <Header/>
             <section className="intro__content">
                 <h1>Our Plastic World</h1>
-                <p>{t('intro.1')}</p>
-                <p>{t('intro.2')}</p>
-                <p>{t('intro.3')}</p>
+                <div className="content">
+                    <p>{t('intro.1')}</p>
+                    <p>{t('intro.2')}</p>
+                    <p>{t('intro.3')}</p>
+                </div>
                 <Link to="/main"><button className="cta">{t('intro.cta')}</button></Link>
             </section>
             <Globe/>
