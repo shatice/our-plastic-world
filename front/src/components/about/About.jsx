@@ -1,10 +1,12 @@
 import React from "react";
 import './about.scss';
+import Goabout from '../goabout/Goabout.jsx';
 
 const About = () => {
     return(
+        <div className="background__about">
+        <Goabout />
         <div className="about">
-            <h1 className="first__title">Our plastic world</h1>
             <h2 className="second__title">À PROPOS</h2>
             <h3 className="third__title">Une visualisation interactive des données de pollution plastique</h3>
             <p className="first__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu est orci quisque fames. Elementum in viverra vel mollis vitae eget bibendum duis elit. Praesent lorem est eget eget enim pellentesque rhoncus nunc, morbi. Iaculis blandit vel nunc pharetra sed magna orci.</p>
@@ -31,6 +33,8 @@ const About = () => {
             <h2 className="second__title">SOURCES</h2>
             <p className="text">Our World in Data - Plastic Pollution </p>
         </div>
+        </div>
+        
 
     )
 }

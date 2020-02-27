@@ -11,6 +11,8 @@ import Infos from '../../components/infos/Infos.jsx';
 import Nav from '../../components/nav/Nav.jsx';
 import Globe from '../../components/globe/Globe.jsx';
 import Timeline from '../../components/timeline/Timeline.jsx';
+import About from '../../components/about/About.jsx';
+import Goabout from '../../components/goabout/Goabout.jsx';
 
 
 const Main = () => {
@@ -20,6 +22,7 @@ const Main = () => {
   const [yearList, setYearList] = useState(null);
   const [infosContent, setInfosContent] = useState(null);
   const [continentList, setContinentList] = useState(null);
+
 
   if( !yearList ) {
     $API.getYears()
@@ -44,8 +47,9 @@ const Main = () => {
 
   return(
     <div className="main">
-      
-      <Header/>
+      <Goabout />
+      <About />
+      <Header />
       <Infos 
         stateInfos={stateInfos} 
         infosContent={infosContent} 
