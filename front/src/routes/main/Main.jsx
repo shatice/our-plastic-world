@@ -1,9 +1,9 @@
-import React, {useState} from "react";
-import { useTranslation } from 'react-i18next';
-import '../../scss/styles.scss';
-import './main.scss';
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../../scss/styles.scss";
+import "./main.scss";
 import views from "../../js/models/views.js";
-import API from '../../services/Api';
+import API from "../../services/Api";
 
 /***** COMPONENTS *****/
 import Header from '../../components/header/Header.jsx';
@@ -14,7 +14,6 @@ import Timeline from '../../components/timeline/Timeline.jsx';
 import About from '../../components/about/About.jsx';
 import Goabout from '../../components/goabout/Goabout.jsx';
 
-
 const Main = () => {
   const { t } = useTranslation();
   const $API = new API();
@@ -23,53 +22,63 @@ const Main = () => {
   const [infosContent, setInfosContent] = useState(null);
   const [continentList, setContinentList] = useState(null);
   const [isDisplayAbout, setIsDisplayAbout] = useState(false);
+  const [countryList, setCountryList] = useState(null);
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
-  if( !yearList ) {
-    $API.getYears()
-    .then((res)=>{
+  if (!yearList) {
+    $API.getYears().then(res => {
       setYearList(res.data);
-    })
+    });
   }
-  if( !infosContent) {
-    $API.getInfoByYear(1980)
-    .then((res)=>{
+  if (!infosContent) {
+    $API.getInfoByYear(1980).then(res => {
       setInfosContent(res.data);
-    })
+    });
   }
 
-  if( !continentList) {
-    $API.getContinentsInfos()
-    .then((res)=>{
+  if (!continentList) {
+    $API.getContinentsInfos().then(res => {
       setContinentList(res.data);
-    })
+    });
   }
 
-
+  if (!countryList) {
+    $API.getCountriesInfos().then(res => {
+      setCountryList(res.data);
+    });
+  }
 
   return(
     <div className="main">
-      <Goabout isDisplayAbout={isDisplayAbout} setIsDisplayAbout={setIsDisplayAbout}/>
+    <Goabout isDisplayAbout={isDisplayAbout} setIsDisplayAbout={setIsDisplayAbout}/>
       {isDisplayAbout && <About />}
       <Header />
-      <Infos 
-        stateInfos={stateInfos} 
-        infosContent={infosContent} 
+      <Infos
+        stateInfos={stateInfos}
+        infosContent={infosContent}
         continentList={continentList}
+        countryList={countryList}
+        selectedCountry={selectedCountry}
+        setSelectedCountry={setSelectedCountry}
       />
-      <Globe/>
-      <Nav 
-        setStateInfos={setStateInfos} 
-      />
-      { setInfosContent && yearList 
-        ? 
-          <Timeline 
-            yearList={yearList} 
-            setInfosContent={setInfosContent}
-          /> 
-        : ''
-      }
+      {countryList ? (
+        <Globe
+          countryList={countryList}
+          setSelectedCountry={setSelectedCountry}
+          stateInfos={stateInfos}
+          continentList={continentList}
+        />
+      ) : (
+        ""
+      )}
+      <Nav setStateInfos={setStateInfos} />
+      {setInfosContent && yearList ? (
+        <Timeline yearList={yearList} setInfosContent={setInfosContent} />
+      ) : (
+        ""
+      )}
     </div>
   );
-}
-   
+};
+
 export default Main;

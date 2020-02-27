@@ -1,1003 +1,1170 @@
 [{
   "entity": "Albania",
-  "code": "ALB",
+  "code": "AL",
   "tonne_per_year": 73364,
   "per_person_per_day": 0.069,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 45
 }, {
   "entity": "Algeria",
-  "code": "DZA",
+  "code": "DZ",
   "tonne_per_year": 1898343,
   "per_person_per_day": 0.144,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 58
 }, {
   "entity": "Angola",
-  "code": "AGO",
+  "code": "AO",
   "tonne_per_year": 528843,
   "per_person_per_day": 0.062,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 71
 }, {
   "entity": "Antigua and Barbuda",
-  "code": "ATG",
+  "code": "AG",
   "tonne_per_year": 22804,
   "per_person_per_day": 0.66,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 6
 }, {
   "entity": "Argentina",
-  "code": "ARG",
+  "code": "AR",
   "tonne_per_year": 2753550,
   "per_person_per_day": 0.183,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 12
 }, {
   "entity": "Aruba",
-  "code": "ABW",
+  "code": "AW",
   "tonne_per_year": 9352,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 1
 }, {
   "entity": "Australia",
-  "code": "AUS",
+  "code": "AU",
   "tonne_per_year": 900658,
   "per_person_per_day": 0.112,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 0
 }, {
   "entity": "Bahamas",
-  "code": "BHS",
+  "code": "BS",
   "tonne_per_year": 51364,
   "per_person_per_day": 0.39,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 1
 }, {
   "entity": "Bahrain",
-  "code": "BHR",
+  "code": "BH",
   "tonne_per_year": 59785,
   "per_person_per_day": 0.132,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 10
 }, {
   "entity": "Bangladesh",
-  "code": "BGD",
+  "code": "BD",
   "tonne_per_year": 1888170,
   "per_person_per_day": 0.034,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 87
 }, {
   "entity": "Barbados",
-  "code": "BRB",
+  "code": "BB",
   "tonne_per_year": 58164,
   "per_person_per_day": 0.57,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 4
 }, {
   "entity": "Belgium",
-  "code": "BEL",
+  "code": "BE",
   "tonne_per_year": 318151,
   "per_person_per_day": 0.08,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Belize",
-  "code": "BLZ",
+  "code": "BZ",
   "tonne_per_year": 20191,
   "per_person_per_day": 0.172,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 29
 }, {
   "entity": "Benin",
-  "code": "BEN",
+  "code": "BJ",
   "tonne_per_year": 144382,
   "per_person_per_day": 0.043,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 83
 }, {
   "entity": "Bermuda",
-  "code": "BMU",
+  "code": "BM",
   "tonne_per_year": 5990,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Bosnia and Herzegovina",
-  "code": "BIH",
+  "code": "BA",
   "tonne_per_year": 195633,
   "per_person_per_day": 0.144,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 40
 }, {
   "entity": "Brazil",
-  "code": "BRA",
+  "code": "BR",
   "tonne_per_year": 11852055,
   "per_person_per_day": 0.165,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 9
 }, {
   "entity": "British Virgin Islands",
-  "code": "VGB",
+  "code": "VG",
   "tonne_per_year": 2504,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Brunei",
-  "code": "BRN",
+  "code": "BN",
   "tonne_per_year": 3688,
   "per_person_per_day": 0.026,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 1
 }, {
   "entity": "Bulgaria",
-  "code": "BGR",
+  "code": "BG",
   "tonne_per_year": 415707,
   "per_person_per_day": 0.154,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 31
 }, {
   "entity": "Cambodia",
-  "code": "KHM",
+  "code": "KH",
   "tonne_per_year": 344698,
   "per_person_per_day": 0.066,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 87
 }, {
   "entity": "Cameroon",
-  "code": "CMR",
+  "code": "CM",
   "tonne_per_year": 335305,
   "per_person_per_day": 0.046,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 81
 }, {
   "entity": "Canada",
-  "code": "CAN",
+  "code": "CA",
   "tonne_per_year": 1154309,
   "per_person_per_day": 0.093,
-  "continent": "North America"
+  "continent": "North America",
+  "value": 0
 }, {
   "entity": "Cape Verde",
-  "code": "CPV",
+  "code": "CV",
   "tonne_per_year": 11919,
   "per_person_per_day": 0.065,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 74
 }, {
   "entity": "Cayman Islands",
-  "code": "CYM",
+  "code": "KY",
   "tonne_per_year": 5106,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Chile",
-  "code": "CHL",
+  "code": "CL",
   "tonne_per_year": 738106,
   "per_person_per_day": 0.119,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 7
 }, {
   "entity": "China",
-  "code": "CHN",
+  "code": "CN",
   "tonne_per_year": 59079741,
   "per_person_per_day": 0.121,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 74
 }, {
   "entity": "Colombia",
-  "code": "COL",
+  "code": "CO",
   "tonne_per_year": 2413455,
   "per_person_per_day": 0.144,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 21
 }, {
   "entity": "Comoros",
-  "code": "COM",
+  "code": "KM",
   "tonne_per_year": 50599,
   "per_person_per_day": 0.201,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 83
 }, {
   "entity": "Congo",
-  "code": "COG",
+  "code": "CD",
   "tonne_per_year": 110479,
   "per_person_per_day": 0.069,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 77
 }, {
   "entity": "Costa Rica",
-  "code": "CRI",
+  "code": "CR",
   "tonne_per_year": 428029,
   "per_person_per_day": 0.258,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 16
 }, {
   "entity": "Cote d'Ivoire",
-  "code": "CIV",
+  "code": "CI",
   "tonne_per_year": 766988,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 82
 }, {
   "entity": "Croatia",
-  "code": "HRV",
+  "code": "HR",
   "tonne_per_year": 406347,
   "per_person_per_day": 0.252,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 9
 }, {
   "entity": "Cuba",
-  "code": "CUB",
+  "code": "CU",
   "tonne_per_year": 368154,
   "per_person_per_day": 0.089,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 23
 }, {
   "entity": "Curacao",
-  "code": "CUW",
+  "code": "CW",
   "tonne_per_year": 13678,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Cyprus",
-  "code": "CYP",
+  "code": "CY",
   "tonne_per_year": 100713,
   "per_person_per_day": 0.248,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Democratic Republic of Congo",
-  "code": "COD",
+  "code": "CD",
   "tonne_per_year": 1059795,
   "per_person_per_day": 0.045,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 85
 }, {
   "entity": "Denmark",
-  "code": "DNK",
+  "code": "DK",
   "tonne_per_year": 95171,
   "per_person_per_day": 0.047,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Djibouti",
-  "code": "DJI",
+  "code": "DJ",
   "tonne_per_year": 31999,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 73
 }, {
   "entity": "Dominica",
-  "code": "DMA",
+  "code": "DM",
   "tonne_per_year": 3885,
   "per_person_per_day": 0.149,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 19
 }, {
   "entity": "Dominican Republic",
-  "code": "DOM",
+  "code": "DO",
   "tonne_per_year": 520238,
   "per_person_per_day": 0.144,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 25
 }, {
   "entity": "Ecuador",
-  "code": "ECU",
+  "code": "EC",
   "tonne_per_year": 801321,
   "per_person_per_day": 0.147,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 30
 }, {
   "entity": "Egypt",
-  "code": "EGY",
+  "code": "EG",
   "tonne_per_year": 5464471,
   "per_person_per_day": 0.178,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 67
 }, {
   "entity": "El Salvador",
-  "code": "SLV",
+  "code": "SV",
   "tonne_per_year": 330763,
   "per_person_per_day": 0.147,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 33
 }, {
   "entity": "Equatorial Guinea",
-  "code": "GNQ",
+  "code": "GQ",
   "tonne_per_year": 49990,
   "per_person_per_day": 0.144,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 30
 }, {
   "entity": "Eritrea",
-  "code": "ERI",
+  "code": "ER",
   "tonne_per_year": 72120,
   "per_person_per_day": 0.045,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 77
 }, {
   "entity": "Estonia",
-  "code": "EST",
+  "code": "EE",
   "tonne_per_year": 85534,
   "per_person_per_day": 0.176,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 9
 }, {
   "entity": "Faeroe Islands",
-  "code": "FRO",
+  "code": "FO",
   "tonne_per_year": 4466,
   "per_person_per_day": 0.252,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Fiji",
-  "code": "FJI",
+  "code": "FJ",
   "tonne_per_year": 59324,
   "per_person_per_day": 0.189,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 78
 }, {
   "entity": "Finland",
-  "code": "FIN",
+  "code": "FI",
   "tonne_per_year": 458084,
   "per_person_per_day": 0.234,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "France",
-  "code": "FRA",
+  "code": "FR",
   "tonne_per_year": 4557128,
   "per_person_per_day": 0.192,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "French Polynesia",
-  "code": "PYF",
+  "code": "PF",
   "tonne_per_year": 24634,
   "per_person_per_day": 0.252,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 3
 }, {
   "entity": "Gabon",
-  "code": "GAB",
+  "code": "GA",
   "tonne_per_year": 32329,
   "per_person_per_day": 0.054,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 34
 }, {
   "entity": "Gambia",
-  "code": "GMB",
+  "code": "GM",
   "tonne_per_year": 29646,
   "per_person_per_day": 0.048,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Georgia",
-  "code": "GEO",
+  "code": "GE",
   "tonne_per_year": 97443,
   "per_person_per_day": 0.068,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 51
 }, {
   "entity": "Germany",
-  "code": "DEU",
+  "code": "DE",
   "tonne_per_year": 14476561,
   "per_person_per_day": 0.485,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Ghana",
-  "code": "GHA",
+  "code": "GH",
   "tonne_per_year": 357877,
   "per_person_per_day": 0.04,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 81
 }, {
   "entity": "Gibraltar",
-  "code": "GIB",
+  "code": "GI",
   "tonne_per_year": 3053,
   "per_person_per_day": 0.252,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 0
 }, {
   "entity": "Greece",
-  "code": "GRC",
+  "code": "GR",
   "tonne_per_year": 811858,
   "per_person_per_day": 0.2,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Greenland",
-  "code": "GRL",
+  "code": "GL",
   "tonne_per_year": 5234,
   "per_person_per_day": 0.252,
-  "continent": "North America"
+  "continent": "North America",
+  "value": 0
 }, {
   "entity": "Grenada",
-  "code": "GRD",
+  "code": "GD",
   "tonne_per_year": 12417,
   "per_person_per_day": 0.325,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 18
 }, {
   "entity": "Guam",
-  "code": "GUM",
+  "code": "GU",
   "tonne_per_year": 14666,
   "per_person_per_day": 0.252,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "Guatemala",
-  "code": "GTM",
+  "code": "GT",
   "tonne_per_year": 1495229,
   "per_person_per_day": 0.28,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 36
 }, {
   "entity": "Guinea",
-  "code": "GIN",
+  "code": "GN",
   "tonne_per_year": 118196,
   "per_person_per_day": 0.03,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Guinea-Bissau",
-  "code": "GNB",
+  "code": "GW",
   "tonne_per_year": 30666,
   "per_person_per_day": 0.054,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 83
 }, {
   "entity": "Guyana",
-  "code": "GUY",
+  "code": "GY",
   "tonne_per_year": 159681,
   "per_person_per_day": 0.586,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 36
 }, {
   "entity": "Haiti",
-  "code": "HTI",
+  "code": "HT",
   "tonne_per_year": 328487,
   "per_person_per_day": 0.09,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 47
 }, {
   "entity": "Honduras",
-  "code": "HND",
+  "code": "HN",
   "tonne_per_year": 565317,
   "per_person_per_day": 0.189,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 40
 }, {
   "entity": "Hong Kong",
-  "code": "HKG",
+  "code": "HK",
   "tonne_per_year": 1020406,
   "per_person_per_day": 0.398,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 1
 }, {
   "entity": "Iceland",
-  "code": "ISL",
+  "code": "IS",
   "tonne_per_year": 32620,
   "per_person_per_day": 0.281,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "India",
-  "code": "IND",
+  "code": "IN",
   "tonne_per_year": 4493080,
   "per_person_per_day": 0.01,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 85
 }, {
   "entity": "Indonesia",
-  "code": "IDN",
+  "code": "ID",
   "tonne_per_year": 5045714,
   "per_person_per_day": 0.057,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 81
 }, {
   "entity": "Iran",
-  "code": "IRN",
+  "code": "IR",
   "tonne_per_year": 3919268,
   "per_person_per_day": 0.144,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 50
 }, {
   "entity": "Iraq",
-  "code": "IRQ",
+  "code": "IQ",
   "tonne_per_year": 1156524,
   "per_person_per_day": 0.103,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 63
 }, {
   "entity": "Ireland",
-  "code": "IRL",
+  "code": "IE",
   "tonne_per_year": 715716,
   "per_person_per_day": 0.43,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Israel",
-  "code": "ISR",
+  "code": "IL",
   "tonne_per_year": 826436,
   "per_person_per_day": 0.297,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 1
 }, {
   "entity": "Italy",
-  "code": "ITA",
+  "code": "IT",
   "tonne_per_year": 2899258,
   "per_person_per_day": 0.134,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Jamaica",
-  "code": "JAM",
+  "code": "JM",
   "tonne_per_year": 34962,
   "per_person_per_day": 0.034,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 27
 }, {
   "entity": "Japan",
-  "code": "JPN",
+  "code": "JP",
   "tonne_per_year": 7993489,
   "per_person_per_day": 0.171,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "Jordan",
-  "code": "JOR",
+  "code": "JO",
   "tonne_per_year": 377506,
   "per_person_per_day": 0.144,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 58
 }, {
   "entity": "Kenya",
-  "code": "KEN",
+  "code": "KE",
   "tonne_per_year": 407506,
   "per_person_per_day": 0.027,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 83
 }, {
   "entity": "Kiribati",
-  "code": "KIR",
+  "code": "KI",
   "tonne_per_year": 3859,
   "per_person_per_day": 0.103,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 84
 }, {
   "entity": "Kuwait",
-  "code": "KWT",
+  "code": "KW",
   "tonne_per_year": 750690,
   "per_person_per_day": 0.686,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 0
 }, {
   "entity": "Latvia",
-  "code": "LVA",
+  "code": "LV",
   "tonne_per_year": 94935,
   "per_person_per_day": 0.124,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 14
 }, {
   "entity": "Lebanon",
-  "code": "LBN",
+  "code": "LB",
   "tonne_per_year": 148807,
   "per_person_per_day": 0.094,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 34
 }, {
   "entity": "Liberia",
-  "code": "LBR",
+  "code": "LR",
   "tonne_per_year": 121050,
   "per_person_per_day": 0.084,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Libya",
-  "code": "LBY",
+  "code": "LY",
   "tonne_per_year": 324250,
   "per_person_per_day": 0.144,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 23
 }, {
   "entity": "Lithuania",
-  "code": "LTU",
+  "code": "LT",
   "tonne_per_year": 149227,
   "per_person_per_day": 0.132,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 14
 }, {
   "entity": "Macao",
-  "code": "MAC",
+  "code": "MO",
   "tonne_per_year": 72126,
   "per_person_per_day": 0.368,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Madagascar",
-  "code": "MDG",
+  "code": "MG",
   "tonne_per_year": 123526,
   "per_person_per_day": 0.016,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Malaysia",
-  "code": "MYS",
+  "code": "MY",
   "tonne_per_year": 2031675,
   "per_person_per_day": 0.198,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 55
 }, {
   "entity": "Maldives",
-  "code": "MDV",
+  "code": "MV",
   "tonne_per_year": 43134,
   "per_person_per_day": 0.322,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 66
 }, {
   "entity": "Malta",
-  "code": "MLT",
+  "code": "MT",
   "tonne_per_year": 32377,
   "per_person_per_day": 0.214,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 6
 }, {
   "entity": "Marshall Islands",
-  "code": "MHL",
+  "code": "MH",
   "tonne_per_year": 3674,
   "per_person_per_day": 0.192,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 77
 }, {
   "entity": "Mauritania",
-  "code": "MRT",
+  "code": "MR",
   "tonne_per_year": 59287,
   "per_person_per_day": 0.045,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 82
 }, {
   "entity": "Mauritius",
-  "code": "MUS",
+  "code": "MU",
   "tonne_per_year": 104971,
   "per_person_per_day": 0.23,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 51
 }, {
   "entity": "Mexico",
-  "code": "MEX",
+  "code": "MX",
   "tonne_per_year": 3725463,
   "per_person_per_day": 0.087,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 12
 }, {
   "entity": "Micronesia (country)",
-  "code": "FSM",
+  "code": "FM",
   "tonne_per_year": 3895,
   "per_person_per_day": 0.103,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 81
 }, {
   "entity": "Monaco",
-  "code": "MCO",
+  "code": "MC",
   "tonne_per_year": 3412,
   "per_person_per_day": 0.252,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Montenegro",
-  "code": "MNE",
+  "code": "ME",
   "tonne_per_year": 32557,
   "per_person_per_day": 0.144,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 30
 }, {
   "entity": "Morocco",
-  "code": "MAR",
+  "code": "MA",
   "tonne_per_year": 863555,
   "per_person_per_day": 0.073,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 66
 }, {
   "entity": "Mozambique",
-  "code": "MOZ",
+  "code": "MZ",
   "tonne_per_year": 132612,
   "per_person_per_day": 0.015,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Myanmar",
-  "code": "MMR",
+  "code": "MM",
   "tonne_per_year": 1373018,
   "per_person_per_day": 0.075,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 87
 }, {
   "entity": "Namibia",
-  "code": "NAM",
+  "code": "NA",
   "tonne_per_year": 114222,
   "per_person_per_day": 0.144,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 66
 }, {
   "entity": "Nauru",
-  "code": "NRU",
+  "code": "NR",
   "tonne_per_year": 527,
   "per_person_per_day": 0.144,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 67
 }, {
   "entity": "Netherlands",
-  "code": "NLD",
+  "code": "NL",
   "tonne_per_year": 2571398,
   "per_person_per_day": 0.424,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "New Caledonia",
-  "code": "NCL",
+  "code": "NC",
   "tonne_per_year": 22995,
   "per_person_per_day": 0.252,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "New Zealand",
-  "code": "NZL",
+  "code": "NZ",
   "tonne_per_year": 525630,
   "per_person_per_day": 0.331,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "Nicaragua",
-  "code": "NIC",
+  "code": "NI",
   "tonne_per_year": 299480,
   "per_person_per_day": 0.143,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 45
 }, {
   "entity": "Nigeria",
-  "code": "NGA",
+  "code": "NG",
   "tonne_per_year": 5961750,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 81
 }, {
   "entity": "North Korea",
-  "code": "PRK",
+  "code": "KP",
   "tonne_per_year": 484700,
   "per_person_per_day": 0.054,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 88
 }, {
   "entity": "Northern Mariana Islands",
-  "code": "MNP",
+  "code": "MP",
   "tonne_per_year": 5006,
   "per_person_per_day": 0.252,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "Norway",
-  "code": "NOR",
+  "code": "NO",
   "tonne_per_year": 499682,
   "per_person_per_day": 0.28,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Oman",
-  "code": "OMN",
+  "code": "OM",
   "tonne_per_year": 93251,
   "per_person_per_day": 0.084,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 4
 }, {
   "entity": "Pakistan",
-  "code": "PAK",
+  "code": "PK",
   "tonne_per_year": 6412210,
   "per_person_per_day": 0.103,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 86
 }, {
   "entity": "Palau",
-  "code": "PLW",
+  "code": "PW",
   "tonne_per_year": 1076,
   "per_person_per_day": 0.144,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 56
 }, {
   "entity": "Palestine",
-  "code": "PSE",
+  "code": "PS",
   "tonne_per_year": 87636,
   "per_person_per_day": 0.063,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 6
 }, {
   "entity": "Panama",
-  "code": "PAN",
+  "code": "PA",
   "tonne_per_year": 192818,
   "per_person_per_day": 0.145,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 18
 }, {
   "entity": "Papua New Guinea",
-  "code": "PNG",
+  "code": "PG",
   "tonne_per_year": 267234,
   "per_person_per_day": 0.103,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 86
 }, {
   "entity": "Peru",
-  "code": "PER",
+  "code": "PE",
   "tonne_per_year": 1543879,
   "per_person_per_day": 0.144,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 25
 }, {
   "entity": "Philippines",
-  "code": "PHL",
+  "code": "PH",
   "tonne_per_year": 2565766,
   "per_person_per_day": 0.075,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 81
 }, {
   "entity": "Poland",
-  "code": "POL",
+  "code": "PL",
   "tonne_per_year": 1346905,
   "per_person_per_day": 0.097,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 12
 }, {
   "entity": "Portugal",
-  "code": "PRT",
+  "code": "PT",
   "tonne_per_year": 1022683,
   "per_person_per_day": 0.265,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Puerto Rico",
-  "code": "PRI",
+  "code": "PR",
   "tonne_per_year": 342306,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 2
 }, {
   "entity": "Qatar",
-  "code": "QAT",
+  "code": "QA",
   "tonne_per_year": 103933,
   "per_person_per_day": 0.16,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 0
 }, {
   "entity": "Romania",
-  "code": "ROU",
+  "code": "RO",
   "tonne_per_year": 310385,
   "per_person_per_day": 0.042,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 26
 }, {
   "entity": "Russia",
-  "code": "RUS",
+  "code": "RU",
   "tonne_per_year": 5839685,
   "per_person_per_day": 0.112,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 16
 }, {
   "entity": "Saint Kitts and Nevis",
-  "code": "KNA",
+  "code": "KN",
   "tonne_per_year": 12280,
   "per_person_per_day": 0.654,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 6
 }, {
   "entity": "Saint Lucia",
-  "code": "LCA",
+  "code": "LC",
   "tonne_per_year": 32882,
   "per_person_per_day": 0.522,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 20
 }, {
   "entity": "Saint Vincent and the Grenadines",
-  "code": "VCT",
+  "code": "VC",
   "tonne_per_year": 8818,
   "per_person_per_day": 0.221,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 21
 }, {
   "entity": "Samoa",
-  "code": "WSM",
+  "code": "WS",
   "tonne_per_year": 7000,
   "per_person_per_day": 0.103,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 80
 }, {
   "entity": "Sao Tome and Principe",
-  "code": "STP",
+  "code": "ST",
   "tonne_per_year": 6571,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 81
 }, {
   "entity": "Saudi Arabia",
-  "code": "SAU",
+  "code": "SA",
   "tonne_per_year": 1561618,
   "per_person_per_day": 0.156,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 8
 }, {
   "entity": "Senegal",
-  "code": "SEN",
+  "code": "SN",
   "tonne_per_year": 485586,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 82
 }, {
   "entity": "Seychelles",
-  "code": "SYC",
+  "code": "SC",
   "tonne_per_year": 11730,
   "per_person_per_day": 0.358,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 37
 }, {
   "entity": "Sierra Leone",
-  "code": "SLE",
+  "code": "SL",
   "tonne_per_year": 96655,
   "per_person_per_day": 0.041,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Singapore",
-  "code": "SGP",
+  "code": "SG",
   "tonne_per_year": 359483,
   "per_person_per_day": 0.194,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Sint Maarten (Dutch part)",
-  "code": "SXM",
+  "code": "MF",
   "tonne_per_year": 3263,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Slovenia",
-  "code": "SVN",
+  "code": "SI",
   "tonne_per_year": 108421,
   "per_person_per_day": 0.145,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 1
 }, {
   "entity": "Solomon Islands",
-  "code": "SLB",
+  "code": "SB",
   "tonne_per_year": 19842,
   "per_person_per_day": 0.103,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 86
 }, {
   "entity": "Somalia",
-  "code": "SOM",
+  "code": "SO",
   "tonne_per_year": 237569,
   "per_person_per_day": 0.054,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 85
 }, {
   "entity": "South Africa",
-  "code": "ZAF",
+  "code": "ZA",
   "tonne_per_year": 4465798,
   "per_person_per_day": 0.24,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 54
 }, {
   "entity": "South Korea",
-  "code": "KOR",
+  "code": "KR",
   "tonne_per_year": 2025772,
   "per_person_per_day": 0.112,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 0
 }, {
   "entity": "Spain",
-  "code": "ESP",
+  "code": "ES",
   "tonne_per_year": 4709157,
   "per_person_per_day": 0.277,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Sri Lanka",
-  "code": "LKA",
+  "code": "LK",
   "tonne_per_year": 2621606,
   "per_person_per_day": 0.357,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 82
 }, {
   "entity": "Sudan",
-  "code": "SDN",
+  "code": "SD",
   "tonne_per_year": 1292740,
   "per_person_per_day": 0.103,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 80
 }, {
   "entity": "Suriname",
-  "code": "SUR",
+  "code": "SR",
   "tonne_per_year": 31300,
   "per_person_per_day": 0.163,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 15
 }, {
   "entity": "Sweden",
-  "code": "SWE",
+  "code": "SE",
   "tonne_per_year": 164305,
   "per_person_per_day": 0.048,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "Syria",
-  "code": "SYR",
+  "code": "SY",
   "tonne_per_year": 1365594,
   "per_person_per_day": 0.178,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 65
 }, {
   "entity": "Tanzania",
-  "code": "TZA",
+  "code": "TZ",
   "tonne_per_year": 386998,
   "per_person_per_day": 0.023,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Thailand",
-  "code": "THA",
+  "code": "TH",
   "tonne_per_year": 3532495,
   "per_person_per_day": 0.144,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 73
 }, {
   "entity": "Togo",
-  "code": "TGO",
+  "code": "TG",
   "tonne_per_year": 135294,
   "per_person_per_day": 0.057,
-  "continent": "Sub-Saharan Africa"
+  "continent": "Sub-Saharan Africa",
+  "value": 84
 }, {
   "entity": "Tonga",
-  "code": "TON",
+  "code": "TO",
   "tonne_per_year": 8476,
   "per_person_per_day": 0.223,
-  "continent": "South Asia"
+  "continent": "South Asia",
+  "value": 78
 }, {
   "entity": "Trinidad and Tobago",
-  "code": "TTO",
+  "code": "TT",
   "tonne_per_year": 1745123,
   "per_person_per_day": 0.29,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 3
 }, {
   "entity": "Tunisia",
-  "code": "TUN",
+  "code": "TN",
   "tonne_per_year": 559235,
   "per_person_per_day": 0.144,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 60
 }, {
   "entity": "Turkey",
-  "code": "TUR",
+  "code": "TR",
   "tonne_per_year": 5596657,
   "per_person_per_day": 0.212,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 16
 }, {
   "entity": "Turks and Caicos Islands",
-  "code": "TCA",
+  "code": "TC",
   "tonne_per_year": 2851,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 0
 }, {
   "entity": "Tuvalu",
-  "code": "TUV",
+  "code": "TV",
   "tonne_per_year": 554,
   "per_person_per_day": 0.144,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 73
 }, {
   "entity": "Ukraine",
-  "code": "UKR",
+  "code": "UA",
   "tonne_per_year": 1724509,
   "per_person_per_day": 0.103,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 49
 }, {
   "entity": "United Arab Emirates",
-  "code": "ARE",
+  "code": "AE",
   "tonne_per_year": 600741,
   "per_person_per_day": 0.199,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 0
 }, {
   "entity": "United Kingdom",
-  "code": "GBR",
+  "code": "GB",
   "tonne_per_year": 4925590,
   "per_person_per_day": 0.215,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 0
 }, {
   "entity": "United States",
-  "code": "USA",
+  "code": "US",
   "tonne_per_year": 37825550,
   "per_person_per_day": 0.335,
-  "continent": "North America"
+  "continent": "North America",
+  "value": 0
 }, {
   "entity": "Uruguay",
-  "code": "URY",
+  "code": "UY",
   "tonne_per_year": 310379,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 8
 }, {
   "entity": "Vanuatu",
-  "code": "VUT",
+  "code": "VU",
   "tonne_per_year": 25443,
   "per_person_per_day": 0.295,
-  "continent": "East Asia and Pacific"
+  "continent": "East Asia and Pacific",
+  "value": 81
 }, {
   "entity": "Venezuela",
-  "code": "VEN",
+  "code": "VE",
   "tonne_per_year": 2669998,
   "per_person_per_day": 0.252,
-  "continent": "Latin America and Caribbean"
+  "continent": "Latin America and Caribbean",
+  "value": 5
 }, {
   "entity": "Vietnam",
-  "code": "VNM",
+  "code": "VN",
   "tonne_per_year": 3268227,
   "per_person_per_day": 0.103,
-  "continent": "Europe and Central Asia"
+  "continent": "Europe and Central Asia",
+  "value": 86
 }, {
   "entity": "Yemen",
-  "code": "YEM",
+  "code": "YE",
   "tonne_per_year": 887497,
   "per_person_per_day": 0.103,
-  "continent": "Middle East and North Africa"
+  "continent": "Middle East and North Africa",
+  "value": 73
 }]
