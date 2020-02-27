@@ -50,6 +50,7 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
+        "setupBDD": "php bin/console d:d:c && php bin/console d:m:m && php bin/console d:f:l",
         "post-install-cmd": [
             "@auto-scripts"
         ],
