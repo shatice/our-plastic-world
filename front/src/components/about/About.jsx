@@ -5,7 +5,6 @@ import Goabout from '../goabout/Goabout.jsx';
 const About = () => {
     return(
         <div className="background__about">
-        <Goabout />
         <div className="about">
             <h2 className="second__title">À PROPOS</h2>
             <h3 className="third__title">Une visualisation interactive des données de pollution plastique</h3>
