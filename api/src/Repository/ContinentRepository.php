@@ -18,28 +18,4 @@ class ContinentRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Continent::class);
     }
-
-    /*
-    public function findContinents()
-    {
-        return $this->createQueryBuilder('c')
-            ->select('c.id', 'c.name', 'c.pollution')
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
-
-
-    /*
-    public function findOneBySomeField($value): ?Continent
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

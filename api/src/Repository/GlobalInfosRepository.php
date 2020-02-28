@@ -32,17 +32,4 @@ class GlobalInfosRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-
-
-    /*
-    public function findOneBySomeField($value): ?GlobalInfos
-    {
-        return $this->createQueryBuilder('g')
-            ->andWhere('g.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

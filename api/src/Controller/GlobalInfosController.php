@@ -11,6 +11,11 @@ class GlobalInfosController extends AbstractController
 {
     /**
      * @Route("/global", name="global_infos")
+     * * @ApiDoc(
+     *     resource=true,
+     *     resourceDescription="Operations on users.",
+     *     description="Retrieve list of users."
+     * )
      */
     public function index(GlobalInfosRepository $repo)
     {
@@ -23,8 +28,8 @@ class GlobalInfosController extends AbstractController
      */
     public function getYears(GlobalInfosRepository $repo)
     {
-        $a = $repo->getYears();
-        return $this->json($a);
+        $result = $repo->getYears();
+        return $this->json($result);
     }
 
     /**

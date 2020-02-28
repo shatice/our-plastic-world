@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\Continent;
 use App\Repository\ContinentRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
