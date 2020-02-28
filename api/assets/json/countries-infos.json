@@ -185,7 +185,7 @@
   "code": "CN",
   "tonne_per_year": 59079741,
   "per_person_per_day": 0.121,
-  "continent": "Europe and Central Asia",
+  "continent": "East Asia and Pacific",
   "value": 74
 }, {
   "entity": "Colombia",
@@ -493,14 +493,14 @@
   "code": "IN",
   "tonne_per_year": 4493080,
   "per_person_per_day": 0.01,
-  "continent": "Europe and Central Asia",
+  "continent": "East Asia and Pacific",
   "value": 85
 }, {
   "entity": "Indonesia",
   "code": "ID",
   "tonne_per_year": 5045714,
   "per_person_per_day": 0.057,
-  "continent": "South Asia",
+  "continent": "East Asia and Pacific",
   "value": 81
 }, {
   "entity": "Iran",
@@ -633,7 +633,7 @@
   "code": "MY",
   "tonne_per_year": 2031675,
   "per_person_per_day": 0.198,
-  "continent": "South Asia",
+  "continent": "East Asia and Pacific",
   "value": 55
 }, {
   "entity": "Maldives",
@@ -717,7 +717,7 @@
   "code": "MM",
   "tonne_per_year": 1373018,
   "per_person_per_day": 0.075,
-  "continent": "Europe and Central Asia",
+  "continent": "East Asia and Pacific",
   "value": 87
 }, {
   "entity": "Namibia",
@@ -1053,7 +1053,7 @@
   "code": "TH",
   "tonne_per_year": 3532495,
   "per_person_per_day": 0.144,
-  "continent": "Europe and Central Asia",
+  "continent": "East Asia and Pacific",
   "value": 73
 }, {
   "entity": "Togo",
@@ -1158,7 +1158,7 @@
   "code": "VN",
   "tonne_per_year": 3268227,
   "per_person_per_day": 0.103,
-  "continent": "Europe and Central Asia",
+  "continent": "East Asia and Pacific",
   "value": 86
 }, {
   "entity": "Yemen",

@@ -97,9 +97,12 @@ const Globe = ({
     if (!stateInfos) {
       // Set rotation animation
       let animation;
-      setTimeout(function(){
-        animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
-      })
+      setTimeout(function() {
+        animation = chart.animate(
+          { property: "deltaLongitude", to: 100000 },
+          20000000
+        );
+      });
 
       // polygonTemplate.fill = am4core.color("rgba(48, 48, 48, 0.521)");
       // polygonTemplate.stroke = am4core.color("#fff");
@@ -132,7 +135,7 @@ const Globe = ({
         continent.countries.forEach(country => {
           arr.push({
             id: country.code,
-            value: index === 0 ? 0 : continent.pollution
+            value: index === 100 ? 0 : 100 - continent.pollution
           });
         });
         polygonSeries.data = arr;
@@ -162,8 +165,8 @@ const Globe = ({
     let polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.nonScalingStroke = true;
 
-    polygonTemplate.fill = am4core.color('rgba(22, 22, 22, 0.055)'); 
-    // polygonTemplate.opacity = .8; 
+    polygonTemplate.fill = am4core.color("rgba(22, 22, 22, 0.055)");
+    // polygonTemplate.opacity = .8;
 
     polygonTemplate.events.on("hit", function(event) {
       // console.log(
