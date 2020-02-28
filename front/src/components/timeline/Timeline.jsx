@@ -15,13 +15,14 @@ const Timeline = ({ yearList, setInfosContent }) => {
 
   return (
     <div className="timeline">
-      <ul>
+      {/* <ul>
         {yearList.map(y => (
           <li key={y.year} onClick={() => handleClick(y.year)}>
             {y.year}
           </li>
         ))}
-      </ul>
+      </ul> */}
+
       <Scrollbar setInfosContent={setInfosContent} />
     </div>
   );

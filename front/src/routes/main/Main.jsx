@@ -26,6 +26,7 @@ const Main = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [color, setColor] = useState("");
+  const [globalInfo, setGlobalInfo] = useState();
 
   if (!yearList) {
     $API.getYears().then(res => {
@@ -50,6 +51,12 @@ const Main = () => {
     });
   }
 
+  if (!globalInfo) {
+    $API.getGlobalInfos().then(res => {
+      setGlobalInfo(res.data);
+    });
+  }
+
   return(
     <div className="main">
     <Goabout isDisplayAbout={isDisplayAbout} setIsDisplayAbout={setIsDisplayAbout}/>
@@ -65,6 +72,7 @@ const Main = () => {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         color={color}
+        globalInfo={globalInfo}
       />
       {countryList ? (
         <Globe
@@ -74,13 +82,14 @@ const Main = () => {
           continentList={continentList}
           setSearchTerm={setSearchTerm}
           setColor={setColor}
+          globalInfo={globalInfo}
         />
       ) : (
         ""
       )}
       <Nav setStateInfos={setStateInfos} />
-      {setInfosContent && yearList ? (
-        <Timeline yearList={yearList} setInfosContent={setInfosContent} />
+      {setInfosContent && yearList && stateInfos === views.Global ? (
+        <Timeline yearList={yearList} setInfosContent={setInfosContent} stateInfos={stateInfos}/>
       ) : (
         ""
       )}

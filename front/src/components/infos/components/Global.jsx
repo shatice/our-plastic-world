@@ -33,6 +33,7 @@ const Global = ({ infosContent }) => {
   return (
     <div>
       <section className="infos__bloc infos__bloc--production">
+        {/* <h1>{infosContent.year}</h1> */}
         <ul>
           <li className="global__title">
             <span className="data">
@@ -43,10 +44,10 @@ const Global = ({ infosContent }) => {
           </li>
           <div className="global__subtitle">
             <li>
-              <strong>{ratio}x</strong> {t("global.data-prod-calcul-1")} 1980
+              <strong>x{ratio}</strong> {t("global.data-prod-calcul-1")} 1980
             </li>
             <li>
-              <strong>{dateBefore}x</strong> {t("global.data-prod-calcul-2")}
+              {/* <strong>{dateBefore}x</strong> {t("global.data-prod-calcul-2")} */}
             </li>
           </div>
         </ul>

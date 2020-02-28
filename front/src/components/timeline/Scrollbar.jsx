@@ -28,10 +28,10 @@ const Scrollbar = ({ setInfosContent }) => {
     let yearLabel = chart.radarContainer.createChild(am4core.Label);
 
     yearLabel.horizontalCenter = "middle";
-    yearLabel.verticalCenter = "middle";
-    yearLabel.fill = am4core.color("#673AB7");
+    yearLabel.verticalCenter = "top";
+    yearLabel.fill = am4core.color("#fff");
     yearLabel.fontSize = 30;
-    // yearLabel.text = String(currentYear);
+    yearLabel.text = String(currentYear);
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 
@@ -58,7 +58,7 @@ const Scrollbar = ({ setInfosContent }) => {
     function updateRadarData(year) {
       if (currentYear != year) {
         currentYear = year;
-        // yearLabel.text = String(currentYear);
+        yearLabel.text = String(currentYear);
         console.log(currentYear);
 
         if (!selectedDates.find(x => x.year === currentYear)) {

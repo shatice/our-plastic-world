@@ -13,6 +13,8 @@
     z-index:100;
     cursor:pointer;
     @include flexbox(row, space-around, center); 
+    opacity: 0;
+    animation: fade 2s 1s ease-in-out forwards;
 
     .arrowIcon {
         height: 24px;

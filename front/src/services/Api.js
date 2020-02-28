@@ -15,11 +15,10 @@ class $API {
 
   /**
    * 
-   * @param {number} date selected date 
    * @return {object} selected date infos
    */
-  getGlobalInfos(date) {
-    return this.get('/TODO/' + date)
+  getGlobalInfos() {
+    return this.get('/global')
   }
 
   /**

@@ -36,7 +36,10 @@ const Search = ({
     const results = countries.filter(country =>
       country.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    setSearchResults(results);
+    if (results.length < 3 ) {
+      console.log('res', results)
+      setSearchResults(results);
+    }
   }, [searchTerm]);
 
   return (
