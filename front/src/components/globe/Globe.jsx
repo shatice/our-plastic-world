@@ -92,6 +92,19 @@ const Globe = ({
     // Create map polygon series
     let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 
+    if (!stateInfos) {
+      // Set rotation animation
+      let animation;
+      setTimeout(function(){
+        animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+      })
+
+      // polygonTemplate.fill = am4core.color("rgba(48, 48, 48, 0.521)");
+      // polygonTemplate.stroke = am4core.color("#fff");
+      // polygonTemplate.strokeOpacity = .2;
+      // polygonTemplate.strokeWidth = 0.2;
+    }
+
     if (stateInfos === views.Countries) {
       console.log("lol");
       let arr = [];
