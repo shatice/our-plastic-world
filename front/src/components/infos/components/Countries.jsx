@@ -32,7 +32,7 @@ const Countries = ({
         <i>{t("countries.detail")}</i>
         {selectedCountry ? (
           <ul style={{ color: color }}>
-            <li>
+            <li className="data__countries">
               <p className="data">
                 <span>
                   {selectedCountry.value || selectedCountry.value === 0
@@ -42,7 +42,7 @@ const Countries = ({
               </p>
               <p>{t("countries.data-reycled-desc")}</p>
             </li>
-            <li>
+            <li className="data__countries">
               <p className="data">
                 <span>
                   {selectedCountry.per_person_per_day

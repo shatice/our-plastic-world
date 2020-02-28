@@ -1,7 +1,7 @@
 @import '../../routes/main/main.scss';
 
 .nav {
-	padding: 2rem $margin 2rem 2rem;
+	padding: 2rem 1.875rem 2rem 2rem;
 	text-align: right;
 	border-top-left-radius: 30px; 
 	border-bottom-left-radius: 30px;
@@ -24,6 +24,7 @@
 		}
 	}
 }
-.nav__items li{
+.nav__items li { 
 	opacity:0.5;
+	color: rgba(255, 255, 255, 0.363);
 }

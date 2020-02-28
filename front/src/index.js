@@ -6,7 +6,7 @@ import './js/helpers/i18n';
 import * as serviceWorker from './js/serviceWorker';
 
 ReactDOM.render(
-    <Suspense fallback ={<div>Chargement ... </div>}>
+    <Suspense fallback ={<div></div>}>
 	    <App />
     </Suspense>		
     , document.getElementById('root'));

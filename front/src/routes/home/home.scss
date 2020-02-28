@@ -19,8 +19,9 @@
     }
   
     ul {
-      width: 50%;
+      width: 400px;
       @include flexbox(row, space-between, center);
+      min-width: 400px;
     }
 
     .headphoneIcon {
