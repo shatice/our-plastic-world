@@ -16,9 +16,9 @@ class ContinentController extends AbstractController
     {
         $result = $repo->findAll();
         $arr = [];
-        $countries = [];
         foreach ($result as $key=>$value)
         {
+            $countries = [];
             foreach ($value->getCountries() as $country)
             {
                 $countriesArr = [

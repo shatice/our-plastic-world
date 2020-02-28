@@ -3,10 +3,10 @@
 .infos {
   min-height: 20.625rem;
   max-height: 75%;
-  padding-left: $margin;
   opacity: 0;
   animation: fade 1.5s 1s linear forwards;
   z-index: 2;
+  padding-left: 1.875rem;
 
   h2 {
     margin-bottom: 2rem;
@@ -40,7 +40,6 @@
 
 .infos__bloc {
   animation: fade .5s forwards;
-  padding-left: 1.875rem;
 
   &:not(:last-child) {
     margin-bottom: 1rem;
