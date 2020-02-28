@@ -29,7 +29,7 @@ const Countries = ({
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
         />
-        <i>{t("countries.detail")}</i>
+        {!selectedCountry ? <i>{t("countries.detail")}</i> : ""}
         {selectedCountry ? (
           <ul style={{ color: color }}>
             <li className="data__countries">

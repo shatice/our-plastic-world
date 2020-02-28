@@ -16,12 +16,13 @@ const Infos = ({
   selectedCountry,
   searchTerm,
   setSearchTerm,
-  color
+  color, 
+  globalInfo
 }) => {
   return (
     <div className="infos">
       {infosContent && stateInfos === views.Global ? (
-        <Global infosContent={infosContent} />
+        <Global infosContent={infosContent} globalInfo={globalInfo}/>
       ) : (
         ""
       )}

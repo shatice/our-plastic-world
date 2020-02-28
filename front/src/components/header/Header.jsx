@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Sound from "react-sound";
 import soundfile from "../../assets/audio/sound.wav";
-import soundClick from "../../assets/audio/click.mp3";
 import "./header.scss";
 
 const Header = () => {
-  const [swapSound, setSwapSound] = useState(Sound.status.STOPPED);
+  const [swapSound, setSwapSound] = useState(Sound.status.PLAYING);
   const [swapClick, setSwapClick] = useState(Sound.status.STOPPED);
 
   const { t, i18n } = useTranslation();
@@ -32,7 +31,6 @@ const Header = () => {
   return (
     <header className="header">
       <Sound url={soundfile} playStatus={swapSound} loop={true} />
-      <Sound url={soundClick} playStatus={swapClick} />
       <nav className="navIcons">
         <ul className="navList">
           <div onClick={add} className="nav__language">

@@ -17,9 +17,25 @@ const Globe = ({
   stateInfos,
   continentList,
   setSearchTerm,
-  setColor
+  setColor,
+  globalInfo
 }) => {
   useEffect(() => {
+
+    function perc2color(perc) {
+      var r, g, b = 0;
+      if(perc < 50) {
+        r = 255;
+        g = Math.round(5.1 * perc);
+      }
+      else {
+        g = 255;
+        r = Math.round(510 - 5.10 * perc);
+      }
+      var h = r * 0x10000 + g * 0x100 + b * 0x1;
+      return '#' + ('000000' + h.toString(16)).slice(-6);
+    }
+
     console.log(stateInfos === views.Countries);
     // Test slider
     console.log(am4core.Slider);
@@ -94,54 +110,6 @@ const Globe = ({
     // Create map polygon series
     let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 
-    if (!stateInfos) {
-      // Set rotation animation
-      let animation;
-      setTimeout(function() {
-        animation = chart.animate(
-          { property: "deltaLongitude", to: 100000 },
-          20000000
-        );
-      });
-
-      // polygonTemplate.fill = am4core.color("rgba(48, 48, 48, 0.521)");
-      // polygonTemplate.stroke = am4core.color("#fff");
-      // polygonTemplate.strokeOpacity = .2;
-      // polygonTemplate.strokeWidth = 0.2;
-    }
-
-    if (stateInfos === views.Countries || stateInfos === views.Continents) {
-      // polygonTemplate.fill = am4core.color("red");
-    }
-
-    if (stateInfos === views.Countries) {
-      console.log("lol");
-      let arr = [];
-
-      countryList.forEach(country => {
-        arr.push({
-          id: country.code,
-          value: 100 - country.value
-        });
-      });
-      polygonSeries.data = arr;
-      // polygonTemplate.fill = am4core.color("red");
-    }
-
-    if (stateInfos === views.Continents) {
-      let arr = [];
-
-      continentList.forEach((continent, index) => {
-        continent.countries.forEach(country => {
-          arr.push({
-            id: country.code,
-            value: index === 100 ? 0 : 100 - continent.pollution
-          });
-        });
-        polygonSeries.data = arr;
-      });
-      console.log("arr", arr);
-    }
     // Load polygon data from GeoJSON (like country names)
     polygonSeries.useGeodata = true;
 
@@ -222,6 +190,64 @@ const Globe = ({
     // Set tooltip style
     polygonSeries.tooltip.background.fillOpacity = 0.5;
     polygonSeries.tooltip.background.cornerRadius = 30;
+
+    if (!stateInfos) {
+      // Set rotation animation
+      let animation;
+      setTimeout(function(){
+        animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+      })
+
+      // polygonTemplate.fill = am4core.color("rgba(48, 48, 48, 0.521)");
+      // polygonTemplate.stroke = am4core.color("#fff");
+      // polygonTemplate.strokeOpacity = .2;
+      // polygonTemplate.strokeWidth = 0.2;
+    }
+
+    if (stateInfos === views.Global) {
+      // polygonTemplate.fill = am4core.color('blue'); 
+
+      let total = 0;
+
+      console.log('loooijl', globalInfo);
+    }
+
+    if (stateInfos === views.Countries) {
+      console.log("lol");
+      let arr = [];
+
+      countryList.forEach(country => {
+        arr.push({
+          id: country.code,
+          value: 100 - country.value
+        });
+      });
+      polygonSeries.data = arr;
+      // polygonTemplate.fill = am4core.color("red");
+    }
+
+    if (stateInfos === views.Continents) {
+      let arr = [];
+
+      continentList.forEach((continent, index) => {
+        continent.countries.forEach(country => {
+          arr.push({
+            id: country.code,
+            value: index === 0 ? 0 : continent.pollution
+          });
+        });
+        polygonSeries.data = arr;
+      });
+      console.log("arr", arr);
+
+      polygonSeries.heatRules.push({
+        property: "fill",
+        target: polygonTemplate,
+        min: am4core.color("#59B64A"),
+        // "max": am4core.color("#C00B0B")
+        max: am4core.color("#C00B0B")
+      });
+    }
   }, [stateInfos]);
 
   return <div id="chartdiv" className="globe"></div>;

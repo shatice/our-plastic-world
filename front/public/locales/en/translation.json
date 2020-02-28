@@ -12,13 +12,13 @@
 	},
 	"global": {
 		"data-prod-mesure" : "million tonnes", 
-		"data-prod-desc" : "plastic product", 
+		"data-prod-desc" : "of plastic produced", 
 		"data-prod-calcul-1" : "since", 
 		"data-prod-calcul-2" : "in 1 year", 
 		"data-recycled-desc" : "recycled", 
 		"data-discarded-desc" : "in nature",
 		"equivalence-intro" : "Or the equivalent of",
-		"equivalence-desc" : "Eiffel tower"
+		"equivalence-desc" : "Eiffel towers"
 	},
 	"current-year" : "In 2020",
 	"continents": {
@@ -27,7 +27,7 @@
 	"countries": {
 		"title": "who recycles the best ?",
 		"detail": "Select a country in order to see its impact",
-		"data-reycled-desc": "Recycled plastic waste", 
+		"data-reycled-desc": "Plastic waste not sorted", 
 		"data-perperson-desc": "Consumption per person"
 	},
 	"search": "Find a country",
