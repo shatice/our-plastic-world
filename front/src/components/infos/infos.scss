@@ -91,11 +91,6 @@
 
 .data__countries:first-child {
   margin-bottom: 1rem;
-  // color:#34CD4D;
-}
-
-.data__countries:last-child {
-  // color:#E96A6A;
 }
 
 .continents {
@@ -132,19 +127,17 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 38px;
-  // color: #FFEBB3;
   margin-bottom: 1rem;
   display: flex;
 }
 
 .global__data--two {
+  display: flex;
   font-family: $primary_font;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 38px;
-  // color: #E96A6A;
-  display: flex;
 }
 
 .data__text {

@@ -1,25 +1,25 @@
 @import '../../scss/vendors/vendors.scss';
 
 .first__title{
-    font-family:$primary-font;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
-    position:absolute;
-    top:0;
-    left: 1.875rem;
-    z-index:100;
-    cursor:pointer;
-    @include flexbox(row, space-around, center); 
-    opacity: 0;
-    animation: fade 2s 1s ease-in-out forwards;
+	font-family:$primary-font;
+	font-size: 20px;
+	line-height: 26px;
+	color: #FFFFFF;
+	margin-top: 2.25rem;
+	margin-bottom: 2.25rem;
+	position:absolute;
+	top:0;
+	left: 1.875rem;
+	z-index:100;
+	cursor:pointer;
+	@include flexbox(row, space-around, center); 
+	opacity: 0;
+	animation: fade 2s 1s ease-in-out forwards;
 
-    .arrowIcon {
-        height: 24px;
-        width: 24px;
-        fill: #FFFFFF;
-        margin-left: 1rem;
-    }
+	.arrowIcon {
+		height: 24px;
+		width: 24px;
+		fill: #FFFFFF;
+		margin-left: 1rem;
+	}
 }

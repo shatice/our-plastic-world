@@ -14,8 +14,8 @@ Une datavisualisation de :
 <strong>Prérequis</strong>
 
 <ul>
-    <li>Composer</li>
-    <li>PHP 7.3</li>
+	<li>Composer</li>
+	<li>PHP 7.3</li>
 </ul>
 
 <i>Si vous avez une version de PHP antérieure à 7.3, vous devez faire une màj</i>
