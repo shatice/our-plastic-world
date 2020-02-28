@@ -21,6 +21,7 @@
     ul {
       width: 50%;
       @include flexbox(row, space-between, center);
+      min-width: 400px;
     }
 
     .headphoneIcon {

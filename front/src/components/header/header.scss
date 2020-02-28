@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   right: 0; 
-  padding: $margin $margin 0;
+  padding: $margin 1.875rem 0;
   @include flexbox(row, flex-end, center);
   opacity: 0;
   animation: fade 2s 1s ease-in-out forwards;
