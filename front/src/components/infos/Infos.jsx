@@ -10,10 +10,13 @@ import views from "../../js/models/views.js";
 const Infos = ({
   stateInfos,
   infosContent,
+  setSelectedCountry,
   continentList,
   countryList,
-  setSelectedCountry,
-  selectedCountry
+  selectedCountry,
+  searchTerm,
+  setSearchTerm,
+  color
 }) => {
   return (
     <div className="infos">
@@ -32,6 +35,9 @@ const Infos = ({
           countryList={countryList}
           setSelectedCountry={setSelectedCountry}
           selectedCountry={selectedCountry}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          color={color}
         />
       ) : (
         ""

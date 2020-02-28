@@ -4,7 +4,12 @@ import { useTranslation } from "react-i18next";
 /* Styles */
 import "./search.scss";
 
-const Search = ({ countryList }) => {
+const Search = ({
+  countryList,
+  setSelectedCountry,
+  searchTerm,
+  setSearchTerm
+}) => {
   const { t } = useTranslation();
 
   const countries = countryList;
@@ -13,7 +18,7 @@ const Search = ({ countryList }) => {
   //   countries.push(country.name);
   // });
 
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
   const handleChange = event => {
@@ -23,6 +28,7 @@ const Search = ({ countryList }) => {
   const add = item => {
     console.log(item);
     setSearchTerm(item.name);
+    setSelectedCountry(item);
     // ZOOM ON COUNTRY
   };
 
