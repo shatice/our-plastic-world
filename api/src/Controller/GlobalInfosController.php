@@ -11,11 +11,6 @@ class GlobalInfosController extends AbstractController
 {
     /**
      * @Route("/global", name="global_infos")
-     * * @ApiDoc(
-     *     resource=true,
-     *     resourceDescription="Operations on users.",
-     *     description="Retrieve list of users."
-     * )
      */
     public function index(GlobalInfosRepository $repo)
     {
