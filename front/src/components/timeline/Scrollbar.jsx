@@ -49,7 +49,7 @@ const Scrollbar = ({ setInfosContent }) => {
       );
     });
     yearSlider.orientation = "horizontal";
-    yearSlider.start = 0.5; // placement du curseur ?
+    yearSlider.start = 0; // placement du curseur ?
     yearSlider.exportable = false;
 
     console.log(yearSlider.thumb);

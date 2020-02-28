@@ -32,6 +32,11 @@ const Search = ({
     // ZOOM ON COUNTRY
   };
 
+  const reset = () => {
+    setSearchTerm("");
+    setSelectedCountry(null);
+  };
+
   useEffect(() => {
     const results = countries.filter(country =>
       country.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -50,6 +55,7 @@ const Search = ({
         placeholder={t("search")}
         value={searchTerm}
         onChange={handleChange}
+        onClick={() => reset()}
       />
       <ul>
         {searchTerm
