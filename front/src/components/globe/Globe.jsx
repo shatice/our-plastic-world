@@ -15,7 +15,9 @@ const Globe = ({
   countryList,
   setSelectedCountry,
   stateInfos,
-  continentList
+  continentList,
+  setSearchTerm,
+  setColor
 }) => {
   useEffect(() => {
     console.log(stateInfos === views.Countries);
@@ -167,12 +169,18 @@ const Globe = ({
       // console.log(
       //   countryList.find(x => x.name === event.target.dataItem.dataContext.name)
       // );
+      console.log("hih", event.target.dataItem.mapPolygon.fill.rgba);
+      setColor(event.target.dataItem.mapPolygon.fill.rgba);
 
       if (
         countryList.find(x => x.code === event.target.dataItem.dataContext.id)
       ) {
         setSelectedCountry(
           countryList.find(x => x.code === event.target.dataItem.dataContext.id)
+        );
+        setSearchTerm(
+          countryList.find(x => x.code === event.target.dataItem.dataContext.id)
+            .name
         );
       } else {
         setSelectedCountry({

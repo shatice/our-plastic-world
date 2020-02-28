@@ -24,6 +24,8 @@ const Main = () => {
   const [isDisplayAbout, setIsDisplayAbout] = useState(false);
   const [countryList, setCountryList] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [color, setColor] = useState("");
 
   if (!yearList) {
     $API.getYears().then(res => {
@@ -60,6 +62,9 @@ const Main = () => {
         countryList={countryList}
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        color={color}
       />
       {countryList ? (
         <Globe
@@ -67,6 +72,8 @@ const Main = () => {
           setSelectedCountry={setSelectedCountry}
           stateInfos={stateInfos}
           continentList={continentList}
+          setSearchTerm={setSearchTerm}
+          setColor={setColor}
         />
       ) : (
         ""
