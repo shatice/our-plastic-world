@@ -43,8 +43,7 @@ const Global = ({ infosContent }) => {
           </li>
           <div className="global__subtitle">
             <li>
-              <strong>{ratio}x</strong> {t("global.data-prod-calcul-1")}{" "}
-              {infosContent.year}
+              <strong>{ratio}x</strong> {t("global.data-prod-calcul-1")} 1980
             </li>
             <li>
               <strong>{dateBefore}x</strong> {t("global.data-prod-calcul-2")}
