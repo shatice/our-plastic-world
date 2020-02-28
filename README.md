@@ -1,6 +1,6 @@
 # Our Plastic World
 
-La pollution plastique à l'échelle mondiale
+<i>La pollution plastique à l'échelle mondiale</i>
 
 Une datavisualisation de : 
 
@@ -8,6 +8,8 @@ Une datavisualisation de :
 <li>Nastasia Dotlic (design)</li>
 <li>Lucas Moreno (développement front)</li>
 <li>Sarah Güngör (développement front)</li>
+
+<br>
 
 <strong>Prérequis</strong>
 
