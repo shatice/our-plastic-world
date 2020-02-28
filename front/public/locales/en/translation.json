@@ -27,7 +27,7 @@
 	"countries": {
 		"title": "who recycles the best ?",
 		"detail": "Select a country in order to see its impact",
-		"data-reycled-desc": "Plastic waste not recycled", 
+		"data-reycled-desc": "Plastic waste not sorted", 
 		"data-perperson-desc": "Consumption per person"
 	},
 	"search": "Find a country",
