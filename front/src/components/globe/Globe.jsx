@@ -133,19 +133,8 @@ const Globe = ({
     let polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.nonScalingStroke = true;
 
-
-    // polygonTemplate.heatRules.push({
-    //   property: "fill",
-    //   target: polygonTemplate,
-    //   min: am4core.color("#59B64A"),
-    //   // "max": am4core.color("#C00B0B")
-    //   max: am4core.color("#C00B0B")
-    // });
-
-
-
-    polygonTemplate.fill = am4core.color('rgba(22, 22, 22, 0.055)'); 
-    // polygonTemplate.opacity = .8; 
+    polygonTemplate.fill = am4core.color("rgba(22, 22, 22, 0.055)");
+    // polygonTemplate.opacity = .8;
 
     polygonTemplate.events.on("hit", function(event) {
       // console.log(
