@@ -1,4 +1,13 @@
-# Projet fil rouge
+# Our Plastic World
+
+La pollution plastique à l'échelle mondiale
+
+Une datavisualisation de : 
+
+<li>Rami Cakir (développement back)</li>
+<li>Nastasia Dotlic (design)</li>
+<li>Lucas Moreno (développement front)</li>
+<li>Sarah Güngör (développement front)</li>
 
 <strong>Prérequis</strong>
 
@@ -36,5 +45,7 @@
 <code>cd back</code>
 
 <code>composer install</code>
+
+<code>composer run-script setupBDD</code>
 
 <code>php -S 127.0.0.1:8000 -t public</code>
