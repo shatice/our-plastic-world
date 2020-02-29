@@ -15,25 +15,24 @@ class $API {
 
   /**
    * 
-   * @param {number} date selected date 
    * @return {object} selected date infos
    */
-  getGlobalInfos(date) {
-    return this.get('/TODO/' + date)
+  getGlobalInfos() {
+    return this.get('/global')
   }
 
   /**
    * @return {array<object>} continents infos
    */
   getContinentsInfos() {
-    return this.get('TODO')
+    return this.get('/continent')
   }
 
   /**
    * @return {array<object>} countries infos
    */
   getCountriesInfos() {
-    return this.get('TODO')
+    return this.get('/country')
   }
 
   /**
@@ -46,6 +45,7 @@ class $API {
   get(path) {
     return axios.get(this.uri+path)
   }
+
   getInfoByYear (year) {
     return this.get(`/global/${year}`)
   }

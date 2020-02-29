@@ -1,30 +1,31 @@
-import React, {} from "react";
-import '../timeline/timeline.scss'; 
+import React from "react";
+import "../timeline/timeline.scss";
+import API from "../../services/Api";
 
-/* Axios */
-import API from '../../services/Api'
-const $API = new API
-
+import Scrollbar from "../../components/timeline/Scrollbar";
 
 const Timeline = ({ yearList, setInfosContent }) => {
+  const $API = new API();
 
-  const handleClick = (a) => {
-    console.log(a);
-
-     $API.getInfoByYear(a)
-     .then((res)=>{ 
-       console.log('res', res)
-        setInfosContent(res.data)
-      })
-  }
+  const handleClick = a => {
+    $API.getInfoByYear(a).then(res => {
+      setInfosContent(res.data);
+    });
+  };
 
   return (
     <div className="timeline">
-        <ul>
-        { yearList.map(y => <li key={y.year} onClick={() => handleClick(y.year)}>{y.year}</li> )}
-      </ul>
+      {/* <ul>
+        {yearList.map(y => (
+          <li key={y.year} onClick={() => handleClick(y.year)}>
+            {y.year}
+          </li>
+        ))}
+      </ul> */}
+
+      <Scrollbar setInfosContent={setInfosContent} />
     </div>
   );
-}
-   
+};
+
 export default Timeline;

@@ -19,9 +19,9 @@ class CountryRepository extends ServiceEntityRepository
         parent::__construct($registry, Country::class);
     }
 
-    // /**
-    //  * @return Country[] Returns an array of Country objects
-    //  */
+     /**
+      * @return Country[] Returns an array of Country objects
+      */
 
     public function findCountries()
     {
@@ -38,23 +38,11 @@ class CountryRepository extends ServiceEntityRepository
                 "code" => $value->getCode(),
                 "tonne_per_year" => $value->getTonnePerYear(),
                 "per_person_per_day" => $value->getPerPersonPerDay(),
+                "value" => $value->getValue(),
                 "continent" => $value->getContinent()->getName()
             ];
             $arr[] = $obj;
         }
         return $arr;
     }
-
-
-    /*
-    public function findOneBySomeField($value): ?Country
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

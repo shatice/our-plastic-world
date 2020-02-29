@@ -23,8 +23,8 @@ class GlobalInfosController extends AbstractController
      */
     public function getYears(GlobalInfosRepository $repo)
     {
-        $a = $repo->getYears();
-        return $this->json($a);
+        $result = $repo->getYears();
+        return $this->json($result);
     }
 
     /**

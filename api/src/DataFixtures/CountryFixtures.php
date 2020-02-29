@@ -20,6 +20,7 @@ class CountryFixtures extends BaseFixture implements DependentFixtureInterface
                 ->setCode($json_elem['code'])
                 ->setTonnePerYear($json_elem['tonne_per_year'])
                 ->setPerPersonPerDay($json_elem['per_person_per_day'])
+                ->setValue($json_elem['value'])
                 ->setContinent($this->getReference(Continent::class . '_' . str_replace(' ','',$json_elem['continent'])));
         });
 

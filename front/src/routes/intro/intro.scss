@@ -4,6 +4,11 @@
   width: 100vw;
   height: 100vh;
   @include flexbox(column, center, center);
+  background: radial-gradient(circle, rgba(51, 51, 51, 0.76) 10%, rgba(19, 19, 19, 0.596) 50%);
+
+  .globe {
+    z-index: -20;
+  }
 
   .intro__content {
     width: 50%;
@@ -13,17 +18,37 @@
     animation: fade 2s .5s ease-in-out forwards;
   
     h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       font-size: 4rem;
       letter-spacing: .1rem;
     }
+
+    .content {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
   
     p {
-      margin-bottom: 4rem;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1rem;
+      font-family: 'roboto';
       font-weight: lighter;
+      text-align: left;
+      line-height: 1.8;
     }
   }
 }
-
+.cta {
+  margin-top: 3rem;
+}
+.intro__text{
+  font-family: $secondary_font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  // margin-bottom: 3rem;
+  width: 55vw;
+}
