@@ -1,10 +1,21 @@
-# Projet fil rouge
+# Our Plastic World
+
+<i>La pollution plastique à l'échelle mondiale</i>
+
+Une datavisualisation de : 
+
+<li>Rami Cakir (développement back)</li>
+<li>Nastasia Dotlic (design)</li>
+<li>Lucas Moreno (développement front)</li>
+<li>Sarah Güngör (développement front)</li>
+
+<br>
 
 <strong>Prérequis</strong>
 
 <ul>
-    <li>Composer</li>
-    <li>PHP 7.3</li>
+	<li>Composer</li>
+	<li>PHP 7.3</li>
 </ul>
 
 <i>Si vous avez une version de PHP antérieure à 7.3, vous devez faire une màj</i>
@@ -33,8 +44,10 @@
 
 <i>Lancer un server local (avec Mamp ou autres)</i>
 
-<code>cd back</code>
+<code>cd api</code>
 
 <code>composer install</code>
+
+<code>composer run-script setupBDD</code>
 
 <code>php -S 127.0.0.1:8000 -t public</code>
