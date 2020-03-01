@@ -11,19 +11,31 @@
 
 <strong><code>React</code></strong>
 <p>Framework JS imposé, il s'est avéré être un bon allié pour le travail en groupe.</p>
-<p>L'utilisation de la syntaxe <code>Jsx</code> nous a fait gagner beaucoup : messages d'erreur très précis, warnings qui évite les doublons et le code itnutile, renommage automatique, syntaxes plus courte et optimisée.</p>
-<p>Après de longues heures de décryptages et d'incapacité à comprendre la logique des <code>Hooks</code>, nous avons finalement réussi à les dompter comme on a pu, inspirés par les avantages d'une syntaxe plus courte, plus pertinente et des fonctionnalités comme le <code>useEffect</code> facile à prendre en main une fois qu'on y a compris quelque chose.</p>
-<p>L'environnement de travail général qu'offre <code>React</code> (à l'instar de ses cousins framework JS) facilite réellement la répartition des tâches et la structuration d'un projet. Ici, notre projet est divisé en trois routes : (l'accueil avec le choix de la langue, l'introduction avec une mise en context du sujet et une vue principale regroupant notre dataviz et tous nos composants). Certains de ces composants sont encore un peu longs, comme celui de notre dataviz, mais nous avons essayé de découper au maximum et de s'orgniser de manière à ce que la prise en main soit simplifié.</p>
+<p>L'utilisation de la syntaxe <code>Jsx</code> nous a fait gagner du temps grâce :</p>
+<ul>  
+<li>aux messages d'erreur très précis</li>
+<li>aux warnings qui prévient les doublons et le code itnutile</li>
+<li>au renommage automatique</li>
+<li>à la syntaxe courte et optimisée</li>
+</ul>
+<p>Après de longues heures de décryptage et d'incompréhension face à la logique des <code>Hooks</code>, nous avons finalement réussi à les dompter comme on a pu, inspirés par les avantages d'une syntaxe plus courte, plus pertinente et des fonctionnalités comme le <code>useEffect</code> facile à prendre en main une fois qu'on y a compris quelque chose.</p>
+<p>L'environnement de travail général qu'offre <code>React</code> (à l'instar de ses cousins framework JS) facilite réellement la répartition des tâches et la structuration d'un projet. Ici, notre projet est divisé en trois routes :</p>
+<ul>  
+<li>Home - l'accueil avec le choix de la langue</li>
+<li>Intro - l'introduction avec une mise en context du sujet</li>
+<li>Main - une vue principale regroupant notre dataviz et tous nos composants</li>
+</ul>
+<p>Certains de ces composants sont encore un peu longs, comme celui de notre dataviz, mais nous avons essayé de découper au maximum et de s'organiser de manière à ce que la prise en main soit simplifiée.</p>
 <br>
 <strong><code>Assets</code></strong>
 <p>Concernant les icônes, nous avons mis en place un <code>spritesheet</code> regroupant des <code>svg</code> dans un système de symbols, ce qui a plusieurs avantages :
 <ul>  
-<li>la possibilité d'entrer à la main nos <code>svg</code> si nous souhaitons les personnalisés (depuis Illustrator par exemple)</li>
-<li>l'intégration de ceux-ci dans une balise <code>use</code> avec un appel à l'<code>id</code> est simle et courte</li>
-<li>la possibilités de cibler des <code>path</code> avec des <code>class</code> ce qui permet de personnaliser au maximum nos <code>svg</code> par le biais du <code>css</code></li>
+<li>la possibilité d'entrer à la main nos <code>svg</code> si nous le souhaitons (depuis Illustrator par exemple)</li>
+<li>l'intégration de ceux-ci dans une balise <code>use</code> avec un appel à l'<code>id</code> est simple et courte</li>
+<li>la possibilités de cibler des <code>path</code> avec des <code>class</code> ce qui permet de personnaliser au maximum nos <code>svg</code> par le biais du <code>scss</code></li>
 <li>la possibilité de créer des <code>animations</code> directement dans le code <code>svg</code>, ce n'est pas le cas ici mais c'est un choix qui avait été envisagée initialement</li>
 </ul>
-<p>Quant au style, nous avons utilisé <code>Scss</code> d'utiliser des <code>variables</code> ou encore des <code>mixines</code>, d'optimiser la lisibilité et la maintenabilité de notre code. Nous avons également fait le choix de scoper le style de nos components pour faciliter la tâche de chacun et de découper de manière logique notre travail.</p>
+<p>Quant au style, nous avons utilisé <code>Scss</code> qui nous permet de mettre en place des <code>variables</code> ou encore des <code>mixines</code> et d'optimiser la lisibilité et la maintenabilité de notre code. Nous avons également fait le choix de scoper le style de nos composants pour faciliter la tâche de chacun et de découper de manière logique notre travail.</p>
 
 # Librairies utilisées
 
@@ -32,6 +44,7 @@
 <br>
 <strong><code>amCharts4 (Maps)</code></strong>
 <p><i>Voir : Travail personnel - Sarah Güngör (plus bas)</i></p>
+<br>
 <strong><code>i18next.js</code></strong>
 <p>Facilite la traduction de notre application et permet donc à l'utilisateur de lire notre contenu dans les langues que nous souhaitons grâce à des fichiers <code>json</code> - dans lesquels nous stockons le contenu textuel dans les différentes langues - et des clés de traduction.</p>
 <p><i>Voir : Travail personnel - Lucas Moreno (plus bas)</i></p>
@@ -43,7 +56,8 @@
 <p>Pour compiler de manière automatique et perfomante le <code>Scss</code>.</p>
 <br>
 <strong><code>React Router DOM</code></strong>
-<p>Pour utiliser le système de routes qui lie les trois étapes de notre site (Home, Intro, Main).</p>
+<p>Pour utiliser le système de routes qui lie les trois étapes de notre site.</p>
+<br>
 
 # Travail personnel - Lucas Moreno
 
