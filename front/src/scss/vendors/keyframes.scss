@@ -15,11 +15,3 @@
     opacity: 1;
   }
 }
-@keyframes left-to-right {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}

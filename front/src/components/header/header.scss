@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   right: 0; 
-  padding: $margin 1.875rem 0;
+  padding: $margin-top-bottom $margin-sides 0 0;
+  border: solid blue;
   @include flexbox(row, flex-end, center);
   opacity: 0;
   animation: fade 2s 1s ease-in-out forwards;
@@ -15,8 +16,9 @@
   @include flexbox(row, space-between, center); 
 
   .navItem {
-    width: $icon-container-size-medium;
-    height: $icon-container-size-medium;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: solid red;
     @include flexbox(column, center, center);
     cursor: pointer;
 
@@ -56,16 +58,9 @@
 .line{
   background:white;
   height: 30px;
-  margin-left: $margin;
 }
 svg.navItem__icon{
-  margin-left: $margin;
   background: $secondary-bg;
+  border: solid green;
   border-radius: 10px;
-}
-.navItem--turnOff {
-  margin-left: $margin;
-}
-.navItem--audio {
-  margin-left: $margin; 
 }

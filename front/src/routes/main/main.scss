@@ -1,16 +1,14 @@
-@import '../../scss/vendors/vendors.scss';
-
+@import '../../scss/styles.scss';
 
 .main {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
 	@include flexbox(row, space-between, center);
-	font-weight: $text-weight;
-	// user-select: none;
+	font-weight: lighter;
 
 	h2 {
-		font-size: $title-size;
-		font-weight: $title-weight;
+		font-size: 1.2rem;
+		font-weight: normal;
 	}
 }

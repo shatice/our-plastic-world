@@ -1,4 +1,4 @@
-@import '../../scss/vendors/vendors.scss';
+@import '../../scss/styles.scss';
 
 .home {
   width: 100vw;
@@ -27,7 +27,7 @@
     .headphoneIcon {
       fill: $white;
       position: absolute;
-      bottom: $margin;
+      bottom: $margin-top-bottom;
       width: 5rem;
       height: 5rem;
       animation: blink 1s linear alternate infinite;

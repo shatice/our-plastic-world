@@ -6,7 +6,6 @@ import './scss/styles.scss';
 import Home from './routes/home/Home.jsx';
 import Intro from './routes/intro/Intro.jsx';
 import Main from './routes/main/Main.jsx';
-import About from './components/about/About';
 
 require('dotenv').config()
 
@@ -22,7 +21,6 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/intro" component={Intro}/>
       <Route exact path="/main" component={Main}/>
-      <Route exact path="/about" component={About}/>
     </Switch>
   </Router>
   </div>

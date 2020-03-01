@@ -1,12 +1,8 @@
-/***** VENDORS *****/
-@import 'vendors/fonts/primary_font.scss';
-@import 'vendors/fonts/secondary_font.scss';
-@import 'vendors/vars.scss';
-@import 'vendors/mixins.scss';
-@import 'vendors/reset.scss';
+/***** FONTS *****/
+@import './fonts/primary_font.scss';
+@import './fonts/secondary_font.scss';
 
 /***** VENDORS *****/
-@import 'global.scss';
 @import './vendors/vendors.scss';
 
 

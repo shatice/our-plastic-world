@@ -1,51 +1,22 @@
 /***** FONTS *****/
 
-// FAMILIES
-
 $primary-font: 'rajdhani', sans-serif;
 $secondary-font: 'roboto', sans-serif;
 
-// SIZES
-
-$text-size: 1rem; 
-$title-size: 1.2rem; 
-$data-size: 1.5rem; 
-$timeline-size: 1.125rem; 
-
-// STYLES & WEIGHTS
-
-$text-weight: lighter; 
-$title-weight: normal; 
-$data-weight: bold; 
-
 /***** COLORS *****/
 
-$primary-text-color: #fff;
-$secondary-text-color: rgb(19, 19, 19);
+$white: #fff;
+$black: rgb(19, 19, 19); 
+
+$primary-text-color: $white;
+$secondary-text-color: $black;
+
+$border-color: $white;
 
 $primary-bg: radial-gradient(circle, rgb(51, 51, 51) 10%, rgb(19, 19, 19) 70%);
-$secondary-bg: linear-gradient(to bottom,rgba(48, 48, 48, 0.678) 11%, rgba(19, 19, 19, 0.623) 100%);
-
-$grey: #5E5E5E;
-$grey-dark: #3B3939; 
-
-$blue: #90B4F9; 
-$red: #FF8383; 
-$green: #8EEBBE; 
-
-$white: #fff;
-$black: #000; 
+$secondary-bg: linear-gradient(to bottom,rgba(48, 48, 48, 0.678) 11%, rgba(19, 19, 19, 0.623) 100%); 
 
 /***** TEMPLATE *****/
 
-// MARGIN
-
-$margin: 1.25rem;
-
-// ICONS
-
-$icon-container-size-big: 3.75rem; 
-$icon-container-size-medium: 3.125rem; 
-$icon-container-size-small: 1.875rem;
-
-// GLOBE
+$margin-top-bottom: 2.5rem;
+$margin-sides: 1.875rem;
