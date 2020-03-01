@@ -1,6 +1,6 @@
 #Développement Front - Rendu d'expertise
 
-<h2>Élèves concernés :<h2>
+<h2>Élèves concernés :</h2>
 <ul>
   <li>Lucas Moreno</li>
   <li>Sarah Güngör</li>
