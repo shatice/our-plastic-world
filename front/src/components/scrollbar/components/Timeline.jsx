@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
-import "../timeline/timeline.scss";
 
-import API from "../../services/Api";
+/***** STYLE *****/
+import "../scrollbar.scss";
 
-/* Globe library */
+/***** DATA CALLS *****/
+import API from "../../../services/Api";
+
+/***** LIBRARY - https://www.amcharts.com/ *****/
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
-const Scrollbar = ({ setInfosContent }) => {
+const Timeline = ({ setInfosContent }) => {
   useEffect(() => {
     let selectedDates = [];
     const $API = new API();
@@ -19,7 +22,7 @@ const Scrollbar = ({ setInfosContent }) => {
     let endYear = 2015;
     let currentYear = 1995;
 
-    let chart = am4core.create("scrollbar", am4charts.RadarChart);
+    let chart = am4core.create("chart_timeline", am4charts.RadarChart);
 
     let yearLabel = chart.radarContainer.createChild(am4core.Label);
 
@@ -29,24 +32,22 @@ const Scrollbar = ({ setInfosContent }) => {
     yearLabel.fontSize = 30;
     yearLabel.text = String(currentYear);
 
-    // year slider IMPORTANT
     let yearSliderContainer = chart.createChild(am4core.Container);
     yearSliderContainer.layout = "vertical";
     yearSliderContainer.padding(0, 38, 0, 38);
     yearSliderContainer.width = am4core.percent(100);
 
-    // IMPORTANT
     let yearSlider = yearSliderContainer.createChild(am4core.Slider);
     yearSlider.events.on("rangechanged", function() {
       updateRadarData(
         startYear + Math.round(yearSlider.start * (endYear - startYear))
       );
     });
+    
     yearSlider.orientation = "horizontal";
-    yearSlider.start = 0; // placement du curseur ?
+    yearSlider.start = 0;
     yearSlider.exportable = false;
 
-    // IMPORTANT
     function updateRadarData(year) {
       if (currentYear !== year) {
         currentYear = year;
@@ -64,7 +65,7 @@ const Scrollbar = ({ setInfosContent }) => {
     }
   }, [setInfosContent]);
 
-  return <div id="scrollbar" className="scrollbar"></div>;
+  return <div id="chart_timeline" className="timeline"></div>;
 };
 
-export default Scrollbar;
+export default Timeline;

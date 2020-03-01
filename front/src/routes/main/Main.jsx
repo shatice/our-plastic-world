@@ -5,13 +5,13 @@ import views from "../../js/models/views.js";
 import API from "../../services/Api";
 
 /***** COMPONENTS *****/
-import Header from '../../components/header/Header.jsx';
-import Infos from '../../components/infos/Infos.jsx';
-import Nav from '../../components/nav/Nav.jsx';
-import Globe from '../../components/globe/Globe.jsx';
-import Timeline from '../../components/timeline/Timeline.jsx';
-import About from '../../components/about/About.jsx';
-import Goabout from '../../components/goabout/Goabout.jsx';
+import Header from '../../components/header/Header';
+import Infos from '../../components/infos/Infos';
+import Nav from '../../components/nav/Nav';
+import Globe from '../../components/globe/Globe';
+import Scrollbar from '../../components/scrollbar/Scrollbar';
+import About from '../../components/about/About';
+import Goabout from '../../components/goabout/Goabout';
 
 const Main = () => {
   const $API = new API();
@@ -87,7 +87,7 @@ const Main = () => {
       )}
       <Nav setStateInfos={setStateInfos} />
       {setInfosContent && yearList && stateInfos === views.Global ? (
-        <Timeline yearList={yearList} setInfosContent={setInfosContent} stateInfos={stateInfos}/>
+        <Scrollbar yearList={yearList} setInfosContent={setInfosContent} stateInfos={stateInfos}/>
       ) : (
         ""
       )}
