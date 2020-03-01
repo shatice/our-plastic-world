@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+/***** TRANSLATOR *****/
 import { useTranslation } from "react-i18next";
 
+/***** DATA CALLS  *****/
 import API from "../../../services/Api";
 
 const Global = ({ infosContent }) => {
@@ -17,6 +20,7 @@ const Global = ({ infosContent }) => {
   });
 
   useEffect(() => {}, []);
+  
   return (
     <div>
       <section className="infos__bloc infos__bloc--production">

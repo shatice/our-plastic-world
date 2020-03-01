@@ -1,4 +1,6 @@
 import React from "react";
+
+/***** TRANSLATOR *****/
 import { useTranslation } from 'react-i18next';
 
 const Continents = ( {continentList} ) => {

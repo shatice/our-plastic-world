@@ -4,7 +4,7 @@
 
 Une datavisualisation de : 
 
-<li>Rami Cakir (développement back)</li>
+<li>Rami Çakir (développement back)</li>
 <li>Nastasia Dotlic (design)</li>
 <li>Lucas Moreno (développement front)</li>
 <li>Sarah Güngör (développement front)</li>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 
-/* Styles */
+/***** STYLE *****/
 import "./search.scss";
+
+/***** TRANSLATOR *****/
+import { useTranslation } from "react-i18next";
 
 const Search = ({
   countryList,
@@ -13,6 +15,7 @@ const Search = ({
   const { t } = useTranslation();
 
   const countries = countryList;
+
   const [searchResults, setSearchResults] = useState([]);
 
   const handleChange = event => {
@@ -36,7 +39,10 @@ const Search = ({
     if (results.length < 3 ) {
       setSearchResults(results);
     }
-  }, [searchTerm, countries]);
+  }, 
+  [ searchTerm, 
+    countries
+  ]);
 
   return (
     <div className="search">

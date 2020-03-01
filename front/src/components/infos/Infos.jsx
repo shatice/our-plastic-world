@@ -1,11 +1,15 @@
 import React from "react";
+
+/***** STYLE *****/
 import "./infos.scss";
+
+/***** MODELS *****/
+import views from "../../js/models/views.js";
 
 /***** COMPONENTS *****/
 import Global from "./components/Global.jsx";
 import Continents from "./components/Continents.jsx";
 import Countries from "./components/Countries.jsx";
-import views from "../../js/models/views.js";
 
 const Infos = ({
   stateInfos,
@@ -19,6 +23,7 @@ const Infos = ({
   color, 
   globalInfo
 }) => {
+
   return (
     <div className="infos">
       {infosContent && stateInfos === views.Global ? (

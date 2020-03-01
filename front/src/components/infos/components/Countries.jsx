@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+
+/***** TRANSLATOR *****/
 import { useTranslation } from "react-i18next";
 
 /***** COMPONENTS *****/
@@ -12,6 +14,7 @@ const Countries = ({
   setSearchTerm,
   color
 }) => {
+  
   useEffect(() => {});
   const { t } = useTranslation();
 
