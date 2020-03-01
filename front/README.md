@@ -17,10 +17,10 @@
 <p>Client HTTP basé sur un système de promesses, nous avons préféré Axios à Fetch, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
 <br>
 <strong><code>amCharts4 (Maps)</code></strong>
-<i>Voir : Travail personnel - Sarah Güngör (plus bas)</i>
+<p><i>Voir : Travail personnel - Sarah Güngör (plus bas)</i></p>
 <strong><code>i18next.js</code></strong>
 <p>Facilite la traduction de notre application et permet donc à l'utilisateur de lire notre contenu dans les langues que nous souhaitons grâce à des fichiers <code>json</code> - dans lesquels nous stockons le contenu textuel dans les différentes langues - et des clés de traduction.</p>
-<i>Voir : Travail personnel - Lucas Moreno (plus bas)</i>
+<p><i>Voir : Travail personnel - Lucas Moreno (plus bas)</i></p>
 <br>
 <strong><code>react-sound</code></strong>
 <p>Afin de rendre notre expérience digitale aussi immersive que possible, nous avons fait le choix d'intégré un son d'ambiance à l'aide de cette librairie, facile d'utilisation et interne à notre framework.</p>
