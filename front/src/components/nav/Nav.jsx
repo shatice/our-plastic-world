@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import views from "../../js/models/views.js";
-import { useTranslation } from "react-i18next";
+
+/***** STYLES *****/
 import "./nav.scss";
+
+/***** TRANSLATOR *****/
+import { useTranslation } from "react-i18next";
+
+/***** MODELS *****/
+import views from "../../js/models/views.js";
 
 const Nav = ({ setStateInfos }) => {
   const { t } = useTranslation();
@@ -26,19 +32,18 @@ const Nav = ({ setStateInfos }) => {
   return (
     <nav className="nav">
       <ul className="nav__items">
-        {dashboard.map((d, index) => (
-          <li
-            onClick={() => {
-              setStateInfos(d.mode);
-              setElementDashboard(index);
-            }}
-            style={
-              elementDashboard === index ? { opacity: 1 } : { opacity: 0.5 }
-            }
-            key={index}
-          >
-            {d.label}
-          </li>
+        {dashboard.map((d, index) => ( 
+        <li
+        onClick={() => {
+          setStateInfos(d.mode);
+          setElementDashboard(index);
+        }}
+        style={
+          elementDashboard === index ? { opacity: 1 } : { opacity: 0.5 }
+        }
+        key={index}>
+          {d.label}
+        </li>
         ))}
       </ul>
     </nav>

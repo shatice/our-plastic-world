@@ -1,11 +1,11 @@
 @import '../../routes/main/main.scss';
 
 .nav {
-	padding: 2rem 1.875rem 2rem 2rem;
+	padding: $margin-top-bottom $margin-sides $margin-top-bottom $margin-top-bottom;
 	text-align: right;
-	border-top-left-radius: 30px; 
-	border-bottom-left-radius: 30px;
 	background: $secondary-bg;
+	border-top-left-radius: 1.875rem; 
+	border-bottom-left-radius: 1.875rem;
 	opacity: 0;
 	animation: fade 1.5s 1s linear forwards;
 
@@ -17,14 +17,11 @@
 		@include flexbox(row, flex-end, center);
 		letter-spacing: .2rem;
 		opacity: .5;
+		transition: opacity .2s;
 		cursor: pointer;
 
 		&:not(:last-child) {
 			margin-bottom: 1.5rem;
 		}
 	}
-}
-.nav__items li { 
-	opacity:0.5;
-	color: rgba(255, 255, 255, 0.363);
 }

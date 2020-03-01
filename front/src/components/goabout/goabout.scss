@@ -1,20 +1,17 @@
 @import '../../scss/vendors/vendors.scss';
 
-.first__title{
-	font-family:$primary-font;
-	font-size: 20px;
-	line-height: 26px;
-	color: #FFFFFF;
-	margin-top: 2.25rem;
-	margin-bottom: 2.25rem;
-	position:absolute;
-	top:0;
-	left: 1.875rem;
-	z-index:100;
-	cursor:pointer;
-	@include flexbox(row, space-around, center); 
-	opacity: 0;
-	animation: fade 2s 1s ease-in-out forwards;
+.goAbout {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: $margin-top-bottom 0 0 $margin-sides;
+	@include flexbox(row, space-around, center);
+	z-index: 30;
+	cursor: pointer;
+
+	h2 {
+		font-size: 1.25rem;
+	}
 
 	.arrowIcon {
 		height: 24px;
