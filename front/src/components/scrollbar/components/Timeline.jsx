@@ -20,7 +20,7 @@ const Timeline = ({ setInfosContent }) => {
 
     let startYear = 1980;
     let endYear = 2015;
-    let currentYear = 1995;
+    let currentYear;
 
     let chart = am4core.create("chart_timeline", am4charts.RadarChart);
 
