@@ -13,7 +13,7 @@
 <p>Framework JS imposé, il s'est avéré être un bon allié pour le travail en groupe.</p>
 <p>L'utilisation de la syntaxe <code>Jsx</code> nous a fait gagner du temps grâce :</p>
 <ul>  
-<li>aux messages d'erreur très précis</li>
+<li>aux messages d'erreur très précis qui facilitent le debuggage</li>
 <li>aux warnings qui prévient les doublons et le code itnutile</li>
 <li>au renommage automatique</li>
 <li>à la syntaxe courte et optimisée</li>
@@ -28,21 +28,23 @@
 <p>Certains de ces composants sont encore un peu longs, comme celui de notre dataviz, mais nous avons essayé de découper au maximum et de s'organiser de manière à ce que la prise en main soit simplifiée.</p>
 <br>
 <strong><code>Assets</code></strong>
+<br>
 <p>Concernant les icônes, nous avons mis en place un <code>spritesheet</code> regroupant des <code>svg</code> dans un système de symbols, ce qui a plusieurs avantages :
 <ul>  
 <li>la possibilité d'entrer à la main nos <code>svg</code> si nous le souhaitons (depuis Illustrator par exemple)</li>
 <li>l'intégration de ceux-ci dans une balise <code>use</code> avec un appel à l'<code>id</code> est simple et courte</li>
 <li>la possibilités de cibler des <code>path</code> avec des <code>class</code> ce qui permet de personnaliser au maximum nos <code>svg</code> par le biais du <code>scss</code></li>
-<li>la possibilité de créer des <code>animations</code> directement dans le code <code>svg</code>, ce n'est pas le cas ici mais c'est un choix qui avait été envisagée initialement</li>
+<li>la possibilité de créer des <code>animations</code> directement dans le code <code>svg</code>, ce n'est pas le cas ici mais c'est un choix qui avait été envisagé initialement</li>
 </ul>
 <p>Quant au style, nous avons utilisé <code>Scss</code> qui nous permet de mettre en place des <code>variables</code> ou encore des <code>mixines</code> et d'optimiser la lisibilité et la maintenabilité de notre code. Nous avons également fait le choix de scoper le style de nos composants pour faciliter la tâche de chacun et de découper de manière logique notre travail.</p>
 
 # Librairies utilisées
 
 <strong><code>Axios</code></strong>
-<p>Client HTTP basé sur un système de promesses, nous avons préféré Axios à Fetch, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
+<p>Client HTTP basé sur un système de promesses, nous avons préféré <code>Axios</code> à <code>Fetch</code>, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
 <br>
 <strong><code>amCharts4 (Maps)</code></strong>
+<br>
 <p><i>Voir : Travail personnel - Sarah Güngör (plus bas)</i></p>
 <br>
 <strong><code>i18next.js</code></strong>
@@ -50,12 +52,15 @@
 <p><i>Voir : Travail personnel - Lucas Moreno (plus bas)</i></p>
 <br>
 <strong><code>React Sound</code></strong>
+<br>
 <p>Afin de rendre notre expérience digitale aussi immersive que possible, nous avons fait le choix d'intégré un son d'ambiance à l'aide de cette librairie, facile d'utilisation et interne à notre framework.</p>
 <br>
 <strong><code>Node Sass</code></strong>
+<br>
 <p>Pour compiler de manière automatique et perfomante le <code>Scss</code>.</p>
 <br>
 <strong><code>React Router DOM</code></strong>
+<br>
 <p>Pour utiliser le système de routes qui lie les trois étapes de notre site.</p>
 <br>
 
