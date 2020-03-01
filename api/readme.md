@@ -1,3 +1,5 @@
+<li>Rémi Cakir (développement back)</li>
+
 # Diagramme
 
 ![MCD](MCD.png)
