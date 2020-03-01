@@ -1,22 +1,22 @@
-#Développement Front - Rendu d'expertise
+# Développement Front - Rendu d'expertise
 
 <p>Élèves concernés :</p>
 <ul>
   <li>Lucas Moreno</li>
   <li>Sarah Güngör</li>
-  <i>(avec l'aide très préciseuse de notre développeur back, Rami Çakir)</i>
+  <li><i>(avec l'aide très préciseuse de notre développeur back, Rami Çakir)</i></li>
 </ul>
 
-#Choix argumentés 
+# Choix argumentés 
 
 <p>à venir</p>
 
-#Librairies utilisées
+# Librairies utilisées
 
-<strong><code>Axios</code></strong> : librairie JS
+<strong><code>Axios</code></strong>
 <p>Client HTTP basé sur un système de promesses, nous avons préféré Axios à Fetch, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
 <br>
-<strong><code>Amcharts4 (Maps)</code></strong> : Librairie JS de datavisualisation
+<strong><code>Amcharts4 (Maps)</code></strong>
 <br>
 <a>https://www.amcharts.com/</a>
 <br>
@@ -40,7 +40,7 @@
 <strong><code>react-sound</code></strong>
 <p>Afin de rendre notre expérience digitale aussi immersive que possible, nous avons fait le choix d'intégré un son d'ambiance à l'aide de cette librairie, facile d'utilisation et interne à notre framework.</p>
 
-#Travail personnel - Lucas Moreno
+# Travail personnel - Lucas Moreno
 
 <strong>Utilisation de <code>i18next.js</code> :</strong>
 <p>Pendant cette partie j'ai dû me charger d'internationaliser notre application en la rendant accessible en anglais comme en français, la cible que nous devions toucher n'était pas forcément un français, il fallait donc impérativement que notre application soit accessible en anglais.</p>
@@ -52,18 +52,10 @@
 <ul>
   <li>ex (dans le fichier en) : "current-year" : "In 2020"</li>
   <li>ex (dans le fichier fr) : "current-year" : "En 2020"</li>
-<ul>
+</ul>
 <p>Il fallait ensuite importer la fonction useTranslation() que la librairie nous met à disposition et la stocker dans une constante appelé i18n, puis créer une fonction :</p>
-<code>function changeLanguage(lang){ <br>
-i18n.changeLanguage(lang); <br>
-}
-</code>
+<code>function changeLanguage(lang) { i18n.changeLanguage(lang); }</code>
 <p>A partir de ce moment la j'ai utilisé la fonction <code>changeLanguage()</code> sur les deux boutons qui servent à changer la langue.</p>
 <p>Pour finir, il a juste fallu remplacer le texte brut par des clefs de traduction qui étaient créer dans le fichiers json dans public, avec une fonction qui était mise à disposition par la librairie :</p>
 <p>ex : <code>{t('current-year')}</code></p>
-
-
-<p></p>
-<p></p>
-<p></p>
 
