@@ -1,6 +1,6 @@
 #Développement Front - Rendu d'expertise
 
-<h2>Élèves concernés :</h2>
+<p>Élèves concernés :</p>
 <ul>
   <li>Lucas Moreno</li>
   <li>Sarah Güngör</li>
@@ -9,11 +9,15 @@
 
 #Choix argumentés 
 
+<p>à venir</p>
+
 #Librairies utilisées
-<strong><code>Axios</code> | Librairie JS</strong>
+
+<strong><code>Axios</code></strong> : librairie JS
 <p>Client HTTP basé sur un système de promesses, nous avons préféré Axios à Fetch, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
 <br>
-<strong><code>Amcharts4</code> : Maps (add-on) | Librairie JS de datavisualisation</strong>
+<strong><code>Amcharts4 (Maps)</code></strong> : Librairie JS de datavisualisation
+<br>
 <a>https://www.amcharts.com/</a>
 <br>
 <p>Le choix de notre <strong>dataviz</strong> s’est porté sur un globe interactif et pour le mettre en place nous avons choisi <code>Amcharts4</code> qui est une librairie de datavisualisation bien documentée, basée sur le format <code>GeoJson</code>, renvoyant un template en <code>SVG</code> accessible dans le <code>DOM</code> et compatible avec TypeScript et les framework JS (ici, <code>React</code>).</p>
@@ -35,6 +39,7 @@
 <br>
 <strong><code>react-sound</code></strong>
 <p>Afin de rendre notre expérience digitale aussi immersive que possible, nous avons fait le choix d'intégré un son d'ambiance à l'aide de cette librairie, facile d'utilisation et interne à notre framework.</p>
+
 #Travail personnel - Lucas Moreno
 
 <strong>Utilisation de <code>i18next.js</code> :</strong>
