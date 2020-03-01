@@ -97,7 +97,6 @@
 <li>Drag & drop</li>
 </ul>
 <p>Nous avons également eu recours à <code>amCharts4</code> pour gérer une scrollbar chronologique liée à nos données ainsi qu’au Globe.</p>
-<p>Avec un peu plus de connaissances les scripts auraient pu être davantage optimisés et raccourcis, quoi qu’il en soit cette librairie nous a beaucoup facilité la tâche pour gérer notre dataviz</p>
-<br>
+<p>Avec un peu plus de connaissances les scripts auraient pu être davantage optimisés et raccourcis, quoi qu’il en soit cette librairie nous a beaucoup facilité la tâche pour gérer notre dataviz.</p>
 
 

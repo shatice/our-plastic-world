@@ -109,7 +109,7 @@ const Globe = ({
     polygonTemplate.strokeWidth = 0.2;
 
     // INTRO
-    if (!stateInfos) {
+    if ( !stateInfos ) {
       // Set rotating animation 
       setTimeout(function(){
         let animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
@@ -117,7 +117,7 @@ const Globe = ({
     }
 
     // VIEWS CONTINENTS || COUNTRIES
-    if (stateInfos !== views.Global) {
+    if ( stateInfos !== views.Global ) {
       // Set hover behaviour
       var hs = polygonTemplate.states.create("hover");
       hs.properties.fill = am4core.color("#fff");
@@ -131,7 +131,7 @@ const Globe = ({
     }
 
     // VIEW CONTINENTS
-    if (stateInfos === views.Continents) {
+    if ( stateInfos === views.Continents ) {
       let arr = [];
 
       continentList.forEach((continent, index) => {
@@ -153,7 +153,7 @@ const Globe = ({
     }
 
     // VIEW COUNTRIES
-    if (stateInfos === views.Countries) {
+    if ( stateInfos === views.Countries ) {
 
       // Set hit event behaviour => show country data
       polygonTemplate.events.on("hit", function(event) {

@@ -27,7 +27,7 @@ const Header = () => {
       <Sound url={soundfile} playStatus={swapSound} loop={true} />
       <nav>
         <ul>
-          <li className="nav__item nav__item--lang" onClick={toggle}>
+          <li className="nav__item nav__item--lang">
             <p onClick={() => { changeLanguage("fr"); }} style={{ opacity: i18n.language === "fr" ? "1" : "0.5" }} className={`navItem navItem--lang`}>
               FR
             </p>

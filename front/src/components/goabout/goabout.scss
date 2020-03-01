@@ -8,6 +8,8 @@
 	@include flexbox(row, space-around, center);
 	z-index: 30;
 	cursor: pointer;
+	opacity: 0;
+	animation: fade .5s forwards;
 
 	h2 {
 		font-size: 1.25rem;
