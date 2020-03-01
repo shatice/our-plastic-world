@@ -1,66 +1,44 @@
 @import '../../scss/vendors/vendors.scss';
 
+.home .header .nav__item:not(.nav__item--turnOff) {
+  display: none;
+} 
+
 .header {
   z-index: 10;
   position: fixed;
   top: 0;
   right: 0; 
   padding: $margin-top-bottom $margin-sides 0 0;
-  border: solid blue;
-  @include flexbox(row, flex-end, center);
   opacity: 0;
   animation: fade 2s 1s ease-in-out forwards;
-}
 
-.navList {
-  @include flexbox(row, space-between, center); 
+  ul {
+    @include flexbox(row, flex-end, center);
+  }
 
-  .navItem {
-    width: 3.125rem;
-    height: 3.125rem;
-    border: solid red;
-    @include flexbox(column, center, center);
+  li.nav__item {
+    width: 2.5rem;
+    height: 2.5rem;
+    @include flexbox(row, center, center);
+    border-radius: 0.625rem;
+    background: $secondary-bg;
     cursor: pointer;
 
-    a {
-      width: 100%;
-      height: 100%;
-      @include flexbox(column, center, center);
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &.nav__item--lang {
+      width: 5.375rem;
+      padding: 1rem;
+      @include flexbox(row, space-between, center);
     }
 
     .navItem__icon {
-      width: 100%;
-      height: 100%;
+      width: 2rem;
+      height: 2rem;
       fill: $white;
     }
   }
-}
-
-.home .header .navItem:not(.navItem--audio){
-  display: none;
-} 
-
-.show{
-  opacity:1;
-}
-.hidden{
-  opacity:0.5;
-}
-.nav__language{
-  display: flex;
-  align-items:center;
-  justify-content: space-around;
-  font-size: 24px;
-  line-height: 41px;
-  background: $secondary-bg;
-  border-radius: 10px;
-}
-.line{
-  background:white;
-  height: 30px;
-}
-svg.navItem__icon{
-  background: $secondary-bg;
-  border: solid green;
-  border-radius: 10px;
 }

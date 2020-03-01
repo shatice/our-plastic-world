@@ -43,8 +43,8 @@ const About = () => {
 			<section className="sourcesContainer">
 				<h2>{t('about.sources-title')}</h2>
 				<ul>
-					<li><a href="https://ourworldindata.org/plastic-pollution" target="_blank">{t('about.sources-content-1')}</a></li>
-					<li><a href="https://www.unenvironment.org/interactive/beat-plastic-pollution/" target="_blank">{t('about.sources-content-2')}</a></li>
+					<li><a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener noreferrer">{t('about.sources-content-1')}</a></li>
+					<li><a href="https://www.unenvironment.org/interactive/beat-plastic-pollution/" target="_blank" rel="noopener noreferrer">{t('about.sources-content-2')}</a></li>
 				</ul>
 			</section>
 		</div>
