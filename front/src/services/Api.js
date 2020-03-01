@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { array } from '@amcharts/amcharts4/core';
 
 class $API {
   constructor () {

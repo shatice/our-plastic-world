@@ -5,11 +5,9 @@ import views from "../../js/models/views";
 /* Globe library */
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
-import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_continentsLow from "@amcharts/amcharts4-geodata/continentsLow";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
-import { cos } from "@amcharts/amcharts4/.internal/core/utils/Math";
 
 const Globe = ({
   countryList,
@@ -17,35 +15,13 @@ const Globe = ({
   stateInfos,
   continentList,
   setSearchTerm,
-  setColor,
-  globalInfo
+  setColor
 }) => {
   useEffect(() => {
-
-    function perc2color(perc) {
-      var r, g, b = 0;
-      if(perc < 50) {
-        r = 255;
-        g = Math.round(5.1 * perc);
-      }
-      else {
-        g = 255;
-        r = Math.round(510 - 5.10 * perc);
-      }
-      var h = r * 0x10000 + g * 0x100 + b * 0x1;
-      return '#' + ('000000' + h.toString(16)).slice(-6);
-    }
-
-    console.log(stateInfos === views.Countries);
-    // Test slider
-    console.log(am4core.Slider);
 
     // Apply Theme
     am4core.useTheme(am4themes_animated);
     let chart = am4core.create("chartdiv", am4maps.MapChart);
-
-    // Useful ??
-    let interfaceColors = new am4core.InterfaceColorSet();
 
     // Set definition
     try {
@@ -120,27 +96,14 @@ const Globe = ({
     let graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
     graticuleSeries.fitExtent = false;
     graticuleSeries.mapLines.template.strokeOpacity = 0;
-    // graticuleSeries.mapLines.template.stroke = am4core.color("#fff");
-    // graticuleSeries.mapLines.template.stroke = am4core.color("#fff");
-
-    // Set rotation animation
-    // let animation;
-    // setTimeout(function(){
-    // 	animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
-    // })
 
     // Configure series
     let polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.nonScalingStroke = true;
 
     polygonTemplate.fill = am4core.color("rgba(22, 22, 22, 0.055)");
-    // polygonTemplate.opacity = .8;
 
     polygonTemplate.events.on("hit", function(event) {
-      // console.log(
-      //   countryList.find(x => x.name === event.target.dataItem.dataContext.name)
-      // );
-      console.log("hih", event.target.dataItem.mapPolygon.fill.rgba);
       setColor(event.target.dataItem.mapPolygon.fill.rgba);
 
       if (
@@ -159,13 +122,7 @@ const Globe = ({
           value: null
         });
       }
-
-      // console.log(event.target.dataItem.dataContext.name);
-      // console.log(event.target.dataItem.dataContext);
-      // console.log(event.target.dataItem.dataContext.id);
     });
-
-    console.log("lool", polygonSeries.data);
 
     // Style | Strokes
     polygonTemplate.stroke = am4core.color("#fff");
@@ -177,43 +134,28 @@ const Globe = ({
       property: "fill",
       target: polygonTemplate,
       min: am4core.color("#C00B0B"),
-      // "max": am4core.color("#C00B0B")
       max: am4core.color("#59B64A")
     });
 
     // Set hover/tabletClick behaviour
     var hs = polygonTemplate.states.create("hover");
     hs.properties.fill = am4core.color("#fff");
-    // polygonTemplate.fill = am4core.color("red");
+
     // Configure tooltips : country name
     polygonTemplate.tooltipText = "{name}";
+
     // Set tooltip style
     polygonSeries.tooltip.background.fillOpacity = 0.5;
     polygonSeries.tooltip.background.cornerRadius = 30;
 
     if (!stateInfos) {
-      // Set rotation animation
-      let animation;
+      // Set rotation animation 
       setTimeout(function(){
-        animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+        let animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
       })
-
-      // polygonTemplate.fill = am4core.color("rgba(48, 48, 48, 0.521)");
-      // polygonTemplate.stroke = am4core.color("#fff");
-      // polygonTemplate.strokeOpacity = .2;
-      // polygonTemplate.strokeWidth = 0.2;
-    }
-
-    if (stateInfos === views.Global) {
-      // polygonTemplate.fill = am4core.color('blue'); 
-
-      let total = 0;
-
-      console.log('loooijl', globalInfo);
     }
 
     if (stateInfos === views.Countries) {
-      console.log("lol");
       let arr = [];
 
       countryList.forEach(country => {
@@ -223,7 +165,6 @@ const Globe = ({
         });
       });
       polygonSeries.data = arr;
-      // polygonTemplate.fill = am4core.color("red");
     }
 
     if (stateInfos === views.Continents) {
@@ -238,17 +179,15 @@ const Globe = ({
         });
         polygonSeries.data = arr;
       });
-      console.log("arr", arr);
 
       polygonSeries.heatRules.push({
         property: "fill",
         target: polygonTemplate,
         min: am4core.color("#59B64A"),
-        // "max": am4core.color("#C00B0B")
         max: am4core.color("#C00B0B")
       });
     }
-  }, [stateInfos]);
+  }, [stateInfos, continentList, setColor, countryList, setSearchTerm, setSelectedCountry]);
 
   return <div id="chartdiv" className="globe"></div>;
 };

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 /***** COMPONENTS *****/
@@ -14,7 +14,6 @@ const Countries = ({
 }) => {
   useEffect(() => {});
   const { t } = useTranslation();
-  console.log("color", color);
 
   return (
     <>

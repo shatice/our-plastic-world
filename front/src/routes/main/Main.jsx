@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import "../../scss/styles.scss";
 import "./main.scss";
 import views from "../../js/models/views.js";
@@ -15,7 +14,6 @@ import About from '../../components/about/About.jsx';
 import Goabout from '../../components/goabout/Goabout.jsx';
 
 const Main = () => {
-  const { t } = useTranslation();
   const $API = new API();
   const [stateInfos, setStateInfos] = useState(views.Global);
   const [yearList, setYearList] = useState(null);

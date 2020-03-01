@@ -1,6 +1,5 @@
 import React from "react";
 import './about.scss';
-import Goabout from '../goabout/Goabout.jsx';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {

@@ -7,13 +7,9 @@ import './home.scss';
 import Header from '../../components/header/Header.jsx';
  
 const Intro = () => {
-
-
-    // Transalation (fr, en)
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [selectLanguage, setSelectLanguage] = React.useState(false);
     const toggle = () => setSelectLanguage(!selectLanguage);
-
 
     function changeLanguage(lang){
       i18n.changeLanguage(lang);

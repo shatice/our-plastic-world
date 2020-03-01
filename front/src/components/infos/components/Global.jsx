@@ -6,10 +6,8 @@ import API from "../../../services/Api";
 const Global = ({ infosContent }) => {
   const { t } = useTranslation();
   const $API = new API();
-  let eiffelWeight = 7300;
-
-  const [ratio, setRatio] = useState(null);
-  const [dateBefore, setDateBefore] = useState(0);
+  const eiffelWeight = 7300;
+  const [ ratio, setRatio ] = useState(null);
 
   $API.getInfoByYear(1980).then(res => {
     let firstYear = res.data;
@@ -18,22 +16,10 @@ const Global = ({ infosContent }) => {
     setRatio(ra.toFixed(2));
   });
 
-  $API.getInfoByYear(infosContent.year - 1).then(res => {
-    if (res.data.totalProduction) {
-      let ra =
-        Number(infosContent.totalProduction) / Number(res.data.totalProduction);
-      setDateBefore(ra.toFixed(4));
-      console.log("res", res.data.totalProduction);
-    } else {
-      setDateBefore(0);
-    }
-  });
-
   useEffect(() => {}, []);
   return (
     <div>
       <section className="infos__bloc infos__bloc--production">
-        {/* <h1>{infosContent.year}</h1> */}
         <ul>
           <li className="global__title">
             <span className="data">
@@ -45,9 +31,6 @@ const Global = ({ infosContent }) => {
           <div className="global__subtitle">
             <li>
               <strong>x{ratio}</strong> {t("global.data-prod-calcul-1")} 1980
-            </li>
-            <li>
-              {/* <strong>{dateBefore}x</strong> {t("global.data-prod-calcul-2")} */}
             </li>
           </div>
         </ul>

@@ -13,12 +13,6 @@ const Search = ({
   const { t } = useTranslation();
 
   const countries = countryList;
-
-  // countryList.forEach(country => {
-  //   countries.push(country.name);
-  // });
-
-  // const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
   const handleChange = event => {
@@ -26,10 +20,8 @@ const Search = ({
   };
 
   const add = item => {
-    console.log(item);
     setSearchTerm(item.name);
     setSelectedCountry(item);
-    // ZOOM ON COUNTRY
   };
 
   const reset = () => {
@@ -42,10 +34,9 @@ const Search = ({
       country.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     if (results.length < 3 ) {
-      console.log('res', results)
       setSearchResults(results);
     }
-  }, [searchTerm]);
+  }, [searchTerm, countries]);
 
   return (
     <div className="search">

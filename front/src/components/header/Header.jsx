@@ -9,7 +9,7 @@ const Header = () => {
   const [swapSound, setSwapSound] = useState(Sound.status.PLAYING);
   const [swapClick, setSwapClick] = useState(Sound.status.STOPPED);
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   function changeLanguage(lang) {
     i18n.changeLanguage(lang);
