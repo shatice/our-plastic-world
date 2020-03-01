@@ -7,7 +7,6 @@ import "./header.scss";
 
 const Header = () => {
   const [swapSound, setSwapSound] = useState(Sound.status.PLAYING);
-  const [swapClick, setSwapClick] = useState(Sound.status.STOPPED);
 
   const { i18n } = useTranslation();
 
@@ -22,43 +21,26 @@ const Header = () => {
       setSwapSound(Sound.status.PLAYING);
     }
   };
-  const add = () => {
-    if (swapClick === Sound.status.STOPPED) {
-      setSwapClick(Sound.status.PLAYING);
-    }
-  };
 
   return (
     <header className="header">
       <Sound url={soundfile} playStatus={swapSound} loop={true} />
-      <nav className="navIcons">
-        <ul className="navList">
-          <div onClick={add} className="nav__language">
-            <li
-              onClick={() => {
-                changeLanguage("fr");
-              }}
-              style={{ opacity: i18n.language === "fr" ? "1" : "0.5" }}
-              className={`navItem navItem--lang`}
-            >
+      <nav>
+        <ul>
+          <li className="nav__item nav__item--lang" onClick={toggle}>
+            <p onClick={() => { changeLanguage("fr"); }} style={{ opacity: i18n.language === "fr" ? "1" : "0.5" }} className={`navItem navItem--lang`}>
               FR
-            </li>
-            <li
-              onClick={() => {
-                changeLanguage("en");
-              }}
-              style={{ opacity: i18n.language === "en" ? "1" : "0.5" }}
-              className={`navItem navItem--lang`}
-            >
+            </p>
+            <p onClick={() => { changeLanguage("en"); }} style={{ opacity: i18n.language === "en" ? "1" : "0.5" }} className={`navItem navItem--lang`}>
               EN
-            </li>
-          </div>
-          <li onClick={toggle} className="navItem navItem--audio">
+            </p>
+          </li>
+          <li className="nav__item nav__item--audio" onClick={toggle}>
             <svg className="navItem__icon navItem__icon--audioOff">
               <use xlinkHref="/sprite-sheet.svg#audioOffIcon" />
             </svg>
           </li>
-          <li onClick={add} className="navItem navItem--turnOff">
+          <li className="nav__item nav__item--turnOff">
             <Link to="/">
               <svg className="navItem__icon navItem__icon--turnOff">
                 <use xlinkHref="/sprite-sheet.svg#turnOffIcon" />
