@@ -16,26 +16,11 @@
 <strong><code>Axios</code></strong>
 <p>Client HTTP basé sur un système de promesses, nous avons préféré Axios à Fetch, par exemple, pour sa compatibilité avec les navigateurs et sa prise en main facile.</p>
 <br>
-<strong><code>Amcharts4 (Maps)</code></strong>
-<br>
-<a>https://www.amcharts.com/</a>
-<br>
-<p>Le choix de notre <strong>dataviz</strong> s’est porté sur un globe interactif et pour le mettre en place nous avons choisi <code>Amcharts4</code> qui est une librairie de datavisualisation bien documentée, basée sur le format <code>GeoJson</code>, renvoyant un template en <code>SVG</code> accessible dans le <code>DOM</code> et compatible avec TypeScript et les framework JS (ici, <code>React</code>).</p>
-<p>Les propriétés qui nous ont été utiles :</p>
-<ul>
-<li>Choix de la projection de la map (ici Orthographic)</li>
-<li>Tooltips</li>
-<li>Légendes</li>
-<li>Répartitions des couleurs</li>
-<li>Zoom</li>
-<li>Rotation</li>
-<li>Drag & drop</li>
-</ul>
-<p>Nous avons également eu recours à Amcharts4 pour gérer une scrollbar chronologique reliée à nos données ainsi qu’au Globe.</p>
-<p>Avec un peu plus de connaissances les scripts auraient pu être davantage optimisés et raccourcis, quoi qu’il en soit cette librairie nous a beaucoup facilité la tâche pour gérer notre dataviz</p>
-<br>
+<strong><code>amCharts4 (Maps)</code></strong>
+<i>Voir : Travail personnel - Sarah Güngör (plus bas)</i>
 <strong><code>i18next.js</code></strong>
 <p>Facilite la traduction de notre application et permet donc à l'utilisateur de lire notre contenu dans les langues que nous souhaitons grâce à des fichiers <code>json</code> - dans lesquels nous stockons le contenu textuel dans les différentes langues - et des clés de traduction.</p>
+<i>Voir : Travail personnel - Lucas Moreno (plus bas)</i>
 <br>
 <strong><code>react-sound</code></strong>
 <p>Afin de rendre notre expérience digitale aussi immersive que possible, nous avons fait le choix d'intégré un son d'ambiance à l'aide de cette librairie, facile d'utilisation et interne à notre framework.</p>
@@ -58,4 +43,22 @@
 <p>A partir de ce moment la j'ai utilisé la fonction <code>changeLanguage()</code> sur les deux boutons qui servent à changer la langue.</p>
 <p>Pour finir, il a juste fallu remplacer le texte brut par des clefs de traduction qui étaient créer dans le fichiers json dans public, avec une fonction qui était mise à disposition par la librairie :</p>
 <p>ex : <code>{t('current-year')}</code></p>
+
+# Travail personnel - Sarah Güngör
+<strong>Utilisation de <code>amCharts4 (Maps)</code> :</strong>
+<p>Le choix de notre <strong>dataviz</strong> s’est porté sur un globe interactif et pour le mettre en place nous avons choisi <code>amCharts4</code> qui est une librairie <code>JS</code> de datavisualisation bien documentée, basée sur le format <code>GeoJson</code>, renvoyant un template en <code>SVG</code> accessible dans le <code>DOM</code> et compatible avec TypeScript et les framework JS (ici, <code>React</code>).</p>
+<p>Les propriétés qui nous ont été utiles :</p>
+<ul>
+<li>Choix de la projection de la map (ici, Orthographic)</li>
+<li>Tooltips</li>
+<li>Légendes</li>
+<li>Répartitions des couleurs</li>
+<li>Zoom</li>
+<li>Rotation</li>
+<li>Drag & drop</li>
+</ul>
+<p>Nous avons également eu recours à <code>amCharts4</code> pour gérer une scrollbar chronologique liée à nos données ainsi qu’au Globe.</p>
+<p>Avec un peu plus de connaissances les scripts auraient pu être davantage optimisés et raccourcis, quoi qu’il en soit cette librairie nous a beaucoup facilité la tâche pour gérer notre dataviz</p>
+<br>
+
 
