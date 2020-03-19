@@ -1,7 +1,6 @@
 # Our Plastic World
-
-Lien vers l'expertise front : 
-<a>https://github.com/shatice/our-plastic-world/tree/master/front</a>
+ 
+<a href="https://github.com/shatice/our-plastic-world/tree/master/front">Lien vers l'expertise front</a>
 
 <i>La pollution plastique à l'échelle mondiale</i>
 
