@@ -32,7 +32,7 @@ Une datavisualisation de :
 
 <code>git clone</code> https://github.com/shatice/filrouge.git
 
-<code>cd filrouge</code>
+<code>cd our-plastic-world</code>
 
 <strong>Lancer le front en local</strong>
 
